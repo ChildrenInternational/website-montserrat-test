@@ -1,0 +1,124 @@
+/* Baseline typography styles, global */
+
+body {font-family: $font-avenir; font-size: $size-8;}
+p {font-family: $font-martel;font-size: $size-8; font-weight: normal;letter-spacing: .5px;line-height: 1.8;margin: 0 0 30px;
+
+    @media #{$media-mobile} { font-size: $size-7-sm; } 
+    @media #{$media-xxs} { font-size: $size-8; } 
+
+    strong {font-family: $font-martel-bold;font-weight: normal;font-style: normal;}
+
+    &.normal { font-family: $font-avenir; line-height: $size-5;font-size: $size-7-sm;
+
+        @media #{$media-mobile} {  line-height: $size-4;font-size: $size-7; }
+        @media #{$media-xxs} {  line-height: $size-6;font-size: $size-8; }
+    }
+        + h1, + h2, + h3, + h4, + h5, + h6 {margin-top: 40px;margin-bottom: 20px;}
+
+    &:last-child{margin:0;}
+    &.caption:last-child{margin: 0 0 30px;}
+}
+.caps { text-transform: uppercase; }
+
+h1, h2, h3, h4, h5, h6 {font-family: $font-avenir-black;letter-spacing: 1px;margin-top:0;margin-bottom: 20px;}
+
+h1, h2, h3, h4 { color: $color-gray-title; }
+h1 { font-size: $size-1; line-height: calc( #{$size-1} + 5px ); }
+h2 { font-size: $size-2; line-height: calc( #{$size-2} + 5px ); }
+h3 { font-size: $size-4; line-height: calc( #{$size-4} + 5px ); }
+h4 { font-size: $size-6; line-height: calc( #{$size-6} + 5px ); }
+h5 { font-size: $size-7; line-height: calc( #{$size-7} + 5px ); }
+h6 { font-size: $size-7-sm; line-height: calc( #{$size-7-sm} + 5px );font-family: $font-avenir-medium; }
+
+@media #{$media-mobile} { 
+    h1 { font-size: $size-2; line-height: calc( #{$size-2} + 5px ); }
+    h2 { font-size: $size-3; line-height: calc( #{$size-3} + 5px ); }
+ }
+
+.page-title { text-align: center; font-size: $size-1; line-height: calc( #{$size-1} + 5px ); margin: 0 0 15px;
+    @media #{$media-tiny} {font-size:40px; line-height: calc( 40px + 5px );}
+}
+.es .page-title {
+    @media #{$media-xxs} {font-size:35px; line-height: calc( 35px + 5px );}
+    @media #{$media-tiny} {font-size:30px; line-height: calc( 30px + 5px );}
+}
+.page-title-sub { text-align: center; text-transform: uppercase;font-size: $size-8;line-height: calc( #{$size-8} + 5px );font-family: $font-avenir; margin:0; padding:0;
+    em { font-family: $font-martel; font-size: $size-11; text-transform: none; }
+    .currently-in-progress { font-size: $size-11; margin-bottom: 30px; position: relative;
+
+        &:before { background: url(../images/icon-in-progress.png) no-repeat 0 0; content: ''; display: inline-block; height: 9px; margin-right: 10px; width: 28px; }
+    }
+}
+
+.caption{ font-size:$size-10;font-family:$font-avenir;
+          strong{font-family:$font-avenir-black;font-weight: normal;font-style: normal;}
+}
+.highlight{background-image: url(../images/highlighter3.svg);background-size: cover;padding-left: 5px;margin-left: -3px;padding-right: 8px;margin-right: -8px;
+    @media #{$is-ie} {padding-left: 13px;margin-left: -13px;padding-right: 10px;margin-right: -10px;}
+    }
+.highlight-lg{background-image: url(../images/highlighter3.svg);background-size: cover;padding-left: 5px;margin-left: -3px;padding-right: 20px;margin-right: -20px;
+    @media #{$is-ie} {padding-left: 44px;margin-left: -44px;padding-right: 26px;margin-right: -26px;}
+}
+
+
+.sm-padding-wrap{
+h1, h2, h3, h4, h5, h6 {margin-bottom: 0;}
+}
+
+           
+/* Section - blockquote
+------------------------------------------------------------------------ */
+blockquote, blockquote p, .blockquote {font-size: $size-3;font-family: $font-avenir;color: $color-purple;border: none;padding: 0;
+    strong{font-family:$font-avenir-black;font-weight: normal;font-style: normal;}
+    @media #{$media-mobile} { font-size: $size-5; }
+}
+
+// Classes to set fonts
+h1.handwriting  { font-size: $size-1; line-height: calc( #{$size-1} + 5px ); }
+h2.handwriting  { font-size: $size-2; line-height: calc( #{$size-2} + 5px ); }
+h3.handwriting  { font-size: $size-4; line-height: calc( #{$size-4} + 5px ); }
+h4.handwriting  { font-size: $size-6; line-height: calc( #{$size-6} + 5px ); }
+h5.handwriting  { font-size: $size-7; line-height: calc( #{$size-7} + 5px ); }
+
+.handwriting { font-family: $font-handwritten; font-size:$size-7; }
+.icon { font-family:$font-icon; }
+
+.text-uppercase{text-transform:uppercase;}
+
+.lightTxt {font-family: $font-avenir;
+    strong{font-family: $font-avenir;font-weight: 700;font-style: normal;}
+}
+
+h1.lightTxt{ line-height: calc( #{$size-1} + 20px );}
+h2.lightTxt { line-height: calc( #{$size-2} + 20px ); }
+h3.lightTxt { line-height: calc( #{$size-4} + 20px ); }
+h4.lightTxt { line-height: calc( #{$size-6} + 20px ); }
+h5.lightTxt { line-height: calc( #{$size-7} + 20px ); }
+h6.lightTxt {  line-height: calc( #{$size-7-sm} + 20px );}
+
+@media #{$media-mobile} { 
+    h1.lightTxt{ line-height: calc( #{$size-1} + 10px );}
+    h2.lightTxt { line-height: calc( #{$size-2} + 10px ); }
+    h3.lightTxt { line-height: calc( #{$size-4} + 10px ); }
+    h4.lightTxt { line-height: calc( #{$size-6} + 10px ); }
+    h5.lightTxt { line-height: calc( #{$size-7} + 10px ); }
+    h6.lightTxt {  line-height: calc( #{$size-7-sm} + 10px );}
+}
+
+// Classes to set font color
+.green { color: $color-green; }
+.green-neon { color: $color-green-neon; }
+.green-dark { color: $color-green-dark; }
+.purple { color: $color-purple; }
+.orange { color: $color-orange; }
+.white { color: $color-white; }
+.gray-light { color: $color-gray-light; }
+.gray-dark { color: $color-gray-dark; }
+.error { color: $color-error; }
+
+.icon-paypal{ font-size:$size-8;
+    @media #{$media-sm} {font-size:$size-6;}
+}
+
+.icon-spinner{animation: fa-spin 2s infinite linear;}
+.tooltip-w-icon:after{font-size:15px;content: $icon-info; font-family:$font-icon; margin-left:4px;line-height:18px; }

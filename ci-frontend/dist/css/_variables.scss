@@ -1,0 +1,296 @@
+
+@import '../vendor/bootstrap/stylesheets/bootstrap/_variables.scss';
+
+// Colors
+$color-green:                   #009976;
+$color-green-light:             lighten($color-green, 8%);
+$color-green-dark:	    	    #037259;
+$color-green-neon:              #adbf2b;
+$color-purple:  		        #901f61;
+$color-purple-light:  		    lighten($color-purple, 8%);
+$color-purple-dark:  		    darken($color-purple, 8%);
+$color-orange:  			    #d64227;
+$color-orange-light:  			lighten($color-orange, 8%);
+$color-orange-dark:  			#b84025;
+$color-gray:                    #898989;
+$color-gray-border:             #ccc;
+$color-gray-dark:   	        #484848;
+$color-gray-light:  		    #f6f4f3;
+$color-gray-title:              #595959;
+$color-white:                   #fff;
+$color-yellow:                  #fed115;
+$color-error:                   #FF0000;
+
+
+// Fonts
+$font-size-base:                16px;
+$font-path: 	    			'/fonts/';
+$font-avenir:                   'AvenirLT-Roman';
+$font-avenir-black:             'AvenirLT-Black';
+$font-avenir-heavy:             'AvenirLT-Heavy';
+$font-avenir-medium:            'AvenirLT-Medium';
+$font-martel:			    	'martellight';
+$font-martel-bold:              'martelbold';
+$font-handwritten:              'cihandregular';
+$font-icon:                     'CI';
+
+$size-1:                        48px;
+$size-2:                        42px;
+$size-3:                        34px;
+$size-4:                        30px;
+$size-5:                        28px;
+$size-6:                        24px;
+$size-7:                        22px;
+$size-7-sm:                     18px;
+$size-8:                        16px;
+$size-9:                        15px;
+$size-10:                       14px;
+$size-11:                       13px;
+$size-12:                       12px;
+
+// Section Padding
+$section-pad-lg: 				    60px;
+$section-pad-sm: 				    40px;
+
+// Images
+$image-url: 				    '../images/';
+
+$border-radius-base:            4px !default;
+$border-radius-large:           6px !default;
+$border-radius-small:           3px !default;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius-base:        $border-radius-base !default;
+$btn-border-radius-large:       $border-radius-large !default;
+$btn-border-radius-small:       $border-radius-small !default;
+
+
+// Media Queries
+/*
+$screen-tiny:                320px;
+$screen-xs:                  480px;
+$screen-sm:                  768px;
+$screen-md:                  992px;
+$screen-lg:                  1200px;
+$screen-xlg:                 1500px;
+$screen-xxlg:                2000px;
+
+$screen-sm-min:              768px;
+$screen-md-min:              992px;
+$screen-lg-min:              1200px;
+
+$screen-xs-max:              767px;
+$screen-sm-max:              991px;
+$screen-md-max:              1199px;
+*/
+
+// x-Large screen / x-wide desktop
+$screen-xlg:                  1500px !default;
+$screen-xlg-min:              $screen-xlg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-xlg-desktop:          $screen-xlg-min !default;
+
+// x-Large screen / x-wide desktop
+$screen-xxlg:                  2000px !default;
+$screen-xxlg-min:              $screen-xxlg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-xxlg-desktop:          $screen-xxlg-min !default;
+
+.container {
+
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
+}
+
+$container-lg:               1170px;
+
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+$media-tiny:    '(max-width: 320px)'; /* 0 to 320 */
+$media-xxs:     '(max-width: #{$screen-xs})'; /* 0 to 480 */
+$media-xs:      '(max-width: #{$screen-xs-max})'; /* 0 to 767 */
+$media-sm:      '(min-width: #{$screen-sm-min}) and (max-width: #{$screen-sm-max})'; /* 768 to 991 */
+$media-md:      '(min-width: #{$screen-md-min}) and (max-width: #{$screen-md-max})'; /* 992 to 1199 */
+$media-lg:      '(min-width: #{$screen-lg-min})'; /* 1200 and above */
+$media-xlg:     '(min-width: #{$screen-xlg-min})'; /* 1500 and above */
+$media-xxlg:    '(min-width: #{$screen-xxlg-min})'; /* 2000 and above */
+
+$media-mobile:  '(min-width: 0) and (max-width: #{$screen-sm-max})'; /* 0 to 991 */
+$media-mdlg:    '(min-width: #{$screen-md-min})'; /* 992 to above */
+
+$media-retina2x:  'only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and ( min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)';
+$media-mobile-retina2x:  '(min-width: 0) and (max-width: #{$screen-sm-max}) and (-webkit-min-device-pixel-ratio: 2), (min-width: 0) and (max-width: #{$screen-sm-max}) and (min-resolution: 192dpi)';
+
+// Transition Speeds
+$header-focus-time: 250ms;
+
+
+// Old Site SASS Variables ---------------------------/
+
+// --- @mixin responsive ------------- /
+
+
+// port iphone phones and down */
+$width-xsmall:  320px;
+// Landscape phones and down */
+$width-small:  479px;
+// Landscape phone to portrait tablet */
+$width-medium: 767px;
+// Portrait tablet to landscape and desktop */
+$width-min-lgmed: 768px;
+$width-max-lgmed: 979px;
+// Desktop */
+$width-large:  1200px;
+
+
+// @mixin retinize -----------------------/
+
+$is-hidpi: "(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5),(min-resolution: 1.5dppx)";
+
+$is-ie: "(-ms-high-contrast: active), (-ms-high-contrast: none)" ;
+
+
+
+
+/* CI Icon font ----------------------------------------------------*/
+$icon-activity1: "\e900";
+$icon-activity2: "\e901";
+$icon-arrow-callout: "\e902";
+$icon-arrow-cta: "\e903";
+$icon-arrow-down: "\e904";
+$icon-arrow-up: "\e905";
+$icon-bedding: "\e906";
+$icon-birthday: "\e907";
+$icon-boy: "\e908";
+$icon-cc: "\e909";
+$icon-cc-amex: "\e90a";
+$icon-cc-discover: "\e90b";
+$icon-cc-mastercard: "\e90c";
+$icon-cc-visa: "\e90d";
+$icon-chart: "\e90e";
+$icon-check: "\e90f";
+$icon-community-center: "\e910";
+$icon-education: "\e911";
+$icon-electricity: "\e912";
+$icon-email: "\e913";
+$icon-employability: "\e914";
+$icon-empowerment: "\e915";
+$icon-empowerment2: "\e916";
+$icon-enjoys: "\e917";
+$icon-family: "\e918";
+$icon-favorite: "\e919";
+$icon-favorite-active: "\e91a";
+$icon-flag: "\e91b";
+$icon-flag-colombia: "\e91c";
+$icon-flag-dominican-republic: "\e91d";
+$icon-flag-ecuador: "\e91e";
+$icon-flag-honduras: "\e91f";
+$icon-flag-india: "\e920";
+$icon-flag-mexico: "\e921";
+$icon-flag-philippines: "\e922";
+$icon-flag-united-states: "\e923";
+$icon-flag-zambia: "\e924";
+$icon-flag-guatemala: "\e925";
+$icon-flag-canada: "\e926";
+$icon-flag-chile: "\e927";
+$icon-girl: "\e928";
+$icon-glasses1: "\e929";
+$icon-glasses2: "\e92a";
+$icon-goals1: "\e92b";
+$icon-goals2: "\e92c";
+$icon-growing: "\e92d";
+$icon-hand-heart: "\e92e";
+$icon-handcuffs: "\e92f";
+$icon-health: "\e930";
+$icon-home: "\e931";
+$icon-id: "\e932";
+$icon-images: "\e933";
+$icon-inactivity2: "\e934";
+$icon-income: "\e935";
+$icon-info: "\e936";
+$icon-knife: "\e937";
+$icon-language: "\e938";
+$icon-laptop: "\e939";
+$icon-library1: "\e93a";
+$icon-library2: "\e93b";
+$icon-load-more: "\e93c";
+$icon-location-pin: "\e93d";
+$icon-logo: "\e93e";
+$icon-logo-sm: "\e93f";
+$icon-malnutrition: "\e940";
+$icon-menu: "\e941";
+$icon-minus: "\e942";
+$icon-pacifier: "\e943";
+$icon-paypal: "\e944";
+$icon-pdf: "\e945";
+$icon-pen: "\e946";
+$icon-pill-bottle: "\e947";
+$icon-pills: "\e948";
+$icon-plus: "\e949";
+$icon-power: "\e94a";
+$icon-print: "\e94b";
+$icon-rss: "\e94c";
+$icon-sanitation: "\e94d";
+$icon-school: "\e94e";
+$icon-search: "\e94f";
+$icon-share: "\e950";
+$icon-siblings: "\e951";
+$icon-soccer: "\e952";
+$icon-social-facebook: "\e953";
+$icon-social-google-plus: "\e954";
+$icon-social-instagram: "\e955";
+$icon-social-pinterest: "\e956";
+$icon-social-twitter: "\e957";
+$icon-social-youtube: "\e958";
+$icon-soup: "\e959";
+$icon-spinner: "\e95a";
+$icon-staff: "\e95b";
+$icon-staff-admin: "\e95c";
+$icon-star: "\e95d";
+$icon-talent1: "\e95e";
+$icon-talents2: "\e95f";
+$icon-team: "\e960";
+$icon-team2: "\e961";
+$icon-toothbrush: "\e962";
+$icon-unemployment: "\e963";
+$icon-video: "\e964";
+$icon-wagon: "\e965";
+$icon-waiting: "\e966";
+$icon-water: "\e967";
+$icon-wealth: "\e968";
+$icon-x: "\e969";
+$icon-check-circle: "\e96a";
+$icon-power-es: "\e96b";
+$icon-warning: "\e96c";
+$icon-certificate: "\e96d";
+$icon-binoculars: "\e96e";
+$icon-strong-arm: "\e96f";
+$icon-shirt-tie: "\e970";
+$icon-thought-cloud: "\e971";
+$icon-mountain: "\e972";
+$icon-graph: "\e973";
+$icon-globe: "\e974";
+$icon-earth-sprout: "\e975";
+$icon-comment: "\e976";
+$icon-checking: "\e977";
+$icon-pencil: "\e978";
+$icon-gift: "\e979";
+$icon-document: "\e97a";
+$icon-trash-can: "\e97b";
+$icon-gear: "\e97c";
+$icon-circle-question: "\e97d";
+$icon-question-mark: "\e97e";
+$icon-cc-diners-club: "\e97f";
+$icon-cc-paypal: "\e980";
+$icon-upload: "\e981";
+$icon-download: "\e982";
+$icon-circle-fill-question: "\e983";
+$icon-social-linkedin: "\e984";
+$icon-zoom-out: "\e985";
+$icon-zoom-in: "\e986";
+
+
+

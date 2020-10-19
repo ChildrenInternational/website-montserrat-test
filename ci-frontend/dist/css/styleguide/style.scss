@@ -1,0 +1,42 @@
+// Third-party
+
+@import "partials/docs.min.css";
+@import "partials/dashboard";
+
+/*
+ * Main content
+ */
+
+.content-wrapper .page-content.main { padding: 15px; }
+
+@media (min-width: 768px) {
+    .content-wrapper .page-content.main { padding-right: 15px; padding-left: 15px; }
+}
+
+.main .page-header { margin-top: 0; }
+
+.bs-example + .highlight2, .tag .highlight2 { background-image: none; }
+.page-template.styleguide .page-content .container{padding:0 15px;}
+
+.navbar-brand{height:auto;}
+
+.item-wrap{ margin:0 0 30px 0;}
+
+.show-grid [class^="col-"] {
+    background-color: rgba(86, 61, 124, 0.15);
+    border: 1px solid rgba(86, 61, 124, 0.2);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.sub-header{position:relative}
+.anchor-name{ position:absolute; top:-70px;}
+
+.tag{ font-size:16px; margin:0 0 10px;}
+
+.highlight2 pre.wrap{font-size: inherit;color: #333;white-space: pre-wrap;}
+
+ul.default.sidebar-list li {margin: 10px 0 10px 0;
+    a{margin-bottom: 0;}
+}
+

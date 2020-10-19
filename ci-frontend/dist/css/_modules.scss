@@ -1,0 +1,149 @@
+/* Reusable components & markup, style guide (KSS) */
+
+
+/*
+Widgets
+
+Generic Widgets
+
+Markup:
+<div class="widget {$modifiers}">
+    <img src="http://lorempixel.com/150/150" class="widget-image" />
+    <p>Widget Contents</p>
+</div>
+
+.right      - Align image to the right instead of the left.
+
+Styleguide 2.0
+*/
+
+.widget {
+    margin: 1em 0;
+    padding: 10px;
+    overflow: hidden;
+
+    .widget-image {
+        float: left;
+        margin-right: 0.2em;
+    }
+
+    &.right .widget-image {
+        float: right;
+        margin-left: 0.2em;
+        margin-right: 0;
+    }
+}
+
+
+/*
+Buttons
+
+Bootstrap-based Buttons
+
+Markup:
+<a href="#" class="btn {$modifiers}">Link</a>
+<button class="btn {$modifiers}">Button</button>
+<input type="button" class="btn {$modifiers}" value="Input"/>
+<input class="btn {$modifiers}" type="submit" value="Submit">
+
+.btn-default             - Indicate that the button is a generic default button
+.btn-lg                  - A Large button
+.btn-sm                  - A Small button
+.btn-primary             - A primary color button
+.btn-default:hover               - Highlight the button when hovered.
+.btn-default:disabled            - Make the button change appearance to reflect it being disabled.
+.btn-default:active              - "Press" the button down when clicked.
+.btn-default:visited             - post visit styles
+
+Styleguide 2.1
+*/
+
+/*
+Modals
+
+Default Modal
+
+Markup:
+<div class="widget {$modifiers}">
+    <img src="http://lorempixel.com/150/150" class="widget-image" />
+    <p>Widget Contents</p>
+</div>
+
+.right      - Align image to the right instead of the left.
+
+Styleguide 2.3
+*/
+
+.modal-default {
+    .modal-container {
+        max-width: 1800px;
+        margin: 0 auto;
+        height: 100%;
+    }
+    .modal-content {
+        /*display: table;
+        height: 100%;*/
+        border-radius: 0;
+        background-color: rgba($color-white, 0.9);
+    }
+    .modal-body {
+        padding: 0;
+    }
+    .modal-header {
+        border: none;
+    }
+    .close {
+        font-size: 32px;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        .modal-content {
+            display: table;
+            height: 100%;
+            width: 100%;
+        }
+        .modal-body {
+            display: table-row;
+            padding: 15px;
+        }
+        .container {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+}
+
+/*
+Alerts
+
+Default Alerts
+
+Markup:
+<div class="widget {$modifiers}">
+    <img src="http://lorempixel.com/150/150" class="widget-image" />
+    <p>Widget Contents</p>
+</div>
+
+<div class="above-nav-alerts">
+    <div class="alert / alert-dismissible / {$modifiers}" role="alert">
+        <a href="#" type="button" class="close pull-right" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true"><span aria-hidden="true"><i class="icon-x"></i></span></span>
+        </a>
+        <p>This an alert.</p>
+    </div>
+</div>
+
+.bg-orange          - Background orange
+.bg-purple          - Background purple
+.bg-green           - Background green
+.bg-green-neon      - Background green neon
+.bg-green-dark      - Background green dark
+.bg-yellow          - Background yellow
+.bg-grey            - Background gray
+.bg-grey-light      - Background gray light
+.bg-grey-dark       - Background gray dark
+.bg-white           - Background white
+
+Styleguide 2.4
+*/
+

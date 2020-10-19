@@ -1,0 +1,156 @@
+/* PLEDGE PAGE */
+
+/* Section - Title
+------------------------------------------------------------------------ */
+.section-page-title {
+    padding: 45px 0;
+
+    h1 { float: left; margin: 0; }
+}
+
+
+/* Section - Pledge Hero
+------------------------------------------------------------------------ */
+.section-pledge-hero {
+    background: url(#{$image-url}bg-pledge-hero.jpg) no-repeat;
+    background-position: 50% 50%;
+    min-height: 550px;
+
+    .column { position: relative; }
+
+    @include bg-cover();
+
+    @media #{$media-mdlg} { padding-top: 80px; }
+
+    .hero-content {border:1px solid $color-gray-border;position: relative; float:left;
+
+       .pledge-text{float: left;width: 100%;}
+       .sign-form{float: left;width: 100%;position: relative;z-index:100; }
+
+        h3 { 
+            color: $color-green; 
+            font-size: $size-3;
+            margin-top: 0;
+        }
+        .pledge-signature-container {border-bottom: 1px solid #a6a6a6;color: #333;float: left;width: 100%;
+
+            i, a { float: left; line-height: 37px; }
+            i { 
+                color: $color-orange;
+                font-size: $size-8; 
+                margin-right: 10px;
+            }
+            .pledge-signature {background: none; border: none;color:$color-gray-dark;font-family: $font-handwritten;font-size: $size-7;width: calc(100% - 33px);
+
+                &::-webkit-input-placeholder { color: #333 !important; }
+                &::-moz-placeholder { color: #333 !important;  } /* firefox 19+ */
+                &:-ms-input-placeholder { color: #333 !important;  } /* ie */
+            }
+
+            @media (min-width: $screen-xs) {
+                i { font-size: $size-7; margin-right: 15px; }
+                .pledge-signature { font-size: $size-6; width: auto; }
+            }
+
+            @media (min-width: $screen-sm-min) {
+                left: 60px;
+                right: 60px;
+                i { font-size: $size-6; margin-right: 20px; }
+                .pledge-signature { font-size: $size-5; }
+                i, a { line-height: 56px; }
+            }
+        }
+
+        .hide-fields { position: absolute; right: 0; bottom: 0; padding: 15px; width: 100%; text-align: center;
+            &:hover { cursor: pointer; }
+            @media (min-width: $screen-md-min) { width: auto; }
+        }
+        .pledge-fields { margin-top:30px;float: left;width: 100%; }
+    }
+}
+
+
+/* Section - Pledge Info
+------------------------------------------------------------------------ */
+.section-pledge-info {
+    padding: 50px 0;
+
+    .column-one { 
+        @include make-xs-column(12);
+        @include make-sm-column(6);
+        @include make-md-column(6);
+        @include make-lg-column(6);
+    }
+    .column-two {
+        @include make-xs-column(12);
+        @include make-sm-column(6);
+        @include make-md-column(6);
+        @include make-lg-column(6);
+    }
+
+    .gray-box {
+        background-color: $color-gray-light;
+        min-height: 210px;
+        padding: 40px; 
+    }
+    .gray-box > p {margin-bottom:0;}
+    .share-pledge {
+        .handwriting { color: $color-purple; font-size: $size-6;line-height: 30px;}
+    }
+}
+
+/* Section - Pledge Boxes
+------------------------------------------------------------------------ */
+.section-pledge-boxes { padding: 0 0 90px; position: relative;
+
+    div.pledge-boxes { margin-bottom: 20px;
+
+        .pledge-wrapper {
+            margin-bottom: 60px;
+
+            @include make-xs-column(12);
+            @include make-sm-column(6);
+            @include make-md-column(4);
+            @include make-lg-column(4);
+
+        }
+
+        .pledge-box { background-color: $color-green; color: $color-white; height: 210px; margin: 0 auto; padding-top: 70px; position: relative; text-align: center; width: 260px;
+            .delete-pledge { position: absolute; top: 0; right: 0; }
+            .pledge-name { font-size: $size-4; }
+            .pledge-location {margin-top: 5px; }
+
+            .overlay { background-color: $color-purple; color: $color-white; width: 100%; height: 100%; font-family: $font-avenir; position: absolute; left: 0; bottom: 0; padding: 20px;text-align: left; 
+                -webkit-transition: all 0.5s ease-in-out;
+	            -moz-transition: all 0.5s ease-in-out;
+	            -ms-transition: all 0.5s ease-in-out;
+	            -o-transition: all 0.5s ease-in-out;
+	            transition: all 0.5s ease-in-out;
+            }
+        }
+    }
+    .down-arrow,
+    .arrow-text { color: #959595; }
+}
+
+
+.overlay-actions {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+
+    .btn-block { background-color: #acacac; }
+    .collapsed i::before {
+        content: $icon-plus;
+    }
+    i::before {
+        content: $icon-minus;
+    }
+}
+
+.section-large-bottom-image {
+    background: url(#{$image-url}bg-large-bottom-image.png) no-repeat;
+    @include bg-cover();
+    background-position: 50% 50%;
+    min-height: 830px;
+}

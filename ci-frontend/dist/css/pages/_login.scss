@@ -1,0 +1,26 @@
+
+/* Login Section --------------------*/
+
+.section-login{
+        .column-one {
+        @include make-xs-column(12);
+        @include make-sm-column(7);
+        @include make-md-column(7);
+        @include make-lg-column(7);
+        border-right:1px solid $color-gray-border; padding-right:50px;
+
+         @media #{$media-xs} { border-bottom:1px solid $color-gray-border; padding-right:15px; }
+    }
+    .column-two {
+        @include make-xs-column(12);
+        @include make-sm-column(5);
+        @include make-md-column(5);
+        @include make-lg-column(5);
+        padding-left:50px;
+
+         @media #{$media-xs} { padding-left:15px; }
+    }
+
+    &.login-wrap .create-account {padding:0;}
+}
+

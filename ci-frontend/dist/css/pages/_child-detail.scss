@@ -1,0 +1,403 @@
+/* CHILD DETAIL PAGE */
+
+/* Section - Child Detail
+------------------------------------------------------------------------ */
+.section-child-detail-header { overflow:hidden;min-height: 340px;position: relative; padding-top: 0;
+    @media #{$media-sm} { min-height: 250px; }
+    @media #{$media-xs} { min-height: 200px; }
+
+    .no-object-fit.bg-image {max-height: 340px;min-height:200px;}
+}
+ 
+/* Section - About Child
+------------------------------------------------------------------------ */
+.section-about-child {
+@media #{$media-mobile} { padding-bottom:0; }
+
+    .column-one {
+        @include make-xs-column(12);
+        @include make-sm-column(12);
+        @include make-md-column(9);
+        @include make-lg-column(9);
+
+        @media #{$media-lg} { padding-left: 50px; }
+    }
+    .column-two {
+        @include make-xs-column(12);
+        @include make-sm-column(12);
+        @include make-md-column(3);
+        @include make-lg-column(3);
+
+        @media #{$media-lg} { padding-left: 60px; }
+        @media #{$media-mobile} { padding-top: 40px; }
+    }
+}
+
+/* Person Card/Detail Layout */
+.section-about-author .person-card.layout-detail .person-name { 
+        @media #{$media-mobile} { text-align:center;  }
+        }
+
+.person-card.layout-detail {
+    width: 100%;
+
+    .person-image { overflow:visible;float: left;width:25%; padding:0;
+        
+        @media #{$media-md} { width: 25%; }
+        @media #{$media-sm} { width: 40%; } 
+        @media #{$media-xs} { max-width: 100%; width: 100%; }
+
+        .share-post .share-text{margin-left:0;}
+
+        img { border: 2px solid $color-white;margin-top: -150px;
+            @media #{$media-mdlg} { margin-top: -100px;}
+        }
+        img.author-image { margin-top: 0; 
+            @media #{$media-mdlg} { margin-top: 0; width: 183px; }
+        }
+        
+        .view-more-img{text-align:center; width:100%; color:$color-white; text-transform:uppercase; font-size:$size-12; background:rgba(0, 0, 0, 0.6); padding:5px 10px;margin-top: -29px; display: flex; justify-content: center;position: relative;z-index: 99;
+            @media #{$media-mobile} { padding:10px; font-size:$size-7; margin-top:-52px; } 
+        }
+    }
+    .card-actions { 
+        margin-top: 30px; 
+
+        @media #{$media-xs} { margin-bottom: 30px; text-align: center }
+
+        li { margin-bottom: 10px; }
+    }
+    .person-info { 
+        float: right; 
+        width: 100%; 
+
+        @media #{$media-lg} { width: 565px; }
+        @media #{$media-md} { float: right; width: 70%; }
+        @media #{$media-sm} { float: right; width: 55%; } 
+    }
+    .person-name, .person-name h1 { color: $color-gray-dark; font-size: $size-4; margin-top: 0;margin-bottom: 0; display:inline-block; line-height:34px;font-family: $font-avenir-medium;
+        @media #{$media-xs} { font-size: $size-2; text-align: left; } 
+
+        .team { font-size: $size-6; margin-right: 8px;
+            @media #{$media-xs} { font-size: $size-5; } 
+        }
+    }
+    .person-profile{
+        .column-full{padding:0;}
+    }
+    .person-role,
+    .person-location { font-size: 18px; }
+    .person-role { margin-top: 5px; }
+    .person-location { margin-bottom: 15px; }
+    .person-profile,
+    .person-profile p { 
+        font-family: $font-avenir;
+        margin-top: 20px;
+        text-align: left;
+
+        @media #{$media-mdlg} { margin-top: 10px; }
+        @media #{$media-mobile} { font-size: $size-6; }
+        @media #{$media-xxs} { font-size: $size-8; }
+    }
+    .person-details { margin-bottom:0;padding-bottom:0;
+
+        .detail {
+            @media #{$media-mobile} {
+                display: table;
+                float: left; 
+                width: 25%; 
+            }
+
+            i { @media #{$media-mobile} { font-size: $size-6; } }
+        }
+        .detail-location .result{margin-right:0;}
+
+        .result { 
+            margin-right: 25px;
+
+            @media #{$media-mobile} {
+                clear: both;
+                display: block; 
+                margin: 10px 0 0 0; 
+            }
+            @media #{$media-sm} { font-size: $size-8; }
+            @media #{$media-xs} { font-size: $size-9; }
+            @media #{$media-xxs} { font-size: $size-11; }
+            @media #{$media-tiny} { font-size: $size-11; }
+        }
+    }
+}
+
+.child-detail-modal {
+    .person-card{width:100%;float:none;
+        .person-name{margin-top:0;}
+    }
+    .person-card.layout-detail {
+        .person-image { margin-right:20px; margin-bottom:20px;
+            img {margin-top:0;
+                @media #{$media-mdlg} { margin-top:0; width: 183px; }
+            }
+        }
+        .person-details{clear:both;
+            @media #{$media-mobile} {display: flex;width: 100%;justify-content: center;}
+        }
+    }
+}
+
+.person-details-more{ text-transform:uppercase; font-size:$size-9;padding-top:20px;font-family: $font-avenir;
+        .column-one {
+        @include make-xs-column(12);
+        @include make-sm-column(6);
+        @include make-md-column(6);
+        @include make-lg-column(6);
+
+    }
+    .column-two {
+        @include make-xs-column(12);
+        @include make-sm-column(6);
+        @include make-md-column(6);
+        @include make-lg-column(6);
+
+    }
+
+    ul{
+        li{ margin-bottom:20px; position:relative; padding-left:35px;font-family: $font-avenir;
+          > i{ position:absolute; left:0;}
+        }
+    }
+
+}
+
+/* Child Detail & Author Links */
+ul.share-social {
+    li { float: left; margin-left: 10px; }
+}
+ul.spaced-buttons {
+    margin-top: 20px;
+
+    @media #{$media-mdlg} { margin-top: 5px; text-align: center; }
+
+    li { 
+        border-top: 1px solid $color-gray-border;
+        padding: 20px 0;
+
+        &:first-child { border-top: none; }
+        .btn-add {  @media #{$media-mdlg} { margin-left: -10px; } }
+    }
+}
+
+/* Section - My Team
+------------------------------------------------------------------------ */
+.section-my-team {
+    background-color: $color-gray-light;
+
+    h3 { 
+        color: $color-purple;
+        margin-bottom: 30px; 
+
+        @media #{$media-lg} { margin-bottom: 55px; }
+        @media #{$media-md} { margin-bottom: 30px; }
+    }
+    .section-message{margin-bottom:40px;}
+
+    .my-team-intro {
+        @include make-md-column(9);
+        @include make-lg-column(9);
+        margin-bottom: 30px;
+        position:relative;
+        z-index:100;
+
+        @media #{$media-mdlg} { float: right;  }
+        @media #{$media-mobile} { margin-bottom: 75px; }
+
+        .share-post{ text-align:left;
+            .share-text{margin-left:0;}
+        }
+    }
+    .my-team {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        width: 100%;
+        font-family:$font-avenir;
+
+        @media #{$media-mdlg} { float: left; margin-top: -90px; }
+
+        li {
+            @include make-xs-column(6);
+            @include make-sm-column(6);
+            @include make-md-column(3);
+            @include make-lg-column(3);
+
+            @media #{$media-mobile} { margin-bottom: 60px; }
+
+            .flex-inner {
+                margin-top:87px;
+                overflow: hidden; 
+                width: 100%; 
+                  @media #{$media-mobile} {margin-top:0;}
+            }
+            .image-container { display: block; width: 100%; }
+            .caption-block {
+                display: block;
+                margin-top: 15px;
+                min-height: 50px;
+
+                @media #{$media-mobile} { 
+                    font-size: $size-6; 
+                    margin-top: 30px; 
+                    min-height: 70px;
+                }
+                @media #{$media-xs} { min-height: 70px; }
+            }
+        }
+        li:first-child{
+            .flex-inner {margin-top:0;
+                @media #{$media-md} {margin-top:17px; }
+            }
+        }
+    }
+    .btn { 
+        margin-top: 50px; 
+
+        @media #{$media-mobile} { margin-top: 0; width: 100%; }
+    }
+
+    &.team-inline{
+
+        .my-team {margin-top:0;
+        @media #{$media-lg} { margin-top:0;}
+
+        li .flex-inner{margin-top:0;}
+        }
+    }
+}
+
+/* Section - How Sponsorship Helps
+------------------------------------------------------------------------ */
+.section-how-sponsorship-helps {
+    background-color: $color-white;
+
+    @media #{$media-mobile} { top: 110px; }
+
+    h3 {margin: 0 auto 60px;
+
+        @media #{$media-mobile} { width: 80%; }
+    }
+    .column-full {margin-bottom:40px; }
+    .column-one { 
+        @include make-xs-column(12);
+        @include make-sm-column(12);
+        @include make-md-column(7);
+        @include make-lg-column(7);
+
+        img { float: right; margin-right: 5%; }
+    }
+    .column-two {
+        @include make-xs-column(12);
+        @include make-sm-column(12);
+        @include make-md-column(5);
+        @include make-lg-column(5);
+    }
+    .section-info { 
+        width: 60%; 
+
+        @media #{$media-mdlg} { padding-bottom:40px; }
+        @media #{$media-mobile} { width: 100%; }
+    }
+    .section-icon { margin-bottom: 35px; }
+    .section-message {
+        @media #{$media-mobile} { text-align: left; width: 100%; }
+    }
+    .column-four,
+    .column-five,
+    .column-six {
+        @include make-xs-column(12);
+        @include make-sm-column(12);
+        @include make-md-column(4);
+        @include make-lg-column(4);
+
+        @media #{$media-mdlg} { padding: 0 60px; }
+
+        h4 {
+            @media #{$media-mobile} { margin-top: 75px; }
+        }
+    }
+    h4 {
+        font-family: $font-avenir-medium;
+        color: $color-orange;
+        margin-bottom: 15px;
+
+        @media #{$media-mobile} { margin-bottom: 30px; }
+    }
+}
+
+/* Child Facts Layout
+------------------------------------------------------------------------ */
+.child-fact-list{
+    .slide-icon{ text-align:center;font-size:100px; padding:10px 0 0; margin-bottom:-10px;}
+    .slide-image{ text-align:center; padding:10px 0 10px;}
+
+    .slide-content{ text-align:center;}
+
+    .swiper-container.gallery-card.no-paging{padding-bottom:0;margin-bottom:0;
+        @media #{$media-mobile} {padding-bottom:0; }
+    }
+
+    .swiper-container.gallery-card.no-paging .slide-content,
+    .swiper-container.gallery-card-one.no-paging .slide-content{ text-align:center; padding-bottom:20px; }
+
+    .card{background-color:$color-gray-light;}
+    .swiper-slide{padding-bottom:0; margin-bottom:0;
+        &.open{ border-bottom: 1px solid #FFF;border-radius: 3px 3px 0 0; padding-bottom:10px;background-color:$color-white;}
+    }
+}
+.section-child-fact-text{margin-top:-1px; margin-bottom:30px;
+         @media #{$media-mobile} { margin-top:-51px; }
+         @media #{$media-xs} { margin-top:-51px; }
+   > .container > .row{ border:1px solid rgba(0, 0, 0, 0.125);margin:0 50px;
+         @media #{$media-mobile} {  margin:0 15px; padding:50px 0 0;}
+         @media #{$media-xs} { padding:70px 0 20px; }
+        > .column-one{
+            @include make-xs-column(12);
+            @include make-sm-column(10);
+            @include make-md-column(10);
+            @include make-lg-column(10);
+            padding:30px; 
+        }
+    }
+}
+
+/* Child Gallery Layout
+------------------------------------------------------------------------ */
+.section-child-gallery{
+    .photo-gallery-details{
+        img{border: 20px solid #FFF;}
+    }
+    .photo-gallery-pics-wrap{display:flex; justify-content:center; flex-wrap:wrap;max-height: 573px;overflow-y: auto; border-left:10px solid $color-white; background:$color-white;
+         @media #{$media-mobile} { margin-top:10px; }
+
+        .photo-wrap{ width:25%;padding: 10px 10px 10px 0;
+         @media #{$media-mobile} {width:33.333333333%; }
+         @media #{$media-xxs} {width:50%; }
+            .uploaded-photo{ position:relative;
+                img{max-height: 193px;min-height: 193px;width: 100%; @include object-fit(cover, 50% 50%);
+                    @media #{$media-mobile} {max-height:163px;min-height: 163px;}
+                    @media #{$media-xs} {max-height: 253px;min-height: 253px;}
+                    @media #{$media-xxs} {max-height: 233px;min-height: 233px;}
+                }
+                .photo-date{left:0; bottom:0; position:absolute; width:100%; color:$color-white; font-size:14px; padding:5px;font-family:$font-avenir;height: 55%;display: flex;justify-content: flex-end;flex-direction: column;
+                background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 82%);
+
+                    span{ display:block;text-align:right;
+                        &:nth-child(1){font-family:$font-avenir-heavy; font-size:$size-6;line-height: 20px;}
+                        &:nth-child(2){font-size:$size-12;}
+                        &:nth-child(3){font-size:$size-12;}
+                        &:nth-child(4){font-size:$size-11;}
+                        &:nth-child(5){font-size:$size-11;}
+                    }
+                }
+            }
+        }
+    }
+}

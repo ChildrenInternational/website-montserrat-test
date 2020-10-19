@@ -1,0 +1,772 @@
+
+@font-face {font-family: 'AvenirLT-Medium';src: url('fonts/2FE55C_0_0.eot');src: url('fonts/2FE55C_0_0.eot?#iefix') format('embedded-opentype'),url('fonts/2FE55C_0_0.woff?embed') format('woff'),url('fonts/2FE55C_0_0.ttf') format('truetype');}
+ 
+@font-face {font-family: 'AvenirLT-Roman';src: url('fonts/2FE55C_1_0.eot');src: url('fonts/2FE55C_1_0.eot?#iefix') format('embedded-opentype'),url('fonts/2FE55C_1_0.woff?embed') format('woff'),url('fonts/2FE55C_1_0.ttf') format('truetype');} 
+  
+@font-face {font-family: 'AvenirLT-Black';src: url('fonts/2FE55C_4_0.eot');src: url('fonts/2FE55C_4_0.eot?#iefix') format('embedded-opentype'),url('fonts/2FE55C_4_0.woff?embed') format('woff'),url('fonts/2FE55C_4_0.ttf') format('truetype');}
+   
+@font-face {font-family: 'AvenirLT-Book';src: url('fonts/2FE55C_6_0.eot');src: url('fonts/2FE55C_6_0.eot?#iefix') format('embedded-opentype'),url('fonts/2FE55C_6_0.woff') format('woff'),url('fonts/2FE55C_6_0.ttf') format('truetype');}
+  
+@font-face {font-family: 'AvenirLT-Light';src: url('fonts/2FE55C_7_0.eot');src: url('fonts/2FE55C_7_0.eot?#iefix') format('embedded-opentype'),url('fonts/2FE55C_7_0.woff') format('woff'),url('fonts/2FE55C_7_0.ttf') format('truetype');} 
+  
+@font-face {font-family: 'AvenirLT-Heavy';src: url('fonts/2FE55C_B_0.eot');src: url('fonts/2FE55C_B_0.eot?#iefix') format('embedded-opentype'),url('fonts/2FE55C_B_0.woff?embed') format('woff'),url('fonts/2FE55C_B_0.ttf') format('truetype');}
+
+// Handwriting font
+@font-face {
+    font-family: 'cihandregular';
+    src: url('fonts/ci-webfont.eot');
+    src: url('fonts/ci-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ci-webfont.woff?embed') format('woff'),
+         url('fonts/ci-webfont.ttf') format('truetype'),
+         url('fonts/ci-webfont.svg#cihandregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+// Martel
+@font-face {
+    font-family: 'martelbold';
+    src: url('fonts/martel-bold-webfont.eot');
+    src: url('fonts/martel-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/martel-bold-webfont.woff?embed') format('woff'),
+         url('fonts/martel-bold-webfont.ttf') format('truetype'),
+         url('fonts/martel-bold-webfont.svg#martelbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'martellight';
+    src: url('fonts/martel-light-webfont.eot');
+    src: url('fonts/martel-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/martel-light-webfont.woff?embed') format('woff'),
+         url('fonts/martel-light-webfont.ttf') format('truetype'),
+         url('fonts/martel-light-webfont.svg#martellight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+// Custom icon font
+@font-face {
+  font-family: 'ci';
+  src: url('fonts/ci.eot');
+  src: url('fonts/ci.eot?#iefix') format('embedded-opentype'),
+       url('fonts/ci.woff?embed') format('woff'),
+       url('fonts/ci.ttf') format('truetype'),
+       url('fonts/ci.svg#ci') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: 'ci';
+  font-style: normal;
+  font-weight: normal;
+  //speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  //width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+
+/* CI Icon font ----------------------------------------------------*/
+@import "variables";
+
+.icon-activity1 {
+  &:before {
+    content: $icon-activity1; 
+  }
+}
+.icon-activity2 {
+  &:before {
+    content: $icon-activity2; 
+  }
+}
+.icon-arrow-callout {
+  &:before {
+    content: $icon-arrow-callout; 
+  }
+}
+.icon-arrow-cta {
+  &:before {
+    content: $icon-arrow-cta; 
+  }
+}
+.icon-arrow-down {
+  &:before {
+    content: $icon-arrow-down; 
+  }
+}
+.icon-arrow-up {
+  &:before {
+    content: $icon-arrow-up; 
+  }
+}
+.icon-bedding {
+  &:before {
+    content: $icon-bedding; 
+  }
+}
+.icon-birthday {
+  &:before {
+    content: $icon-birthday; 
+  }
+}
+.icon-boy {
+  &:before {
+    content: $icon-boy; 
+  }
+}
+.icon-cc {
+  &:before {
+    content: $icon-cc; 
+  }
+}
+.icon-cc-amex {
+  &:before {
+    content: $icon-cc-amex; 
+  }
+}
+.icon-cc-discover {
+  &:before {
+    content: $icon-cc-discover; 
+  }
+}
+.icon-cc-mastercard {
+  &:before {
+    content: $icon-cc-mastercard; 
+  }
+}
+.icon-cc-visa {
+  &:before {
+    content: $icon-cc-visa; 
+  }
+}
+.icon-chart {
+  &:before {
+    content: $icon-chart; 
+  }
+}
+.icon-check {
+  &:before {
+    content: $icon-check; 
+  }
+}
+.icon-community-center {
+  &:before {
+    content: $icon-community-center; 
+  }
+}
+.icon-education {
+  &:before {
+    content: $icon-education; 
+  }
+}
+.icon-electricity {
+  &:before {
+    content: $icon-electricity; 
+  }
+}
+.icon-email {
+  &:before {
+    content: $icon-email; 
+  }
+}
+.icon-employability {
+  &:before {
+    content: $icon-employability; 
+  }
+}
+.icon-empowerment {
+  &:before {
+    content: $icon-empowerment; 
+  }
+}
+.icon-empowerment2 {
+  &:before {
+    content: $icon-empowerment2; 
+  }
+}
+.icon-enjoys {
+  &:before {
+    content: $icon-enjoys; 
+  }
+}
+.icon-family {
+  &:before {
+    content: $icon-family; 
+  }
+}
+.icon-favorite {
+  &:before {
+    content: $icon-favorite; 
+  }
+}
+.icon-favorite-active {
+  &:before {
+    content: $icon-favorite-active; 
+  }
+}
+.icon-flag {
+  &:before {
+    content: $icon-flag; 
+  }
+}
+.icon-flag-colombia {
+  &:before {
+    content: $icon-flag-colombia; 
+  }
+}
+.icon-flag-dominican-republic {
+  &:before {
+    content: $icon-flag-dominican-republic; 
+  }
+}
+.icon-flag-ecuador {
+  &:before {
+    content: $icon-flag-ecuador; 
+  }
+}
+.icon-flag-honduras {
+  &:before {
+    content: $icon-flag-honduras; 
+  }
+}
+.icon-flag-india {
+  &:before {
+    content: $icon-flag-india; 
+  }
+}
+.icon-flag-mexico {
+  &:before {
+    content: $icon-flag-mexico; 
+  }
+}
+.icon-flag-philippines {
+  &:before {
+    content: $icon-flag-philippines; 
+  }
+}
+.icon-flag-united-states {
+  &:before {
+    content: $icon-flag-united-states; 
+  }
+}
+.icon-flag-zambia {
+  &:before {
+    content: $icon-flag-zambia; 
+  }
+}
+.icon-flag-guatemala {
+  &:before {
+    content: $icon-flag-guatemala; 
+  }
+}
+.icon-flag-canada {
+  &:before {
+    content: $icon-flag-canada; 
+  }
+}
+.icon-flag-chile {
+  &:before {
+    content: $icon-flag-chile; 
+  }
+}
+.icon-girl {
+  &:before {
+    content: $icon-girl; 
+  }
+}
+.icon-glasses1 {
+  &:before {
+    content: $icon-glasses1; 
+  }
+}
+.icon-glasses2 {
+  &:before {
+    content: $icon-glasses2; 
+  }
+}
+.icon-goals1 {
+  &:before {
+    content: $icon-goals1; 
+  }
+}
+.icon-goals2 {
+  &:before {
+    content: $icon-goals2; 
+  }
+}
+.icon-growing {
+  &:before {
+    content: $icon-growing; 
+  }
+}
+.icon-hand-heart {
+  &:before {
+    content: $icon-hand-heart; 
+  }
+}
+.icon-handcuffs {
+  &:before {
+    content: $icon-handcuffs; 
+  }
+}
+.icon-health {
+  &:before {
+    content: $icon-health; 
+  }
+}
+.icon-home {
+  &:before {
+    content: $icon-home; 
+  }
+}
+.icon-id {
+  &:before {
+    content: $icon-id; 
+  }
+}
+.icon-images {
+  &:before {
+    content: $icon-images; 
+  }
+}
+.icon-inactivity2 {
+  &:before {
+    content: $icon-inactivity2; 
+  }
+}
+.icon-income {
+  &:before {
+    content: $icon-income; 
+  }
+}
+.icon-info {
+  &:before {
+    content: $icon-info; 
+  }
+}
+.icon-knife {
+  &:before {
+    content: $icon-knife; 
+  }
+}
+.icon-language {
+  &:before {
+    content: $icon-language; 
+  }
+}
+.icon-laptop {
+  &:before {
+    content: $icon-laptop; 
+  }
+}
+.icon-library1 {
+  &:before {
+    content: $icon-library1; 
+  }
+}
+.icon-library2 {
+  &:before {
+    content: $icon-library2; 
+  }
+}
+.icon-load-more {
+  &:before {
+    content: $icon-load-more; 
+  }
+}
+.icon-location-pin {
+  &:before {
+    content: $icon-location-pin; 
+  }
+}
+.icon-logo {
+  &:before {
+    content: $icon-logo; 
+  }
+}
+.icon-logo-sm {
+  &:before {
+    content: $icon-logo-sm; 
+  }
+}
+.icon-malnutrition {
+  &:before {
+    content: $icon-malnutrition; 
+  }
+}
+.icon-menu {
+  &:before {
+    content: $icon-menu; 
+  }
+}
+.icon-minus {
+  &:before {
+    content: $icon-minus; 
+  }
+}
+.icon-pacifier {
+  &:before {
+    content: $icon-pacifier; 
+  }
+}
+.icon-paypal {
+  &:before {
+    content: $icon-paypal; 
+  }
+}
+.icon-pdf {
+  &:before {
+    content: $icon-pdf; 
+  }
+}
+.icon-pen {
+  &:before {
+    content: $icon-pen; 
+  }
+}
+.icon-pill-bottle {
+  &:before {
+    content: $icon-pill-bottle; 
+  }
+}
+.icon-pills {
+  &:before {
+    content: $icon-pills; 
+  }
+}
+.icon-plus {
+  &:before {
+    content: $icon-plus; 
+  }
+}
+.icon-power {
+  &:before {
+    content: $icon-power; 
+  }
+}
+.icon-print {
+  &:before {
+    content: $icon-print; 
+  }
+}
+.icon-rss {
+  &:before {
+    content: $icon-rss; 
+  }
+}
+.icon-sanitation {
+  &:before {
+    content: $icon-sanitation; 
+  }
+}
+.icon-school {
+  &:before {
+    content: $icon-school; 
+  }
+}
+.icon-search {
+  &:before {
+    content: $icon-search; 
+  }
+}
+.icon-share {
+  &:before {
+    content: $icon-share; 
+  }
+}
+.icon-siblings {
+  &:before {
+    content: $icon-siblings; 
+  }
+}
+.icon-soccer {
+  &:before {
+    content: $icon-soccer; 
+  }
+}
+.icon-social-facebook {
+  &:before {
+    content: $icon-social-facebook; 
+  }
+}
+.icon-social-google-plus {
+  &:before {
+    content: $icon-social-google-plus; 
+  }
+}
+.icon-social-instagram {
+  &:before {
+    content: $icon-social-instagram; 
+  }
+}
+.icon-social-pinterest {
+  &:before {
+    content: $icon-social-pinterest; 
+  }
+}
+.icon-social-twitter {
+  &:before {
+    content: $icon-social-twitter; 
+  }
+}
+.icon-social-youtube {
+  &:before {
+    content: $icon-social-youtube; 
+  }
+}
+.icon-soup {
+  &:before {
+    content: $icon-soup; 
+  }
+}
+.icon-spinner {
+  &:before {
+    content: $icon-spinner; 
+  }
+}
+.icon-staff {
+  &:before {
+    content: $icon-staff; 
+  }
+}
+.icon-staff-admin {
+  &:before {
+    content: $icon-staff-admin; 
+  }
+}
+.icon-star {
+  &:before {
+    content: $icon-star; 
+  }
+}
+.icon-talent1 {
+  &:before {
+    content: $icon-talent1; 
+  }
+}
+.icon-talents2 {
+  &:before {
+    content: $icon-talents2; 
+  }
+}
+.icon-team {
+  &:before {
+    content: $icon-team; 
+  }
+}
+.icon-team2 {
+  &:before {
+    content: $icon-team2; 
+  }
+}
+.icon-toothbrush {
+  &:before {
+    content: $icon-toothbrush; 
+  }
+}
+.icon-unemployment {
+  &:before {
+    content: $icon-unemployment; 
+  }
+}
+.icon-video {
+  &:before {
+    content: $icon-video; 
+  }
+}
+.icon-wagon {
+  &:before {
+    content: $icon-wagon; 
+  }
+}
+.icon-waiting {
+  &:before {
+    content: $icon-waiting; 
+  }
+}
+.icon-water {
+  &:before {
+    content: $icon-water; 
+  }
+}
+.icon-wealth {
+  &:before {
+    content: $icon-wealth; 
+  }
+}
+.icon-x {
+  &:before {
+    content: $icon-x; 
+  }
+}
+.icon-check-circle {
+  &:before {
+    content: $icon-check-circle; 
+  }
+}
+.icon-power-es {
+  &:before {
+    content: $icon-power-es; 
+  }
+}
+.icon-warning {
+  &:before {
+    content: $icon-warning; 
+  }
+}
+.icon-certificate {
+  &:before {
+    content: $icon-certificate; 
+  }
+}
+.icon-binoculars {
+  &:before {
+    content: $icon-binoculars; 
+  }
+}
+.icon-strong-arm {
+  &:before {
+    content: $icon-strong-arm; 
+  }
+}
+.icon-shirt-tie {
+  &:before {
+    content: $icon-shirt-tie; 
+  }
+}
+.icon-thought-cloud {
+  &:before {
+    content: $icon-thought-cloud; 
+  }
+}
+.icon-mountain {
+  &:before {
+    content: $icon-mountain; 
+  }
+}
+.icon-graph {
+  &:before {
+    content: $icon-graph; 
+  }
+}
+.icon-globe {
+  &:before {
+    content: $icon-globe; 
+  }
+}
+.icon-earth-sprout {
+  &:before {
+    content: $icon-earth-sprout; 
+  }
+}
+.icon-comment {
+  &:before {
+    content: $icon-comment; 
+  }
+}
+.icon-checking {
+  &:before {
+    content: $icon-checking; 
+  }
+}
+.icon-pencil {
+  &:before {
+    content: $icon-pencil; 
+  }
+}
+.icon-gift {
+  &:before {
+    content: $icon-gift; 
+  }
+}
+.icon-document {
+  &:before {
+    content: $icon-document; 
+  }
+}
+.icon-trash-can {
+  &:before {
+    content: $icon-trash-can; 
+  }
+}
+.icon-gear {
+  &:before {
+    content: $icon-gear; 
+  }
+}
+.icon-circle-question {
+  &:before {
+    content: $icon-circle-question; 
+  }
+}
+.icon-question-mark {
+  &:before {
+    content: $icon-question-mark; 
+  }
+}
+.icon-cc-diners-club {
+  &:before {
+    content: $icon-cc-diners-club; 
+  }
+}
+.icon-cc-paypal {
+  &:before {
+    content: $icon-cc-paypal; 
+  }
+}
+.icon-upload {
+  &:before {
+    content: $icon-upload; 
+  }
+}
+.icon-download {
+  &:before {
+    content: $icon-download; 
+  }
+}
+.icon-circle-fill-question {
+  &:before {
+    content: $icon-circle-fill-question; 
+  }
+}
+.icon-social-linkedin {
+  &:before {
+    content: $icon-social-linkedin; 
+  }
+}
+.icon-zoom-out {
+  &:before {
+    content: $icon-zoom-out; 
+  }
+}
+.icon-zoom-in {
+  &:before {
+    content: $icon-zoom-in; 
+  }
+}
+

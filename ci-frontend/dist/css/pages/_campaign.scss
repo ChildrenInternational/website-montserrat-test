@@ -1,0 +1,110 @@
+/* CAMPAIGN PAGE */
+
+/* Section - Community Centers 
+------------------------------------------------------------------------ */
+.section-community-centers {
+    background-color: $color-gray-light;
+
+    h1 { margin-bottom: 20px; }
+    .column-one {
+        @include make-xs-column(12);
+        @include make-sm-column(12);
+        @include make-md-column(7);
+        @include make-lg-column(7);
+    }
+    .column-two {
+        @include make-xs-column(12);
+        @include make-sm-column(12);
+        @include make-md-column(5);
+        @include make-lg-column(5);
+
+        @media #{$media-mobile} { margin-top: 30px; }
+
+    }
+    .community-center-goals {
+        @media #{$media-mobile} { margin-top: 30px; }
+
+        .goal { float: left; margin-right: 35px; }
+        label { margin-right: 10px; }
+        .value { 
+            color: $color-purple;
+            font-family: $font-avenir-black;
+            font-size: $size-4;
+        }
+    }
+    .community-center-progress {
+        background-color: #b2b2b2;
+        @include rounded-corners(10px);
+        float: left;
+        height: 13px;
+        margin-top: 20px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+
+        .community-center-progress-bar {
+            background-color: $color-green;
+            content: '';
+            height: 13px;
+            left: 0;
+            position: absolute;
+            top: 0;
+        }
+    }
+}
+
+/* Section - Navigation
+------------------------------------------------------------------------ */
+.sections-navigation {padding:0;text-align: center;position: relative;z-index: 100;
+    ul{padding: 25px 0;}
+    li {font-family:$font-avenir; border-left: 1px solid $color-gray-border; display: inline;font-size: $size-10;padding: 0 10px;
+        @media #{$media-mobile} { border: none;border-top: 1px solid $color-gray-border;display: block;font-size: $size-6;padding: 10px 0;text-align: center;width: 100%;}
+
+        &:first-child { border-left: 0;
+            @media #{$media-mobile} { border-top: 0; }
+        }
+    }
+}
+
+/* Section - Dontation
+------------------------------------------------------------------------ */
+
+/* Section - Latest Supporters 
+------------------------------------------------------------------------ */
+.section-latest-supporters {background-color: $color-orange;color: $color-white;min-height: 392px;position: relative;
+    .section-title {font-size: $size-8;margin-bottom: 50px;
+
+        &:before {background-color: $color-white;content: '';display: block;height: 1px;margin-bottom: -16px;width: 100%;}
+        .color-block { background-color: $color-orange; padding: 0 40px; }
+    }
+    ul {
+        li {
+            @include make-xs-column(12);
+            @include make-sm-column(6);
+            @include make-md-column(3);
+            @include make-lg-column(3);
+
+            @media #{$media-sm} { margin-bottom: 50px; }
+            @media #{$media-xs} { margin-top: 50px; }
+
+            &:first-child {
+                @media #{$media-xs} { margin-top: 0; }
+            }
+        }
+        .supporter-name { font-size: $size-4; text-transform: uppercase; }
+        .supporter-location { font-size: $size-9; margin-top: 20px; }
+    }
+    .load-more-posts{ color:$color-white;
+        &:hover{color:$color-white; opacity:0.5;}
+    }
+}
+
+/* Section - Carousel
+------------------------------------------------------------------------ */
+.centers-page .section-carousel { 
+    @media #{$media-lg} {padding: 80px 0;}
+}
+
+/* Section - See More Centers
+------------------------------------------------------------------------ */
+.section-see-more-centers {background-color: #4f4f4f;padding: 45px 0;}

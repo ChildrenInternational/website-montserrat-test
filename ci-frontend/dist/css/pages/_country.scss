@@ -1,0 +1,198 @@
+.country{
+    /* Page header ---------------- */
+    .bg-image-wrap {
+        &.section-hero > img { position: relative; 
+            @media #{$media-lg} {max-height:60vh; min-height:550px;}
+            @media #{$media-xlg} {max-height:65vh; min-height:550px;}
+            @media #{$media-md} {max-height:60vh; min-height:400px;}
+            @media #{$media-mobile} {max-height: calc(850px*.7);min-height: calc(600px*.7); }
+            @media #{$media-xs} {max-height: calc(550px*.6);min-height: calc(300px*.6); } 
+            @media #{$media-tiny} {max-height:160px;min-height:160px; } 
+        }
+    }
+
+    .page-content .column-full{ padding-left:60px; padding-right:60px;
+        @media #{$media-mobile} {padding-left:15px; padding-right:15px;}
+        }
+
+    .page-content .column-one .column-full,
+    .page-content .column-two .column-full,
+    .page-content .column-full .column-full { padding-left: 15px; padding-right: 15px;}
+
+    .section.section-intro{padding-top:0;}
+    .page-title {text-align: left;font-size: 38px;line-height: calc( 38px + 5px);margin: 0 0 5px;}
+    .page-title-sub{text-align: left;}
+    .share-post.inline {text-align: left;padding-bottom:0;}
+
+    .page-content .column-full.carousel-block{ padding-left:15px; padding-right:15px;}
+
+
+    .page-content .section-header{ padding-bottom:0;}
+
+    .content-wrapper .page-content .text-module{max-width:100%;}
+    /* Orange nav callouts ------------- */
+    .section-nav-callout{ background-color:$color-orange;
+        ul{ width:100%; display:flex;
+            @media #{$media-xs} { margin:0 -15px; width: calc(100% + 30px);}
+            li{ border-left:1px solid  rgba(255, 255, 255, .3); padding:20px 0; margin:0; width:25%; justify-content:stretch;
+                @media #{$media-xs} { padding:15px 2px;}
+                &:nth-child(1){border:none;}
+            }
+            a{ display:block; color:$color-white; width:220px; margin:0 auto;
+                @media #{$media-lg} {width:245px}
+                @media #{$media-mobile} {width:100%; text-align:center; }
+                i{ float:left; font-size: $size-4;width:93px;
+                    @media #{$media-mobile} {@include responsive-font(3vw, 15px, 30px);width:100%;}
+                }
+                .nav-callout-text-wrap{ float:left;width:127px;
+                    @media #{$media-lg} { width:150px; }
+                    @media #{$media-mobile} { width:100%; }
+                }
+                h3{color:$color-white;margin:0; padding:0;
+                    @media #{$media-mobile} {@include responsive-font(2.8vw, 15px, 30px); line-height: calc( #{20px} + 5px ); }
+                }
+                .nav-callout-text{ font-size: $size-10;
+                    @media #{$media-mobile} {@include responsive-font(2vw, 10px, 14px); line-height: calc( #{3vw} + 5px ); }
+                }
+            }
+        }
+    }
+
+    /* section-hero-w-arrow --------------------- */
+    .section-hero-w-arrow{ padding:0;
+        .section-arrow-mid { color: $color-gray-light;}
+    }
+
+    /* section-my-team --------------------- */
+    .page-content .section-my-team .container{padding:0 15px; width:100%;}
+    .section-my-team{margin:0 -15px;
+        .my-team {margin-top:0;
+        @media #{$media-lg} { margin-top:0;}
+
+        li .flex-inner{margin-top:0;}
+        }
+    }
+    /* post ----------------- */
+    .post {
+    
+        &.post-single {  background-color: #f6f4f3;}  
+        &.post-visit {
+           padding:60px 0; border:none;
+           &.row{margin:0 -15px 0;}
+        }
+    }
+
+    .section-related-posts{
+        .post {background-color:none;}
+    }
+
+    /* section-community-centers ----------------- */
+    .section-community-centers {background-color: #fff;
+        .share-post{ float:left; margin:0;}
+    }
+} /* .country close----------------- */
+
+/* section-location-map
+------------------------------------------------------------------------ */
+.section-location-map { padding: 0; margin: 0; transition:all ease 1s;
+    .row {
+        position: relative;
+        min-height: 555px;
+        width: 980px;
+        margin: 0 auto;
+        background: url(#{$image-url}locations-map.jpg) no-repeat 50% 0;
+        background-size: 100%;
+        @media #{$media-mobile} { background-image: url(#{$image-url}mobile-map.jpg); min-height: 233px; background-size: cover; width: auto; margin: 0 -15px; }
+        @media #{$media-sm} { min-height: 345px; }
+    }
+    .map-dot {
+        content: "";
+        height: 12px;
+        position: absolute;
+        transform: translateX(-50%px) translateY(-50%px);
+        transition: all 0.28s ease 0s;
+        width: 12px;
+        z-index: 10;
+        border: 1px solid #fff;
+        background: $color-orange;
+        border-radius: 50%;
+
+        &.active { background: $color-green; }
+
+        @media #{$media-mobile} { display: none; }
+
+
+        &#dot-colombia { left: 254px; top: 336px; }
+        &#dot-dominican-republic { left: 270px; top: 293px; }
+        &#dot-ecuador { left: 241px; top: 351px; }
+        &#dot-guatemala { left: 213px; top: 301px; }
+        &#dot-honduras { left: 225px; top: 303px; }
+        &#dot-india { left: 673px; top: 281px; }
+        &#dot-mexico { left: 173px; top: 278px; }
+        &#dot-philippines { left: 792px; top: 307px; }
+        &#dot-united-states { left: 183px; top: 230px; }
+        &#dot-zambia { left: 531px; top:384.5px; }
+    }
+
+    .collapse, .collapsing, .collapse.in {
+        width: 220px;
+        position: absolute;
+        z-index: 99;
+        -moz-transition:all 0.5s ease-in-out;
+        -o-transition:all ease 0.5s;
+        -webkit-transition:all ease 0.5s;
+        transition:all ease 1s;
+
+        @media #{$media-mobile} { display: none; }
+
+        .section-arrow-mid {width: 30px;height: 100px;left: -30px;top: 101px;}
+        .section-arrow-left{left:auto; right: -30px;}
+        .dot-callout {
+            .dot-callout-wrap {text-align: center; font-size: $size-6; color: $color-white;position:relative;
+                .dot-callout-link{display:block; width:100%; padding: 20px; }
+                i { font-size: 30px; clear: both; }
+                .btn-link { text-align: left; padding-bottom:20px; }
+            }
+        }
+    }
+
+    #colombia-detail { left: 294px; bottom:116px; }
+    #dominican-republic-detail { left: 313px; bottom: 124px; }
+    #ecuador-detail { left: 286px; bottom: 100px; }
+    #guatemala-detail { left: -40px; bottom: 149px;}
+    #honduras-detail { left: 269px; bottom: 147px; }
+    #india-detail { left:717px; bottom: 170px;}
+    #mexico-detail { left: 218px; bottom: 173px; }
+    #philippines-detail { left:541px; bottom: 144px; }
+    #united-states-detail { left: 227px; bottom: 221px; }
+    #zambia-detail { left:575px; bottom: 66.5px; }
+}
+  
+/* section-locations
+------------------------------------------------------------------------ */
+.section-locations {
+    .column-one {
+        @include make-xs-column(12);
+        @include make-sm-column(6);
+        @include make-md-column(6);
+        @include make-lg-column(6);
+    }
+    .column-two {
+        @include make-xs-column(12);
+        @include make-sm-column(6);
+        @include make-md-column(6);
+        @include make-lg-column(6);
+    }
+
+    ul {
+        li { margin-bottom: 10px; position: relative;
+            .btn {width: 100%;text-align: left; padding-right: 10px;padding-left: 10px;display:flex; justify-content: space-between; align-content: stretch; align-items: center;
+                  span{flex:1;padding: 0 5px;}
+            }
+        }
+    }
+}
+
+
+
+

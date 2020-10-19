@@ -1,0 +1,225 @@
+/* remove padding */
+.section.section-posts-wrap + .section.section-post-comments,
+.section.section-posts-wrap + .section.section-related-posts-header,
+.section.cta-single + .section.section-related-posts-header,
+.section.section-two-col:not([class*=" bg-"]) + .section.section-related-posts-header,
+.section.section-header + .section.section-prev-viewed,
+.section.section-child-search-wrap + .section.section-prev-viewed,
+.section.section-child-search-form + .section.section-prev-viewed,
+.section.section-child-search-header + .section.section-prev-viewed,
+.section.section-two-col + .section.section-factoid,
+.homepage .more-posts-container  .section.section-related-posts{padding:0;}
+
+/* only padding at the bottom */
+.section.bg-gray-light + .section.bg-gray-light,
+.section.bg-purple + .section.bg-purple,
+.section.bg-green + .section.bg-green,
+.section.bg-orange + .section.bg-orange,
+
+.section.cta-single + .section.cta-single,
+.section.cta-single.bg-gray-light + .section.cta-single.bg-gray-light,
+.section.cta-single.bg-purple + .section.cta-single.bg-purple,
+.section.cta-single.bg-green + .section.cta-single.bg-green,
+.section.cta-single.bg-orange + .section.cta-single.bg-orange,
+.section.cta-single + .section.section-two-col,
+.section.cta-single + .section.section-thematic,
+.section.cta-single + .section.section-thematic-center,
+.section.cta-single + .section.section-footer-cta,
+.section.cta-single.bg-gray-light + .section.section-our-impact,
+.section.cta-single.bg-gray-light + .section.section-carousel,
+.section.cta-single + .section.section-related-posts,
+.section.cta-single:not([class*=" bg-"]) + .section.section-child-search-form,
+
+.section.section-thematic-center + .section.cta-single,
+.section.section-thematic + .section.cta-single,
+.section.section-thematic + .section.section-thematic,
+
+.section.section-two-col + .section.cta-single,
+.section.section-two-col + .section.section-two-col,
+.section.section-two-col[class*=" bg-"] + .section.section-two-col[class*=" bg-"],
+.section.section-two-col + .section.section-thematic,
+.section.section-two-col + .section.section-signup,
+.section.section-two-col + .section.section.more-posts-container,
+.section.section-two-col + .section.section-child-search-form,
+.section.section-two-col.bg-gray-light + .section.cta-single.bg-gray-light,
+.section.section-two-col + .section.section-fact-block,
+
+.section.section-two-col-flex:not([class*=" bg-"]) + .section.more-posts-container,
+.section.section-two-col-flex:not([class*=" bg-"]) + .section.section-child-search-form,
+.section.section-two-col-flex + .section.section-carousel-block,
+.section.section-two-col-flex:not([class*=" bg-"]) + .section.section-two-col-flex:not([class*=" bg-"]),
+.section.section-two-col-flex:not([class*=" bg-"]) + .section.section-img-grid:not([class*=" bg-"]),
+.section.section-two-col-flex:not([class*=" bg-"]) + .section.section-thanks-sponsor:not([class*=" bg-"]),
+.section.section-two-col-flex:not([class*=" bg-"]) + .section.section-message-center,
+.section.section-two-col-flex:not([class*=" bg-"]) + .section.section-fact-block,
+.section.section-two-col-flex:not([class*=" bg-"]) + .section-message-center,
+.section.section-two-col-flex:not([class*=" bg-"]) + .section.section-write-child,
+.section.section-two-col-flex:not([class*=" bg-"]) + .section.section-header.section-search,
+
+.section.bg-green + .section.section-facts,
+.section.section-facts + .section.section-factoid,
+.section.section-facts + .section.section-carousel,
+.section.section-facts + .section.section-related-posts,
+.section.section-facts + .section.section-two-col-flex,
+.section.section-facts + .section.section-two-col,
+
+.section.section-fact-block + .section.section-two-col-flex:not([class*=" bg-"]),
+.section.section-fact-block + .section.section-two-col:not([class*=" bg-"]),
+
+.section.section-child-search-form + .section.section-two-col-flex:not([class*=" bg-"]),
+
+.section.section-footer-cta + .section.cta-single,
+.section.section-footer-cta + .section.section-thematic-center,
+.section.section-footer-cta + .section.section-footer-cta,
+
+.section.section-my-team + .section.section-carousel,
+.section.section-my-team + .section.section-carousel-block,
+
+.section.section-hero + .section.section-hero,
+
+.section.section-swipable-block + .section.section-swipable-block,
+.section.section-swipable-block + .section.thematic,
+.section.section-swipable-block + .section.myci-dashboard,
+.section.section-swipable-block + .section.cta-single:not([class*=" bg-"]),
+.section.section-swipable-block + .section.section-grid,
+
+.section.more-posts-container + .section.section-grid,
+.section.more-posts-container + .section.section-swipable-block,
+.section.more-posts-container + .section.section-two-col-flex,
+.section.more-posts-container + .section.section-signup,
+.section.more-posts-container + .section.section-footer-cta,
+.section.more-posts-container + .section.section-two-col,
+
+.section.section-grid + .section.cta-single:not([class*=" bg-"]),
+.section.section-grid + .section.section-grid,
+
+.section.section-about-child + .section.section-swipable-block,
+.section.section-about-child + .section.section-child-fact,
+.section.section-about-child + .section.section-grid,
+
+.section.section-child-fact + .section.section-child-fact,
+.section.section-child-fact + .section.section-grid,
+
+.column-full + .section.section-giving-history,
+.column-full + .section.section-sponsorship-contrib,
+
+.myci-dashboard .column-full + .section.section-swipable-block,
+.section.myci-dashboard + .section.section-two-col-flex,
+
+.section.section-message-center + .section.cta-single,
+.section.section-message-center + .section.section-write-child,
+
+.section.section-sponsorship-contrib + .section.section-sponOptionalAdd,
+.section.section-factoid + .section.section-facts,
+.section.section-message + .section.section-how-sponsorship-helps,
+.section.section-our-impact + .section.section-our-impact,
+.section.section-our-impact + .section.bg-gray-light,
+.section.section-signup:not([class*=" bg-"]) + .section.section-footer-cta,
+.section.section-signup + .section.cta-single,
+.section.section-related-posts + .section.section-footer-cta,
+.section.section-thematic + .section.section-footer-cta,
+.section.section-sponorship-current + .section.section-sponorship-past,
+.section.section-child-photos + .section.section-grid,
+.section.section-child-search + .section.section-child-search-form,
+.section.section-carousel-block + .section.section-child-search-form,
+.section.section-carousel-block + .section.section-child-search-compact-form,
+.section.section-img-grid:not([class*=" bg-"]) + .section.section-thanks-sponsor:not([class*=" bg-"]),
+.section.section-thanks-sponsor + .section.section-two-col-flex:not([class*=" bg-"])
+{padding-bottom:$section-pad-lg; padding-top:0;
+    @media #{$media-xxs} { padding-bottom:$section-pad-sm; padding-top:0; }
+}
+
+/* overwrite for padding at the bottom for Background Color */
+.section.cta-single + .section.cta-single[class*=" bg-"],
+.section.cta-single[class*=" bg-"] + .section.cta-single,
+.section.cta-single + .section.section-two-col[class*=" bg-"],
+.section.cta-single[class*=" bg-"] + .section.section-two-col,
+.section.cta-single[class*=" bg-"] + .section.section-thematic,
+.section.cta-single[class*=" bg-"] + .section.section-footer-cta,
+.section.section-thematic + .section.cta-single[class*=" bg-"],
+.section.section-thematic-center + .section.cta-single[class*=" bg-"],
+.section.section-two-col + .section.cta-single[class*=" bg-"],
+.section.section-signup + .section.cta-single[class*=" bg-"],
+.section.section-message-center + .section.cta-single[class*=" bg-"],
+.section.section-footer-cta + .section.cta-single[class*=" bg-"],
+.section.section-two-col[class*=" bg-"] + .section.section-two-col,
+.section.section-two-col + .section.section-two-col[class*=" bg-"],
+.section.section-intro + .section.section-two-col[class*=" bg-"],
+.section.section-header + .section.section-swipable-block[class*=" bg-"],
+.section.section-intro + .section.section-swipable-block[class*=" bg-"]{padding:$section-pad-lg 0;
+    @media #{$media-xxs} { padding:$section-pad-sm 0; }
+
+}
+
+
+/* overwrite for margin top */
+.section-facts + .section[class*=" bg-"],
+.section[class*=" bg-"] + .section-facts,
+.section-facts + .section.section-our-impact,
+.section.section-hero + .column-full,
+.section.section-child-gallery[class*=" bg-"] + .section.section-hero,
+.section.section-hero + .section.section-my-team,
+.section.section-hero.no-background + section.section-two-col[class*=" bg-"],
+.section.section-two-col[class*=" bg-"] + .section.section-thematic,
+.section.sections-navigation + .section.section-hero.no-background{margin-top:$section-pad-lg;
+ @media #{$media-xxs} {margin-top:$section-pad-sm; }
+}
+
+/* Section Header and Intro
+------------------------------------------------------------------------ */
+.section.section-header + .section.section-intro,
+.section.section-header + .section.section-how-sponsorship-helps,
+.section.section-header + .section.section-search-results,
+.section.section-header + .section.cta-single,
+.section.section-header + .section.section-child-search-wrap,
+.section.section-header + .section.section-two-col,
+.section.section-header + .section.myci-sponorships,
+.section.section-header + .section.section-write-child,
+.section.section-header + .section.section-swipable-block,
+.section.section-header + .section.section-message-center,
+.section.section-header + .section.section-sponsorship-contrib,
+.section.section-header + .section.section-two-col-flex:not([class*=" bg-"]),
+
+.section.section-intro + .section.section-two-col,
+.section.section-intro + .section.section-thematic,
+.section.section-intro + .section.section-facts,
+.section.section-intro + .section.section-hero.no-background,
+.section.section-intro + .section.section-footer-cta,
+.section.section-intro + .section.myci-sponorships,
+.section.section-intro + .section.section-write-child,
+.section.section-intro + .section.section-swipable-block,
+.section.section-intro + .section.section-message-center,
+.section.section-intro + .section.section-two-col-flex,
+.section.section-intro + .section.section-sponsorship-contrib{padding-bottom:$section-pad-lg; padding-top:0;
+    @media #{$media-xxs} { padding-bottom:$section-pad-sm; padding-top:0; }
+}
+
+.section.section-hero + .section.section-intro,
+.section.section-hero.no-background + .section.section-hero.no-background,
+.section.cta-single[class*=" bg-"] + .section.section-related-posts-header{padding-top:$section-pad-lg;
+ @media #{$media-xxs} {padding-top:$section-pad-sm; }
+}
+
+
+/* overwrite for sm-padding-wrap */
+.sm-padding-wrap{
+    .section.section-two-col-flex,
+    .section.section-two-col-flex + .section.section-two-col-flex,
+    .section.section-two-col + .section.section-two-col-flex,
+    .section.section-two-col + .section.cta-single[class*=" bg-"],
+    .section.cta-single, 
+    .section.cta-single + .section.cta-single[class*=" bg-"], 
+    .section.cta-single + .section.cta-single[class*=" bg-"], 
+    .section.cta-single[class*=" bg-"] + .section.cta-single{padding-top:$section-pad-sm;padding-bottom:$section-pad-sm;}
+}
+
+/* overwrite for padding one offs */
+.section.section-featured-story + .section.section-signup{padding-top:30px;padding-bottom:30px;}
+
+.myci .full-bg-image > .section.section-intro{padding-top:$section-pad-sm;padding-bottom:$section-pad-sm;}
+.myci .full-bg-image > .section.section-header + .section.section-intro{padding-top:0;padding-bottom:$section-pad-sm;}
+
+.col-md-12 > .section.section-intro{padding-top:0;}
+
+.section-swipable-block + .more-posts-container{padding-bottom:0;}
+
