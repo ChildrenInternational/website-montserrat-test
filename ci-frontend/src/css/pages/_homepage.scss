@@ -1,0 +1,324 @@
+/* HOMEPAGE */
+
+/* Homepage parallax 
+------------------------------------------------------------------------*/
+.homepage{
+    .section-hero-home,
+    .bg-image-wrap{background-attachment: fixed;
+        @media #{$media-mobile} { background-attachment: scroll;}
+        @media #{$media-md} { 
+            @media #{$media-retina2x} { background-attachment: scroll;}
+        }
+    }
+
+    .section-thematic-center,
+    .section-thematic{background-color:$color-gray-light; position:relative; overflow:hidden;}
+
+    .section-signup{position:relative; overflow:hidden;}
+}
+
+/* Section - Hero
+------------------------------------------------------------------------ */
+.section-hero-home { background-color:$color-green;background-size: cover;background-position: center top; padding: 0;position: relative;width: 100%;overflow: hidden;display: flex;height: 100%;  
+
+    &.bg-video {
+        video{ position: absolute;top: 50%;left: 50%;height: 100%; width: auto; visibility: visible; z-index:0;  transform: translateX(-50%) translateY(-50%);
+              @media #{$media-lg} {  height:auto; width: 110%;}
+              @media #{$media-xlg} {  height:auto; width: 105%;}
+
+              @media #{$media-mobile} { display: none;}
+        }
+        .container{ height: 78vh;
+            @media #{$media-lg} { height: 85vh;} 
+        }
+    }
+
+    &.shadow-text-left:after {background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); top:0; height: 100%; width: 90%;}
+    &.shadow-text-center:after {background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);bottom: 0;height: 35vh;width: 100%;}
+    &.shadow-text-right:after {background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);top: 0; right:0;  height: 100%; width: 90%; }
+
+    &.shadow-text-left:after,
+    &.shadow-text-center:after,
+    &.shadow-text-right:after {content: ''; display: block; opacity: .4; position: absolute;z-index: 2;
+        @media #{$media-xxs} {background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);bottom: 0; content: ''; display: block; height: 255px; opacity: .5; position: absolute; width: 100%; top: auto; }
+    }
+
+   .container{ height: 76vh;position:relative; z-index:100; min-height:500px;max-height:900px;
+        @media #{$media-lg} { height: 83vh;} 
+        @media #{$media-mobile} { height:71vh; min-height: 410px;} 
+   }
+   .column-full.img-text-center {height: 76vh;min-height:470px;max-height:870px;
+        @media #{$media-lg} { height: 80vh;}
+        @media #{$media-mobile} { height: 70vh;min-height: 410px;}
+   }
+   .column-full.img-text-left,
+   .column-full.img-text-right{height: 76vh;min-height:470px;max-height:870px;
+        @media #{$media-lg} { height: 83vh;}
+        @media #{$media-mobile} { height: 70vh;min-height: 410px;}
+   }
+
+   .hero-message { display: flex;flex-wrap: wrap; justify-content: center;align-items: flex-end; align-content: flex-end;width: 100%;height:100%;text-align: left;
+        &.img-text-right {justify-content: flex-end; align-items: center;
+            @media #{$media-xs} { justify-content: center;align-items: flex-end;}
+        }
+
+        &.img-text-left { justify-content: flex-start; align-items: center;
+            @media #{$media-xs} { justify-content: center;align-items: flex-end;}
+        }
+
+        .hero-width{
+            @media #{$media-xs} { width:100%!important;}
+        }
+        .message-main {width: 100%;line-height: 7vw;margin-bottom:10px;}
+        .message-sub {color: $color-white;@include fluid-type(font-size, 320px, 1366px, 18px, 24px);font-weight: 900;line-height: 1.5em;letter-spacing: 2px;display: block;text-transform: uppercase;width: 100%;z-index: 100;font-family:$font-avenir;@include text-shadow(); text-align:left;
+        @media #{$media-mobile} {width:100%;}
+            a{ 
+                @media #{$media-mobile} {margin-bottom:0;}
+                &:hover {text-shadow: none;}
+            }
+        }
+   }
+
+   .down-arrow {display: none;
+        @media #{$media-lg} {bottom:10px;font-size: 20px;}
+        @media #{$media-md} {bottom: 5px;font-size: 18px;}
+       .arrow-text {
+           @media #{$media-lg} {font-size: 20px;margin-bottom: 5px;}
+           @media #{$media-md} {font-size: 18px;margin-bottom: 5px;}
+       }
+   }
+}
+
+/* Section - Featured Child
+------------------------------------------------------------------------ */
+.homepage{
+    .featured-child {
+        @media #{$media-md} { margin: 0 14%;  }
+    }
+}
+
+/* Section - Poverty
+------------------------------------------------------------------------ */
+.section-poverty {
+    min-height: 605px;
+
+    .column-one { 
+        @include make-xs-column(12);
+        @include make-sm-column(12);
+        @include make-md-column(8);
+        @include make-lg-column(8);
+    }
+    .column-two {
+        @include make-xs-column(12);
+        @include make-sm-column(12);
+        @include make-md-column(4);
+        @include make-lg-column(4);
+    }
+    .section-info {
+        @media #{$media-xs} { margin-top: 30px; }
+    }
+}
+
+    /* Section - Featured Story (homepage)
+------------------------------------------------------------------------ */ 
+    .section-featured-story-home {overflow: hidden;padding-top: 0;padding-bottom: 0;position: relative;
+
+        @media #{$media-xs} { padding: 0; }
+        .post{ margin:0;padding: 50px 0 0; border: 0 none;}
+        .row {
+            @media #{$media-mdlg} {display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: flex-start;align-content: stretch;align-items: flex-start;}
+            @media #{$media-sm} {display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: flex-start;align-content: stretch;align-items: flex-start;}
+
+            .column-one { 
+                @include make-xs-column(12);
+                @include make-sm-column(6);
+                @include make-md-column(5);
+                @include make-lg-column(5);
+                padding-bottom: 40px;
+
+
+                    @media #{$media-sm} {padding-bottom:20px; }
+                    @media #{$media-xs} {padding-bottom:0; }
+
+                h2 {color: $color-white; font-size:40px;
+                    @media #{$media-md} { font-size: 35px; }
+                    @media #{$media-mobile} { font-size: 32px; }
+                    @media #{$media-sm} { font-size: 28px; }
+                    a{color: $color-white;
+                        &:hover{color: $color-gray;}
+                    }
+                }
+
+                .post-category { margin-bottom:10px;
+                    li{color:$color-white;}
+                }
+                .post-meta {color: $color-white;
+                    a{
+                        .author{color: $color-white;
+                            &:hover{color: $color-gray;}
+                        }
+                    }
+                    .byline,
+                    .author,
+                    .department {color: $color-white;
+                         a{color: $color-white;
+                           &:hover{color: $color-gray;}
+                         }
+                    }
+                    .read-more {font-size: $size-8;display: block;clear: both;margin: 30px 0 0 0;
+                        &:after {content:'';display:inline-block;background: url(#{$image-url}icon-arrow-white.svg) no-repeat;}
+                    }
+                }
+                .read-more {float: left;margin-top:20px;
+                    @media #{$media-xs} { margin-top: 20px; }
+                }
+            }
+
+            .column-two {
+                @include make-xs-column(12);
+                @include make-sm-column(6);
+                @include make-md-column(7);
+                @include make-lg-column(7);
+                padding-right: 0;
+                order: 0;flex: 0 1 auto;align-self: center;
+
+                @media #{$media-xs} { padding: 30px 0 0; position: relative; margin: 0 -15px !important; width: calc(100% + 30px); }
+            }
+        }
+
+        .featured-image {overflow:hidden;
+            img{width:100%; height:auto; display:block;}
+            a{display:block; width:100%;}
+            }
+    }
+
+
+/* Section - Community Center
+------------------------------------------------------------------------ */
+.homepage {
+
+    .section-hero { overflow: hidden; }
+
+    .section-hero.section-hero-single {
+
+        video{ position:absolute; top:0; left:0;}
+        .container{margin:85px auto 85px;
+            .section-info{
+                .section-title{ width:100%;}
+                   h3{ color:#FFF; margin: 0 0 20px;}
+            }
+        }
+    }
+
+    .bg-image-wrap{ @include bg-cover;max-height:670px; min-height:670px;
+        max-height: 670px;
+        min-height: 670px;
+        @include object-fit(cover, 50% 50%);
+        width:100%;
+        @media #{$media-mobile} { max-height: calc(600px * 0.5); min-height: calc(600px * 0.5); }
+        @media #{$media-xxs} { max-height: calc(600px * 0.4); min-height: calc(600px * 0.4); }
+        .bg-image{display:none; opacity:0;}
+    }
+
+    .section.section-thematic + .section-hero.section-hero-single{
+        @media #{$media-xlg} { min-height:650px;}
+    }
+
+    .section-thematic-center{visibility: hidden;
+        @media #{$media-mobile} {visibility: visible;}
+    }
+    .section-thematic{
+        .column-one,
+        .column-two{visibility: hidden;
+          @media #{$media-mobile} {visibility: visible;}
+        }
+    }
+}
+
+/* Section - Team
+------------------------------------------------------------------------ */
+.section-team {
+    padding: 65px 0 100px 0;
+
+    .team-img {
+	    background: url(#{$image-url}bg-reading-group.jpg) no-repeat;
+        @include bg-cover;
+        margin: 95px 0;
+	    max-height: 400px;
+	    min-height: 400px;
+    }
+    .section-message { margin-top: 20px; }
+    .section-link { margin-top: 25px; }
+}
+
+/* Section - Reading
+------------------------------------------------------------------------ */
+.section-reading {padding: 0;}
+
+/* Section - Sponsor
+------------------------------------------------------------------------ */
+.section-thematic {
+
+    .column-one { 
+        @include make-xs-column(12);
+        @include make-sm-column(5);
+        @include make-md-column(5);
+        @include make-lg-column(5);
+
+        &.img-left img { float: right; margin: 0;padding: 0 0 0 60px;
+              @media #{$media-mobile} {float: right;padding:40px 0 0;}
+              @media #{$media-xs} {float: none;padding: 0 50px;margin: 0 auto;}
+              @media #{$media-xxs} {float: none;padding: 0 50px;margin: 0 auto;}
+        }
+        &.img-right img { float: left; margin: 0;padding: 0 60px 0 0;
+              @media #{$media-mobile} {float: right; padding:40px 0 0;}
+              @media #{$media-xs} {float: none;padding: 0 50px;margin: 0 auto;}
+              @media #{$media-xxs} {float: none;padding: 0 50px;margin: 0 auto;}
+        }
+    }
+    .column-two {
+        @include make-xs-column(12);
+        @include make-sm-column(6);
+        @include make-md-column(6);
+        @include make-lg-column(6);
+    }
+    .section-info {
+        @media #{$media-xs} { margin-top: 30px; }
+        @media #{$media-lg} { width: 80%; } 
+    }
+
+    .aligned-left {
+       .section-subtitle{text-align: left;
+            @media #{$media-xs} { text-align: center; }
+            }
+        }
+
+    .aligned-right {
+        .section-subtitle{text-align: right;
+            @media #{$media-xs} { text-align: center; }
+        }
+    }
+}
+
+/* Section - Footer CTA
+------------------------------------------------------------------------ */
+.cta-now {
+    .column-one, .column-two, .column-three { 
+        @include make-xs-column(12);
+        @include make-sm-column(12);
+        @include make-md-column(4);
+        @include make-lg-column(4);
+
+        @media #{$media-mobile} { margin-bottom: 40px;
+            &:last-child{margin-bottom:0;}
+        }
+    }
+}
+
+/* Section - SwipeableCards
+------------------------------------------------------------------------ */
+.homepage {
+    .swiper-container.gallery-card{
+        .swiper-button-prev, .swiper-button-next  { background:$color-gray-light;}
+    }
+}

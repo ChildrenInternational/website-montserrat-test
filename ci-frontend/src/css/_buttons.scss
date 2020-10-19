@@ -1,0 +1,593 @@
+
+/* Main Button Class
+------------------------------------------------------------------------ */
+.btn {
+    background-image: none;
+    border-radius: unset;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $font-avenir-heavy;
+    font-size: $size-10;
+    font-weight: normal;
+    margin-bottom: 0;
+    letter-spacing: 1.5px;
+    line-height: 15px;
+    padding: 0;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    white-space: normal;
+    -moz-user-select: none;
+
+    @media #{$media-sm} { font-size: $size-8; line-height: 25px;}
+    @media #{$media-xs} { font-size: $size-8; line-height: 25px;}
+    @media #{$media-xxs} { font-size: $size-11; line-height: 20px;}
+
+}
+
+/* Button - Rounded
+------------------------------------------------------------------------ */
+.btn-rounded {
+    border: none;
+    // @include ease;
+    @include rounded-corners(3px);
+    padding:15px 25px;
+    text-align: center;
+
+    @media #{$media-mobile} {padding:20px 25px;width: 100%; margin-bottom:20px; }
+    @media #{$media-xxs} {padding: 20px 15px;}
+}
+
+/* Button - Bordered (transparent w/outline)
+------------------------------------------------------------------------ */
+.btn-border {
+    background-color: transparent;
+    border: 1px solid $color-white;
+    @include ease;
+    @include rounded-corners(3px);
+    color: $color-white;
+    padding:15px 25px;
+    text-transform: uppercase;
+
+    &:hover { background-color: $color-white;color: $color-green-dark;  }
+
+    @media #{$media-mobile} { padding:20px 25px; width: 100%; margin-bottom:20px; }
+    @media #{$media-xxs} { padding:20px 15px; }
+
+    &.btn-orange {
+    @include button-variant($color-orange,  transparent, $color-orange);
+    }
+    &.btn-green {
+    @include button-variant($color-green,  transparent, $color-green-dark);
+    }
+    &.btn-purple {
+    @include button-variant($color-purple,  transparent, $color-purple);
+    }
+    &.btn-yellow {
+    @include button-variant($color-yellow,  transparent, $color-yellow);
+    }
+    &.btn-gray {
+        @include button-variant($color-gray,  transparent, $color-gray);
+            &:hover { @include button-variant($color-green, transparent, $color-green); }
+    }
+    &.btn-disabled {cursor: not-allowed;
+    @include button-variant($color-gray-border,  transparent, $color-gray-border);
+    }
+}
+
+/* Button - Full (100%)
+------------------------------------------------------------------------ */
+.btn-full {text-align: center;width: 100%;}
+
+.btn-sm{ padding-top:8px; padding-bottom:8px;}
+.btn-lg{white-space: normal;
+    span{text-transform: none;display: block; border-top: 1px solid #ccc; padding: 10px 0 0; margin: 10px 0 0; font-family:$font-avenir-medium; letter-spacing: 1px;}
+}
+
+.btn-yellow.btn-lg{
+    span{border-top: 1px solid #f6f4f3;}
+}
+
+.btn-xlg{font-size: 1.2em;
+    @media #{$media-mdlg} {padding: 35px 45px; font-size: 1.4em;}
+    @media #{$media-mobile}{width:auto;}
+    @media #{$media-xxs}{width:100%;}
+
+    & + .btn-xlg {margin-left: 20px;
+     @media #{$media-mobile}{margin-left: 5px;}
+    }
+}
+
+/* Button - Block (square)
+------------------------------------------------------------------------ */
+.btn-block {
+    background-color: $color-green;
+    color: $color-white;
+    border: none;
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    width: 42px;
+
+    @media #{$media-sm} {font-size: $size-10; }
+    @media #{$media-xs} {height: 71px;line-height: 71px;width: 71px; font-size: $size-8; }
+    @media #{$media-xxs} { height: 55px; width: 55px; line-height: 55px; font-size: $size-10;}
+
+
+    &:hover { background-color: darken($color-green, 10%); color: $color-white; }
+    &.orange { background-color: $color-orange;
+        &:hover { background-color: darken($color-orange, 10%); color: $color-white; }
+    }
+    &.btn-comment{ font-family:$font-icon;@include button-variant($color-gray, $color-white, $color-gray);
+        &:after {
+            content: $icon-language;
+        }
+        &:hover{ color:$color-green; background:transparent;}
+    }
+}
+
+/* Button - Block (square) - with animation
+------------------------------------------------------------------------ */
+.btn-animate{
+    button{transition: background-color .3s ease-in-out; position:relative;
+        i{transition:opacity .5s ease-in-out;opacity: 1; position: relative; z-index:100;}
+        .nav-icon-close{width:42px;height: 42px;position: absolute;transform: rotate(0deg);transition: .5s ease-in-out;cursor: pointer;z-index:1;top: 50%;left: 50%;margin-right: -50%; transform: translate(-50%, -50%);
+                span {display: block;position: absolute;height: 5px;width: 74%;background: transparent;border-radius: 9px;opacity: 1;left: 0;transform: rotate(0deg);transition: .25s ease-in-out;
+                &:nth-child(1) {top: 0px;transform-origin: left center;opacity:0;}
+                &:nth-child(2) {top: 36px;transform-origin: left center;opacity:0;}
+                }
+        }
+                                       
+        &.open{ background-color:$color-gray;
+            &:hover{background-color:$color-gray;}
+            i{opacity: 0;}
+            .nav-icon-close{
+                span{background: $color-gray-light;
+                    &:nth-child(1) {transform: rotate(45deg);top: 7px;left: 10px;opacity:1;}
+                    &:nth-child(2) {transform: rotate(-45deg);top: 29px;left: 10px;opacity:1;}
+                }
+            }
+        }
+    }
+}
+
+/* Button - Block w/Text (square)
+------------------------------------------------------------------------ */
+.btn-block-with-text {
+
+    span { display: inline-block; }
+    .button-block {
+        @extend .btn-block;
+        margin-right: 5px;
+        display: inline-block;
+    }
+    &.orange .button-block { background-color: $color-orange; }
+    .button-text {
+        color: $color-gray-dark;
+        font-size: $size-10;
+        font-family: $font-avenir-heavy;
+        text-transform: uppercase;
+        @media #{$media-sm} {font-size: $size-7-sm; }
+        @media #{$media-xs} {font-size: $size-8; }
+        @media #{$media-xxs} {font-size: $size-10;}
+    }
+}
+
+/* Button - Text Link + Arrow
+------------------------------------------------------------------------ */
+button.btn-link,
+button.btn-text { background:transparent; border:none;}
+.btn-link,
+.btn-text {
+	color: $color-green;
+	text-decoration: none;
+    line-height:20px;
+
+    &:after {
+        content: $icon-arrow-cta;
+        font-family:$font-icon;
+        margin-left: 5px;
+    }
+
+    &.btn-print{ background:transparent; border:none;
+        &:after {
+            content: $icon-print;
+        }
+    }
+    &.btn-noarw{
+        background:transparent; border:none;padding:15px 25px;text-align: center;
+
+    @media #{$media-mobile} {padding:20px 25px;width: 100%; margin-bottom:20px; }
+    @media #{$media-xxs} {padding: 20px 15px;}
+
+       &:after {
+            content: ''; display:none;
+        }
+    }
+
+    &.btn-padding{
+        padding:15px 25px;text-align: center;
+
+    @media #{$media-mobile} {padding:20px 25px;width: 100%; margin-bottom:20px; }
+    @media #{$media-xxs} {padding: 20px 15px;}
+
+    }
+
+    &:hover { color: $color-green-dark; text-decoration: none; }
+    &.orange {
+        color: $color-orange;
+        &:hover { color: $color-orange; }
+    }
+    &.purple {
+        color: $color-purple;
+        &:hover { color: $color-purple; }
+    }
+    &.white {
+        color: $color-white;
+        &:hover { color: $color-white; }
+    }
+    &.arrow-left {
+        &:before {
+            content: $icon-arrow-cta;
+            display: inline-block;
+            font-family: $font-icon;
+            margin-right: 5px;
+            transform: rotate(180deg);
+        }
+        &:after { content: ''; }
+    }
+}
+
+/* Button - Link + Plus Icon or - Minus Icon
+------------------------------------------------------------------------ */
+.btn-add {
+    position: relative;
+
+    &:after {content:'';margin:0;}
+    &:before {
+        content: $icon-plus;
+        font-family: $font-icon;
+        font-size: 12px;
+        font-weight: bold;
+        padding-right:5px;
+    }
+}
+
+.btn-minus {
+    position: relative;
+
+    &:after {content:''; margin:0;}
+    &:before {
+        content: $icon-minus;
+        font-family: $font-icon;
+        font-size: 12px;
+        font-weight: bold;
+        padding-right:5px;
+    }
+}
+
+/* Button - Clear
+------------------------------------------------------------------------ */
+.btn-clear {
+    border-bottom: 1px solid $color-gray;
+    color: $color-gray;
+    font-family: $font-avenir-heavy;
+    padding-bottom: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover { color: darken($color-gray, 10%); }
+
+    @media #{$media-mobile} { border-bottom: none; }
+}
+
+/* Buttons - Close btn
+------------------------------------------------------------------------ */
+.callout-close{padding: 8px 6px;font-size: 10px;font-weight:bold;line-height: 1;color: #fff;text-align: center;white-space: nowrap;vertical-align: middle;border-radius:50%;border:1px solid #FFF; background-color:rgba(0, 0, 0, 0.7);position:absolute; top:15px; right:15px; z-index:1000;
+    &:hover{ color:$color-white;}
+
+    @media #{$media-mobile} {padding: 15px 13px;}
+}
+
+/* Buttons - Print btn
+------------------------------------------------------------------------ */
+.callout-print{padding: 15px 10px;font-size: 18px;font-weight:bold;line-height: 1;color: #fff;text-align: center;white-space: nowrap;vertical-align: middle;border-radius:50%;border:1px solid #FFF; background-color:rgba(0, 0, 0, 0.7);position:absolute; top:10px; right:10px; z-index:1000;
+    &:hover{ color:$color-white;}
+
+    @media #{$media-mobile} {padding: 15px 10px;}
+}
+
+/* Buttons - Favorite & Share Post
+------------------------------------------------------------------------ */
+.share-post {clear: both; display: block;float: left;margin: 0;padding: 0;
+
+    &.share-image-buttons{left:0; top:10px;}
+
+    .share-text{font-size: 12px; padding-top: 9.5px;display: inline-block;vertical-align: top;padding-right: 10px;text-transform:uppercase;font-family: $font-avenir;
+        @media #{$media-mobile} {margin:0 0 10px;}
+    }
+
+    li {clear: both;float: left;list-style: none;position: relative;margin:0;
+        @media #{$media-tiny} {clear:none;margin-bottom:20px}
+        a{display:inline-block;}
+        .btn {background-color: transparent;border: 1px solid $color-gray-border;color: $color-gray;display: block;float: left;font-family: $font-icon;margin:0;
+            &.btn-block-with-text { border:0 none;}
+  
+            &.share {margin-top:10px;
+                @media #{$media-tiny}{ margin-top:0; margin-left:10px;}
+                &:before { content: $icon-share; }
+            }
+            &.favorite {border-bottom: 1px solid $color-gray-border;
+               
+                &:before { content: $icon-favorite; }
+                &:hover,
+                &.active {
+                    &:before { color: $color-green; content: $icon-favorite-active; }
+                }
+            }
+        }
+        .favorite-count{ float:left; width:42px;background-color:$color-gray-light;border: 1px solid $color-gray-border; border-top:none; color: $color-gray;display: block; text-align:center;font-family: $font-avenir; font-size:$size-10; clear:left;
+            @media #{$media-xs} {width:  71px;}
+            @media #{$media-xxs} {width:  55px;}
+            @media #{$media-tiny}{border-top:none; border-bottom: 1px solid $color-gray-border;}
+
+            &.share-count{
+                @media #{$media-tiny}{margin-left:10px;}
+            }
+        }
+    }
+
+    &.inline {clear: none;display:block;padding:10px 0;text-align:center;width:100%;
+                  @media #{$media-mobile} {padding:10px 0 0;}
+
+        li{ float:none;
+            @media #{$media-mobile} { margin:0;}
+        }
+             .addthis_sharing_toolbox{display:inline-block;}
+
+            .btn-block, .btn-block-with-text .button-block {height: 20px;width: 20px;line-height: 20px;font-size: 14px;
+                  @media #{$media-mobile} {height: 55px;width: 55px;line-height: 55px;font-size: 14px;}
+           }
+             .social-share {padding: 0;height: auto;width: auto;font-size: $size-8;line-height: 1.42857; position:relative; left:auto; top:auto; background:none;
+                  @media #{$media-mobile} {}
+             }
+        }
+    &.white {
+        li { clear:none;
+            a.share,
+            a.favorite { border-color: $color-white; color: $color-white; }
+        }
+        .social-share {background-color: $color-white;background-color: rgba($color-white, 0.85);left: 52px; top:0;
+            @media #{$media-xs}{height: 51px; width: 185px;}
+            @media #{$media-xs} {left: 81px;height: 55px;padding: 7px;width: 190px;top: 9px;}
+            @media #{$media-xxs} {left: 65px;height: 55px;padding: 7px;width: 190px;top: 0;}
+            @media #{$media-tiny} {left: 65px;height: 106px;padding: 10px;width: 106px;top: 0;}
+        }
+
+          .btn {
+            &.share { margin-top:0; margin-left:10px;}
+            &.favorite {border-bottom: 1px solid $color-gray-border;}
+            }
+            .favorite-count{border-top:none; border-bottom: 1px solid $color-gray-border;
+                 &.share-count{margin-left:10px;}           
+        }   
+    }
+
+    /* Social Share Buttons */
+    .social-share {display: none;left: 42px;position: absolute;top: 10px;overflow: hidden;background-color: $color-gray-light;background-color: rgba($color-gray-light, 0.85);padding:5px 0 0 5px;height: 42px;width: 150px;z-index: 1010;
+            &.btn-3{width:116px;}
+            &.btn-2{width:80px;}
+            &.btn-1{width:44px;}
+            @media #{$media-mobile} {left: 42px;height: 55px;padding: 7px;width: 190px;top: 9px;
+                &.btn-3{width:148px;}
+                &.btn-2{width:100px;}
+                &.btn-1{width:57px;}
+            }
+            @media #{$media-xxs} {left: 55px;height: 55px;padding: 7px;width: 190px;top: 10px;
+                &.btn-3{width:148px;}
+                &.btn-2{width:100px}
+                &.btn-1{width:57px;}
+            }
+            @media #{$media-tiny} {left: 65px;height: 106px;padding: 10px;width: 106px;top: 0;
+                &.btn-3{height:159px;width:62px;}
+                &.btn-2{width:62px}
+                &.btn-1{padding:7px;height:55px;width:57px;}
+            }
+
+        li { clear:none; float: left; }
+
+        .btn {border: none;float: left;text-align: center;
+
+            &.btn-facebook {background: #3a5897;color: $color-white;
+                &:hover { background-color: darken(#3a5897, 10%); color: $color-white; }
+            }
+            &.btn-twitter {background: #2ca9e0;color: $color-white;
+                &:hover { background-color: darken(#2ca9e0, 10%); color: $color-white; }
+            }
+            &.btn-google {background: #c9161e;color: $color-white;
+                &:hover { background-color: darken(#c9161e, 10%); color: $color-white; }
+            }
+            &.btn-pinterest {background: #be2026;color: $color-white;
+                &:hover { background-color: darken(#be2026, 10%); color: $color-white; }
+            }
+            &.btn-email {background: $color-gray;color: $color-white;
+                &:hover { background-color: darken($color-gray, 10%); color: $color-white; }
+            }
+       }
+
+    }
+}
+
+.share-post.inline .share-post-favorite{ margin-left:20px; float:right;
+     .btn-block, .btn-block-with-text .button-block {height: 32px;width: 32px;line-height: 32px; border: 1px solid #ccc;font-size:$size-12;}
+     .favorite-count {border: none;background: none;float: left;clear: none; line-height:32px;width: 32px; height: 32px;vertical-align: middle; font-size: $size-8;}
+}
+
+/* AddThis replacement */
+.social-share {
+    a{ display:inline-block;}
+    .at-icon{fill:#fff;border:0}
+    .at-icon-wrapper{display:inline-block;overflow:hidden; width:32px; height:32px;
+        @media #{$media-mobile} {width:41px; height:41px;}
+
+    }
+    a .at-icon-wrapper{cursor:pointer;}
+    .at-circular,.at-circular-element .at-icon-wrapper{border-radius:50%}
+    .addthis_32x32_style .at-icon{width:100%;height:100%;}
+    .addthis_24x24_style .at-icon{width:24px;height:24px}
+    .addthis_20x20_style .at-icon{width:20px;height:20px}
+    .addthis_16x16_style .at-icon{width:1pc;height:1pc}
+}
+
+.image-share-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.share-image-buttons {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    z-index: 10;
+}
+
+// Social media buttons
+.at-svc-facebook span,
+.btn-facebook {
+  background: #3a5897;
+  color: $color-white;
+
+  &:hover { background-color: darken(#3a5897, 10%); color: $color-white; }
+}
+.at-svc-twitter span,
+.btn-twitter {
+  background: #2ca9e0;
+  color: $color-white;
+
+  &:hover { background-color: darken(#2ca9e0, 10%); color: $color-white; }
+}
+.btn-google {
+  background: #c9161e;
+  color: $color-white;
+
+  &:hover { background-color: darken(#c9161e, 10%); color: $color-white; }
+}
+.at-svc-pinterest_share span,
+.btn-pinterest {
+  background: #be2026;
+  color: $color-white;
+
+  &:hover { background-color: darken(#be2026, 10%); color: $color-white; }
+}
+.at-svc-email span,
+.btn-email {
+  background: $color-gray;
+  color: $color-white;
+
+  &:hover { background-color: darken($color-gray, 10%); color: $color-white; }
+}
+
+/* Button Colors
+------------------------------------------------------------------------ */
+.btn-orange {
+  @include button-variant($color-white, $color-orange, $color-orange);
+}
+.btn-green {
+  @include button-variant($color-white, $color-green, $color-green);
+}
+.btn-purple {
+  @include button-variant($color-white, $color-purple, $color-purple);
+}
+.btn-yellow {
+  @include button-variant($color-gray-dark, $color-yellow, $color-yellow);
+}
+.btn-gray {
+      @include button-variant($color-white, $color-gray, $color-gray);
+}
+.btn-disabled, :disabled {cursor: not-allowed;
+    @include button-variant($color-white, $color-gray-border, $color-gray-border);
+}
+
+/* Button - Search Filters
+------------------------------------------------------------------------ */
+.btn-search-filters { border-bottom: 1px solid $color-gray-border;color: $color-gray-dark;font-family: $font-avenir-medium;font-size: $size-10;height: 42px;line-height: 42px;text-align: left;width: 100%;
+    overflow: hidden;}
+
+.toggle-sort-prev {
+    &.active {
+        &:after { transform: rotate(180deg);}
+    }
+}
+
+/* Button Dropdown
+------------------------------------------------------------------------ */ 
+.btn-dropdown { position: relative;
+        &:after { content: $icon-arrow-down; display: block; float: right; font-size: 5px; font-family: $font-icon; padding: 0 15px; background: $color-green-neon; color: #FFF; position: absolute; right: 0; top: 0; }
+        &.active {
+            &:after { transform: rotate(180deg); }
+        }
+    }
+    /* Scroll To Top Button
+------------------------------------------------------------------------ */
+.scroll-top-wrapper {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1999;
+    right: 30px;
+    bottom: 30px;
+    transition: all 0.5s ease-in-out;
+    @media #{$media-mobile} { right: 0; bottom:0; padding:10px; width:100%;background-color: rgba(246, 244, 243, 0.85); }
+    @media #{$media-tiny} {}
+
+    .btn-block { position: relative; z-index: 100; }
+
+    .share-post li {
+        @media #{$media-tiny}{ margin: 0;}
+        .btn { background-color: $color-gray; border: none; color: $color-white; display: block; float: left; font-family: $font-icon; margin:0;
+            &:hover { background-color: darken($color-gray, 10%); color: $color-white; }
+            .share-text { font-size: 10px; clear: both; margin: 0; padding: 5px 0 0; text-align: center; width: 42px; height: auto; line-height: 15px; }
+        }
+    }
+    .share-post .social-share {    left: -10px;height: 58px;top: -68px;width:991px;}
+    .share-post .share-text { font-size: 22px; line-height: calc( 22px + 5px ); margin: 0; padding-top: 0; }
+
+    .flex-inner { display: flex; flex-direction: column; flex-wrap: wrap; justify-content: flex-start; align-content: flex-start; align-items: flex-start; height: 100%; position: relative; text-align: center; }
+
+    .h5,
+    .at-share-tbx-element { order: 0; flex: 0 1 auto; align-self: auto; }
+
+    .btn-block,
+    .at-share-btn {height: 42px;line-height: 42px;width: 42px;
+        @media #{$media-tiny} { height: 38px; line-height: 38px; width: 38px; }
+    }
+    .btn-back-top{float: right; position:absolute; right:10px; bottom:10px;}
+
+    .at-icon-wrapper { width: 100%; height: 100%; }
+
+    .floated-button{position: absolute;transition: transform .5s; right: 65px;bottom: 10px;width: 220px;
+        &.feedback-block{width:245px;}
+       @media #{$media-tiny} { right: 59px;width: 141px;}
+       .floated-button-popout-content{ background:#FFF; border:2px solid $color-purple; padding:10px; max-width:100%;}
+        &.feedback-block .floated-button-popout-content{padding:0;}
+        p{ font-family:$font-avenir;}
+        .popup-nav{
+            li{border-top: 1px solid #f6f4f3;display: block;list-style: none;margin: 0;padding:0;width: 100%;}
+            li:first-child {border-top: none;}
+            a {color: #484848;display: block;font-size: 14px;font-weight: normal;padding: 10px;width: 100%;font-family: "AvenirLT-Roman"; text-transform:uppercase;}
+            a:hover {background-color: #f6f4f3;}
+            }
+        .btn-block { width:100%; text-align:left; padding-left:15px; padding-right:15px; position:relative;
+            @media #{$media-tiny} { padding-left:5px; padding-right:5px; font-size:12px;}
+            i.icon-plus,
+            i.icon-minus{ float:right;margin-left:10px;
+             @media #{$media-tiny} {margin-left:5px;}
+            }
+            &:hover{ background-color: darken($color-purple, 15%); font-weight:normal;}
+        }
+    }
+}
+
+.scroll-top-wrapper.show { visibility: visible; cursor: pointer; opacity: 1;
+    &:hover, &:focus { opacity: 1; }
+}

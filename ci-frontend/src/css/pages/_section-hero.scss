@@ -1,0 +1,399 @@
+/* Module - Hero Content
+------------------------------------------------------------------------ */
+.hero-content {background: $color-white;background: rgba(255, 255, 255, 0.91) none repeat scroll 0 0;border-radius: 5px;padding: 50px;
+    margin: 0 auto;width: 100%;
+
+    @media #{$media-mobile} { padding: 45px 30px; }
+
+    .column-one,
+    .column-two {
+        @include make-xs-column(12);
+        @include make-sm-column(12);
+        @include make-md-column(6);
+        @include make-lg-column(6);
+    }
+    .column-three {
+        @include make-xs-column(12);
+        @include make-sm-column(12);
+        @include make-md-column(12);
+        @include make-lg-column(12);
+    }
+
+    .col-sm-6:nth-child(1){
+        @media #{$media-mobile}{ padding-bottom:30px;}
+    }
+
+    .title,
+    .subtitle {text-align: center;}
+    h3 { margin: 0 0 20px; }
+    p { font-family: $font-avenir; }
+
+        .section-info { padding: 0; margin: 0 auto;
+        @media #{$media-lg} { padding: 75px 0; }
+    }
+
+    .section-title h3 { color: $color-white; margin-bottom: 30px; }
+    .section-link {
+        a {
+            &:hover { background: $color-white; color: $color-orange; }
+        }
+    }
+
+    .donate-frequency-wrap{border:1px solid $color-green;border-radius:3px;display: flex; background:rgba(255, 255, 255, .9);margin:0 auto; margin-top:10px;
+                @media #{$media-lg} { width:70%;}
+                @media #{$media-md} { width:80%;}
+                @media #{$media-mobile} { width:90%;}
+                @media #{$media-xxs} { display: block ;}
+        > div{width: 50%; display: flex;align-items: stretch;
+                @media #{$media-xxs} { width:100%; }    
+            &.active{ background:$color-green;
+                a{ color:$color-white;}
+            }
+            a{align-self: center;padding-top: 8px;padding-bottom: 8px;
+                @media #{$media-mobile} { margin:0; }
+            }
+
+        }
+    }
+
+    .select-amount { margin: 20px auto 5px auto; text-align: center;
+
+        .radio {color: $color-green;float: none;font-family: $font-avenir-heavy;font-size: 22px;margin: 0 20px 40px;position: relative;
+
+            @media #{$media-md} { margin: 0 10px 40px; }
+            @media #{$media-xs} { margin: 0 10px 40px; }
+
+            label { padding: 0; }
+        }
+    }
+    .ci-radio[type="radio"]:not(:checked),
+    .ci-radio[type="radio"]:checked { position: absolute; left: -99999px; }
+    .ci-radio[type="radio"] + label:before,
+    .ci-radio[type="radio"] + label:after { content: ""; height: 16px; left: 50%; margin: 4px; position: absolute; bottom: -30px; width: 16px; z-index: 0; transform: translate(-50%, -50%); transition: all 0.28s ease 0s;}
+    .ci-radio[type="radio"] + label:before { border: 2px solid $color-green; border-radius: 50%; }
+    .ci-radio[type="radio"]:checked + label:after { background-color: $color-green; border-radius: 50%; height: 16px; width: 16px; z-index: 0; transform: scale(0.5) translate(-100%,-100%);}
+
+    .input-amount{ position:relative;
+        .input-amount-frequency{ font-size:$size-6; position:absolute; top: 19px; right: 10px;
+            @media #{$media-xxs}{ font-size:$size-8; top:26px;}
+            @media #{$media-tiny}{ font-size:$size-10; top:26px;}
+        }
+    }
+    .donation { background: none; border: 1px solid $color-gray-dark; color: $color-gray-dark; font-family: $font-avenir-heavy; font-size: $size-4; height: 72px; line-height: 72px; outline: none; text-align: center;
+        @include form-focus;
+
+        @media #{$media-tiny}{ text-align: left;}
+
+        &::-webkit-input-placeholder { color: $color-purple; }
+        &::-moz-placeholder { color: $color-purple; }/* firefox 19+ */ 
+        &:-ms-input-placeholder { color: $color-purple; }/* ie */ 
+
+        &.mnthly{
+        @media #{$media-tiny} { padding:6px 100px 6px 12px; }
+        }
+
+        &.locked[type="text"] { pointer-events:none; outline: none; border-width: 0px; border: none; box-shadow: none; -webkit-appearance: none; background-color: transparent; 
+             @media #{$media-tiny} { padding:6px 100px 6px 0; }
+        }
+    }
+
+    .payment-options { margin-top: 20px;
+
+        .btn {display: inline-block;margin: 0 10px;
+
+            @media #{$media-md} { font-size: $size-12; padding: 15px 20px;
+                .icon-paypal { font-size: $size-12; }
+            }
+            @media #{$media-mobile} { margin: 0 0 20px; }
+        }
+        .other-options { clear: both; display: block; font-family: $font-avenir-heavy; font-size: $size-10; margin-top: 20px; }
+    }
+}
+
+.hero-content{
+    .donate-simple{display:flex;align-items	:stretch; justify-content:center;margin-top:10px;
+        .donation{height:100%; line-height:15px; font-size:$size-8; border-top-right-radius:0; border-bottom-right-radius:0;border-right:none;border-color:$color-gray-border; background:$color-white;display: flex;flex: 1;align-items: stretch;
+            @include form-focus;
+            &:focus{border-right:none;}
+        }
+        button{ border-top-left-radius:0; border-bottom-left-radius:0;margin-bottom:0;}
+        .input-amount{margin-bottom:0;margin-bottom: 0;display: flex;flex-direction: column;width:100%;
+            &.locked[type="text"] { pointer-events:none; outline: none; border-width: 0px; border: none; box-shadow: none; -webkit-appearance: none; background-color: transparent; }
+        }
+    }
+}
+
+
+/* Module - Hero
+------------------------------------------------------------------------ */
+.bg-image-wrap {
+    &.bg-video { max-height: 2000px; min-height: 400px; }
+    &.section-hero > img { position: relative; 
+        @media #{$media-lg} {max-height:760px; min-height:550px;}
+        @media #{$media-xlg} {max-height:900px; min-height:550px;}
+        @media #{$media-md} {max-height:650px; min-height:400px;}
+        @media #{$media-mobile} {max-height: calc(850px*.7);min-height: calc(600px*.7); }
+        @media #{$media-xs} {max-height: calc(550px*.6);min-height: calc(300px*.6); } 
+        @media #{$media-tiny} {max-height:160px;min-height:160px; } 
+    }
+    &.section-hero .container { position: relative; display: none; }
+}
+
+.bg-image{position:absolute;z-index:0;top:0;left: 0;padding:0;margin:0; @include object-fit(cover, 50% 50%); width:100%; height: auto; min-height: 100%;
+            &.no-object-fit { max-height:760px; min-height:670px;}
+}
+.bg-image-wrap.section-hero img {
+    &.no-object-fit { max-height:760px; min-height:550px;
+        @media #{$media-lg} { max-height:560px; min-height:300px; }
+        @media #{$media-xlg} { max-height:760px; min-height:300px; }
+        @media #{$media-md} { max-height: 500px; min-height:200px; }
+        @media #{$media-mobile} { max-height: calc(850px * 0.5); min-height: calc(600px * 0.5); }
+        @media #{$media-xs} { max-height: calc(550px * 0.4); min-height: calc(300px * 0.4); }
+    }
+}
+
+.section-hero {position: relative;overflow:hidden;padding:0;
+
+    .column-one,
+    .column-two {
+        @include make-xs-column(12);
+        @include make-sm-column(12);
+        @include make-md-column(6);
+        @include make-lg-column(6);
+    }
+
+    .column-two {
+        @media #{$media-mobile} { margin-top: 30px; }
+    }
+
+    &.section-hero-single {
+
+        .column-full,
+        .column-one { z-index:100;
+            @include make-md-column(7);
+            margin: 0 21%;
+            @media #{$media-mobile} { margin: 0; }
+        }
+        .column-two { display: none; z-index:100; }
+    }
+    &.no-background {
+        .hero-content {background:none; border-radius:0; padding:0;}
+        .container { position: relative; margin-bottom:0;margin-top:0; }
+    }
+
+    video {height: auto;width: 100%;visibility: visible;margin-bottom: -7px;
+        @media #{$media-mobile} { display: none; }
+    }
+    .container { position: relative; margin-bottom:60px;margin-top:60px; }
+}
+
+/* Section Arrow 
+------------------------------------------------------------------------ */
+// functions to urlencode the svg string
+
+@function str-replace($string, $search, $replace: '') {
+  $index: str-index($string, $search);
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+  @return $string;
+}
+
+@function url-encode($string) {
+  $map: (
+    "%": "%25",
+    "<": "%3C",
+    ">": "%3E",
+    " ": "%20",
+    "!": "%21",
+    "*": "%2A",
+    "'": "%27",
+    '"': "%22",
+    "(": "%28",
+    ")": "%29",
+    ";": "%3B",
+    ":": "%3A",
+    "@": "%40",
+    "&": "%26",
+    "=": "%3D",
+    "+": "%2B",
+    "$": "%24",
+    ",": "%2C",
+    "/": "%2F",
+    "?": "%3F",
+    "#": "%23",
+    "[": "%5B",
+    "]": "%5D"
+  );
+  $new: $string;
+  @each $search, $replace in $map {
+    $new: str-replace($new, $search, $replace);
+  }
+  @return $new;
+}
+
+@function inline-svg($string) {
+  @return url('data:image/svg+xml;charset=US-ASCII,#{url-encode($string)}');
+}
+
+// Arrow styles
+// note the fill="' + var-color + '"
+
+.section-arrow-mid {position: absolute;width: 100%; height:100%; top:0; left:0;
+                     background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-white + '" d="M0,0c11.3,0,16,9.8,16,9.8S20.8,0,32.1,0H0z"/></svg>'); background-size:85px; background-position:center top; background-repeat: no-repeat;
+
+    &.section-arrow-right { background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 9.8 32.1" style="enable-background:new 0 0 9.8 32.1;" preserveAspectRatio="xMinYMid"><path fill="' + $color-white + '" d="M9.8,0C9.8,11.3,0,16,0,16s9.8,4.8,9.8,16.1V0z"/></svg>'); background-size:30px; background-position:right center; background-repeat: no-repeat;
+        &.white{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 9.8 32.1" style="enable-background:new 0 0 9.8 32.1;" preserveAspectRatio="xMinYMid"><path fill="' + $color-white + '" d="M9.8,0C9.8,11.3,0,16,0,16s9.8,4.8,9.8,16.1V0z"/></svg>'); background-size:30px;    background-position:right center; background-repeat: no-repeat;}
+        &.gray-light{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 9.8 32.1" style="enable-background:new 0 0 9.8 32.1;" preserveAspectRatio="xMinYMid"><path fill="' + $color-gray-light + '" d="M9.8,0C9.8,11.3,0,16,0,16s9.8,4.8,9.8,16.1V0z"/></svg>'); background-size:30px;    background-position:right center; background-repeat: no-repeat;}
+        &.gray-dark{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 9.8 32.1" style="enable-background:new 0 0 9.8 32.1;" preserveAspectRatio="xMinYMid"><path fill="' + $color-gray-dark + '" d="M9.8,0C9.8,11.3,0,16,0,16s9.8,4.8,9.8,16.1V0z"/></svg>'); background-size:30px;    background-position:right center; background-repeat: no-repeat;}
+        &.purple{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 9.8 32.1" style="enable-background:new 0 0 9.8 32.1;" preserveAspectRatio="xMinYMid"><path fill="' + $color-purple + '" d="M9.8,0C9.8,11.3,0,16,0,16s9.8,4.8,9.8,16.1V0z"/></svg>'); background-size:30px;    background-position:right center; background-repeat: no-repeat;}
+        &.orange{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 9.8 32.1" style="enable-background:new 0 0 9.8 32.1;" preserveAspectRatio="xMinYMid"><path fill="' + $color-orange + '" d="M9.8,0C9.8,11.3,0,16,0,16s9.8,4.8,9.8,16.1V0z"/></svg>'); background-size:30px;    background-position:right center; background-repeat: no-repeat;}
+        &.green{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 9.8 32.1" style="enable-background:new 0 0 9.8 32.1;" preserveAspectRatio="xMinYMid"><path fill="' + $color-green + '" d="M9.8,0C9.8,11.3,0,16,0,16s9.8,4.8,9.8,16.1V0z"/></svg>'); background-size:30px;    background-position:right center; background-repeat: no-repeat;}
+        &.green-dark{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 9.8 32.1" style="enable-background:new 0 0 9.8 32.1;" preserveAspectRatio="xMinYMid"><path fill="' + $color-green-dark + '" d="M9.8,0C9.8,11.3,0,16,0,16s9.8,4.8,9.8,16.1V0z"/></svg>'); background-size:30px;    background-position:right center; background-repeat: no-repeat;}
+        &.green-neon{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 9.8 32.1" style="enable-background:new 0 0 9.8 32.1;" preserveAspectRatio="xMinYMid"><path fill="' + $color-green-neon + '" d="M9.8,0C9.8,11.3,0,16,0,16s9.8,4.8,9.8,16.1V0z"/></svg>'); background-size:30px;    background-position:right center; background-repeat: no-repeat;}
+
+    }
+    
+    &.section-arrow-left {background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 9.8 32.1" style="enable-background:new 0 0 9.8 32.1;" preserveAspectRatio="xMinYMid"><path fill="' + $color-white + '" d="M0,32.1c0-11.3,9.8-16,9.8-16S0,11.3,0,0V32.1z"/></svg>'); background-size:30px;    background-position:left center; background-repeat: no-repeat;
+         &.white{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 9.8 32.1" style="enable-background:new 0 0 9.8 32.1;" preserveAspectRatio="xMinYMid"><path fill="' + $color-white + '" d="M0,32.1c0-11.3,9.8-16,9.8-16S0,11.3,0,0V32.1z"/></svg>'); background-size:30px;    background-position:left center; background-repeat: no-repeat;}
+        &.gray-light{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 9.8 32.1" style="enable-background:new 0 0 9.8 32.1;" preserveAspectRatio="xMinYMid"><path fill="' + $color-gray-light + '" d="M0,32.1c0-11.3,9.8-16,9.8-16S0,11.3,0,0V32.1z"/></svg>'); background-size:30px;    background-position:left center; background-repeat: no-repeat;}
+        &.gray-dark{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 9.8 32.1" style="enable-background:new 0 0 9.8 32.1;" preserveAspectRatio="xMinYMid"><path fill="' + $color-gray-dark + '" d="M0,32.1c0-11.3,9.8-16,9.8-16S0,11.3,0,0V32.1z"/></svg>'); background-size:30px;    background-position:left center; background-repeat: no-repeat;}
+        &.purple{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 9.8 32.1" style="enable-background:new 0 0 9.8 32.1;" preserveAspectRatio="xMinYMid"><path fill="' + $color-purple + '" d="M0,32.1c0-11.3,9.8-16,9.8-16S0,11.3,0,0V32.1z"/></svg>'); background-size:30px;    background-position:left center; background-repeat: no-repeat;}
+        &.orange{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 9.8 32.1" style="enable-background:new 0 0 9.8 32.1;" preserveAspectRatio="xMinYMid"><path fill="' + $color-orange + '" d="M0,32.1c0-11.3,9.8-16,9.8-16S0,11.3,0,0V32.1z"/></svg>'); background-size:30px;    background-position:left center; background-repeat: no-repeat;}
+        &.green{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 9.8 32.1" style="enable-background:new 0 0 9.8 32.1;" preserveAspectRatio="xMinYMid"><path fill="' + $color-green + '" d="M0,32.1c0-11.3,9.8-16,9.8-16S0,11.3,0,0V32.1z"/></svg>'); background-size:30px;    background-position:left center; background-repeat: no-repeat;}
+        &.green-dark{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 9.8 32.1" style="enable-background:new 0 0 9.8 32.1;" preserveAspectRatio="xMinYMid"><path fill="' + $color-green-dark + '" d="M0,32.1c0-11.3,9.8-16,9.8-16S0,11.3,0,0V32.1z"/></svg>'); background-size:30px;    background-position:left center; background-repeat: no-repeat;}
+        &.green-neon{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 9.8 32.1" style="enable-background:new 0 0 9.8 32.1;" preserveAspectRatio="xMinYMid"><path fill="' + $color-green-neon + '" d="M0,32.1c0-11.3,9.8-16,9.8-16S0,11.3,0,0V32.1z"/></svg>'); background-size:30px;    background-position:left center; background-repeat: no-repeat;}
+    }
+
+    &.section-arrow-left, &.section-arrow-right{
+         @media #{$media-mobile} {background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-white + '" d="M0,0c11.3,0,16,9.8,16,9.8S20.8,0,32.1,0H0z"/></svg>'); background-size:85px; background-position:center top; background-repeat: no-repeat;
+        &.white{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-white + '" d="M0,0c11.3,0,16,9.8,16,9.8S20.8,0,32.1,0H0z"/></svg>'); background-size:85px; background-position:center top; background-repeat: no-repeat;}
+        &.gray-light{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-gray-light + '" d="M0,0c11.3,0,16,9.8,16,9.8S20.8,0,32.1,0H0z"/></svg>'); background-size:85px; background-position:center top; background-repeat: no-repeat;}
+        &.gray-dark{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-gray-dark + '" d="M0,0c11.3,0,16,9.8,16,9.8S20.8,0,32.1,0H0z"/></svg>'); background-size:85px; background-position:center top; background-repeat: no-repeat;}
+        &.purple{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-purple + '" d="M0,0c11.3,0,16,9.8,16,9.8S20.8,0,32.1,0H0z"/></svg>'); background-size:85px; background-position:center top; background-repeat: no-repeat;}
+        &.orange{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-orange + '" d="M0,0c11.3,0,16,9.8,16,9.8S20.8,0,32.1,0H0z"/></svg>'); background-size:85px; background-position:center top; background-repeat: no-repeat;}
+        &.green{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-green + '" d="M0,0c11.3,0,16,9.8,16,9.8S20.8,0,32.1,0H0z"/></svg>'); background-size:85px; background-position:center top; background-repeat: no-repeat;}
+        &.green-dark{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-green-dark + '" d="M0,0c11.3,0,16,9.8,16,9.8S20.8,0,32.1,0H0z"/></svg>'); background-size:85px; background-position:center top; background-repeat: no-repeat;}
+        &.green-neon{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-green-neon + '" d="M0,0c11.3,0,16,9.8,16,9.8S20.8,0,32.1,0H0z"/></svg>'); background-size:85px; background-position:center top; background-repeat: no-repeat;}
+         }
+    }
+
+    &.section-arrow-top {
+        &.white{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-white + '" d="M0,0c11.3,0,16,9.8,16,9.8S20.8,0,32.1,0H0z"/></svg>'); background-size:85px; background-position:center top; background-repeat: no-repeat;}
+        &.gray-light{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-gray-light + '" d="M0,0c11.3,0,16,9.8,16,9.8S20.8,0,32.1,0H0z"/></svg>'); background-size:85px; background-position:center top; background-repeat: no-repeat;}
+        &.gray-dark{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-gray-dark + '" d="M0,0c11.3,0,16,9.8,16,9.8S20.8,0,32.1,0H0z"/></svg>'); background-size:85px; background-position:center top; background-repeat: no-repeat;}
+        &.purple{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-purple + '" d="M0,0c11.3,0,16,9.8,16,9.8S20.8,0,32.1,0H0z"/></svg>'); background-size:85px; background-position:center top; background-repeat: no-repeat;}
+        &.orange{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-orange + '" d="M0,0c11.3,0,16,9.8,16,9.8S20.8,0,32.1,0H0z"/></svg>'); background-size:85px; background-position:center top; background-repeat: no-repeat;}
+        &.green{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-green + '" d="M0,0c11.3,0,16,9.8,16,9.8S20.8,0,32.1,0H0z"/></svg>'); background-size:85px; background-position:center top; background-repeat: no-repeat;}
+        &.green-dark{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-green-dark + '" d="M0,0c11.3,0,16,9.8,16,9.8S20.8,0,32.1,0H0z"/></svg>'); background-size:85px; background-position:center top; background-repeat: no-repeat;}
+        &.green-neon{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-green-neon + '" d="M0,0c11.3,0,16,9.8,16,9.8S20.8,0,32.1,0H0z"/></svg>'); background-size:85px; background-position:center top; background-repeat: no-repeat;}
+    }
+
+    &.section-arrow-bottom {  background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-white + '" d="M32.1,9.8C20.8,9.8,16,0,16,0S11.3,9.8,0,9.8H32.1z"/></svg>'); background-position:center bottom; background-repeat: no-repeat; background-size:85px;
+        &.white{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-white + '" d="M32.1,9.8C20.8,9.8,16,0,16,0S11.3,9.8,0,9.8H32.1z"/></svg>'); background-size:85px; background-position:center bottom; background-repeat: no-repeat;}
+        &.gray-light{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-gray-light + '" d="M32.1,9.8C20.8,9.8,16,0,16,0S11.3,9.8,0,9.8H32.1z"/></svg>'); background-size:85px; background-position:center bottom; background-repeat: no-repeat;}
+        &.gray-dark{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-gray-dark + '" d="M32.1,9.8C20.8,9.8,16,0,16,0S11.3,9.8,0,9.8H32.1z"/></svg>'); background-size:85px; background-position:center bottom; background-repeat: no-repeat;}
+        &.purple{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-purple + '" d="M32.1,9.8C20.8,9.8,16,0,16,0S11.3,9.8,0,9.8H32.1z"/></svg>'); background-size:85px; background-position:center bottom; background-repeat: no-repeat;}
+        &.orange{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-orange + '" d="M32.1,9.8C20.8,9.8,16,0,16,0S11.3,9.8,0,9.8H32.1z"/></svg>'); background-size:85px; background-position:center bottom; background-repeat: no-repeat;}
+        &.green{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-green + '" d="M32.1,9.8C20.8,9.8,16,0,16,0S11.3,9.8,0,9.8H32.1z"/></svg>'); background-size:85px; background-position:center bottom; background-repeat: no-repeat;}
+        &.green-dark{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-green-dark + '" d="M32.1,9.8C20.8,9.8,16,0,16,0S11.3,9.8,0,9.8H32.1z"/></svg>'); background-size:85px; background-position:center bottom; background-repeat: no-repeat;}
+        &.green-neon{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-green-neon + '" d="M32.1,9.8C20.8,9.8,16,0,16,0S11.3,9.8,0,9.8H32.1z"/></svg>'); background-size:85px; background-position:center bottom; background-repeat: no-repeat;}
+    }
+}
+
+@media not screen and (-moz-windows-theme) { _:-moz-ui-valid, .section-arrow-mid.section-arrow-top { top:-.4px; } }
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    // saf3+, chrome1+
+    .section-arrow-mid {
+        background-position: center -0.24px;
+    }
+}
+@supports (-moz-osx-font-smoothing: auto) {
+    //target only Firefox on Mac
+   .section-arrow-mid {
+        background-position: center -0.4px;
+    }
+}
+.section-arrow-edge {position: absolute;width: 100%; height:100%; top:0; left:0;
+                     background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-gray-light + '" d="M0,0c11.3,0,16,9.8,16,9.8S20.8,0,32.1,0H0z"/></svg>'); background-size:85px; background-position:1% top; background-repeat: no-repeat;
+        &.white{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-white + '" d="M0,0c11.3,0,16,9.8,16,9.8S20.8,0,32.1,0H0z"/></svg>'); background-size:85px; background-position:1% top; background-repeat: no-repeat;}
+        &.gray-light{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-gray-light + '" d="M0,0c11.3,0,16,9.8,16,9.8S20.8,0,32.1,0H0z"/></svg>'); background-size:85px; background-position:1% top; background-repeat: no-repeat;}
+        &.gray-dark{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-gray-dark + '" d="M0,0c11.3,0,16,9.8,16,9.8S20.8,0,32.1,0H0z"/></svg>'); background-size:85px; background-position:1% top; background-repeat: no-repeat;}
+        &.purple{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-purple + '" d="M0,0c11.3,0,16,9.8,16,9.8S20.8,0,32.1,0H0z"/></svg>'); background-size:85px; background-position:1% top; background-repeat: no-repeat;}
+        &.orange{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-orange + '" d="M0,0c11.3,0,16,9.8,16,9.8S20.8,0,32.1,0H0z"/></svg>'); background-size:85px; background-position:1% top; background-repeat: no-repeat;}
+        &.green{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-green + '" d="M0,0c11.3,0,16,9.8,16,9.8S20.8,0,32.1,0H0z"/></svg>'); background-size:85px; background-position:1% top; background-repeat: no-repeat;}
+        &.green-dark{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-green-dark + '" d="M0,0c11.3,0,16,9.8,16,9.8S20.8,0,32.1,0H0z"/></svg>'); background-size:85px; background-position:1% top; background-repeat: no-repeat;}
+        &.green-neon{ background: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.1 9.8" style="enable-background:new 0 0 32.1 9.8;" preserveAspectRatio="xMinYMid"><path fill="' + $color-green-neon + '" d="M0,0c11.3,0,16,9.8,16,9.8S20.8,0,32.1,0H0z"/></svg>'); background-size:85px; background-position:1% top; background-repeat: no-repeat;}
+
+}
+
+@media #{$is-ie}{
+    .section-arrow-mid {position: absolute; width: 100%; height: 100%; top: 0; left:0; background-image:none!important;
+
+        &.section-arrow-right{ &:after{ top: 50%;right:0;border: solid transparent;content: " ";height: 0;width: 0;position: absolute;pointer-events: none;border-color:transparent;border-top-width: 60px;
+        border-top-width: 40px;
+        border-right-width: 20px;
+        border-bottom-width: 40px;
+        border-left-width: 0;
+        margin-top: -40px;border-right-color:$color-white;}
+
+        }
+        &.section-arrow-left{ &:after{ top: 50%;left: 0;border: solid transparent;content: " ";height: 0;width: 0;position: absolute;pointer-events: none;border-color:transparent;
+        border-top-width: 40px;
+        border-left-width: 20px;
+        border-bottom-width: 40px;
+        border-right-width: 0;
+        margin-top: -40px;border-left-color:$color-white;}
+        }
+        &.section-arrow-top {&:after{ top: 0;left: 50%;border: solid transparent;content: " ";height: 0;width: 0;position: absolute;pointer-events: none;border-color:transparent;border-top-width: 20px;border-right-width:40px;border-bottom-width: 20px;border-left-width: 40px;margin-left: -40px;border-top-color:$color-white;}
+        }
+        &.section-arrow-bottom{&:after{  top:auto; bottom:0;left: 50%;border: solid transparent;content: " ";height: 0;width: 0;position: absolute;pointer-events: none;border-color:transparent; border-top-width: 20px;border-right-width: 40px;border-bottom-width: 20px;border-left-width: 40px;margin-left: -40px;border-bottom-color:$color-white;}
+
+        }
+        &.section-arrow-bottom{
+            &.green {&:after{ border-bottom-color:$color-green;}}
+            &.green-neon {&:after{ border-bottom-color:$color-green-neon;}}
+            &.green-dark {&:after{ border-bottom-color:$color-green-dark;}}
+            &.purple {&:after{ border-bottom-color:$color-purple;}}
+            &.orange {&:after{ border-bottom-color:$color-orange;}}
+            &.gray-dark {&:after{ border-bottom-color:$color-gray-dark;}}
+            &.gray {&:after{ border-bottom-color:$color-gray;}}
+            &.gray-light {&:after{ border-bottom-color:$color-gray-light;}}
+            &.white {&:after{ border-bottom-color:$color-white;}}
+
+        }
+        &.section-arrow-top{
+            &.green {&:after{ border-top-color:$color-green;}}
+            &.green-neon {&:after{ border-top-color:$color-green-neon;}}
+            &.green-dark {&:after{ border-top-color:$color-green-dark;}}
+            &.purple {&:after{ border-top-color:$color-purple;}}
+            &.orange {&:after{ border-top-color:$color-orange;}}
+            &.gray-dark {&:after{ border-top-color:$color-gray-dark;}}
+            &.gray {&:after{ border-top-color:$color-gray;}}
+            &.gray-light {&:after{ border-top-color:$color-gray-light;}}
+            &.white {&:after{ border-top-color:$color-white;}}
+        }
+        &.section-arrow-left{
+            &.green {&:after{ border-left-color:$color-green;}}
+            &.green-neon {&:after{ border-left-color:$color-green-neon;}}
+            &.green-dark {&:after{ border-left-color:$color-green-dark;}}
+            &.purple {&:after{ border-left-color:$color-purple;}}
+            &.orange {&:after{ border-left-color:$color-orange;}}
+            &.gray-dark {&:after{ border-left-color:$color-gray-dark;}}
+            &.gray {&:after{ border-left-color:$color-gray;}}
+            &.gray-light {&:after{ border-left-color:$color-gray-light;}}
+            &.white {&:after{ border-left-color:$color-white;}}
+        }
+        &.section-arrow-right{
+            &.green {&:after{ border-right-color:$color-green;}}
+            &.green-neon {&:after{ border-right-color:$color-green-neon;}}
+            &.green-dark {&:after{ border-right-color:$color-green-dark;}}
+            &.purple {&:after{ border-right-color:$color-purple;}}
+            &.orange {&:after{ border-right-color:$color-orange;}}
+            &.gray-dark {&:after{ border-right-color:$color-gray-dark;}}
+            &.gray {&:after{ border-right-color:$color-gray;}}
+            &.gray-light {&:after{ border-right-color:$color-gray-light;}}
+            &.white {&:after{ border-right-color:$color-white;}}
+        }
+    }
+}

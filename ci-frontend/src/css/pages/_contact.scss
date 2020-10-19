@@ -1,0 +1,51 @@
+/* CONTACT US PAGE */
+// 1. section-contact-us
+// 2. footer
+
+/* 1. Section - Contact Us
+------------------------------------------------------------------------ */
+.section-contact-us {
+
+        .column-one {
+        @include make-xs-column(12);
+        @include make-sm-column(4);
+        @include make-md-column(4);
+        @include make-lg-column(4);
+            @media #{$media-xxs} { width:100%; }
+        }
+        .column-two {
+        @include make-xs-column(12);
+        @include make-sm-column(4);
+        @include make-md-column(4);
+        @include make-lg-column(4);
+            @media #{$media-xxs} { width:100%; }
+        }
+        .column-three {
+        @include make-xs-column(12);
+        @include make-sm-column(4);
+        @include make-md-column(4);
+        @include make-lg-column(4);
+            @media #{$media-xxs} { width:100%; }
+        }
+
+	.widget {
+		font-family: $font-avenir-medium;
+		
+		h3 {
+			margin-bottom: 30px;
+		}
+		p {
+			font-family: $font-avenir;
+			
+			&.hours {
+				margin-top: 40px;
+			}
+		}
+		a {
+			display: block;
+			font-size: $size-7;
+			margin-bottom: 10px;
+		}
+	}
+	
+}
