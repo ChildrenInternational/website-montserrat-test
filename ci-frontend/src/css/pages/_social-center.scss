@@ -2,7 +2,7 @@
 .rdhdr a[rel="tooltip"]{font-size: $size-10; display:inline-block; padding:0; margin:0;  line-height:20px;}
 .rdhdr a[rel="tooltip"]:before{font-size:15px;content: $icon-info; font-family:$font-icon;}
 
-.child-name { color: $color-gray-dark; font-family: $font-avenir-medium; font-size: 24px; }
+.child-name { color: $color-gray-dark; font-family: $font-montserrat-medium; font-size: 24px; }
 
 .rdhdr.rdhrdsp,
 .rdhrdsp{float:left; width:100%; margin:0;background:#EEE; padding:10px;
@@ -14,7 +14,7 @@
 
 .rdhdr.rdhrdsp2 a{display:block; padding: 6px 0 10px;}
 
-.small-btn{background:$color-gray-border; color:#686868; border-radius:3px; padding:2px 5px; margin:0; font-size:12px; border:none; font-family:$font-avenir;
+.small-btn{background:$color-gray-border; color:#686868; border-radius:3px; padding:2px 5px; margin:0; font-size:12px; border:none; font-family:$font-montserrat;
 	&:hover{color:#333;}
 }
 
@@ -32,7 +32,7 @@
 .navbartp{margin:0 0 40px; padding:10px 0; width:100%; background:$color-gray-light; display:flex;}
 .msc-navigation > ul {margin-top:5px; float:right;
     > li{float: left;margin: 0 16px;position: relative;
-        > a{color: #484848;display: block;height: 100%;font-family: $font-avenir;
+        > a{color: #484848;display: block;height: 100%;font-family: $font-montserrat;
         }
     }
     > li.active > a {color: $color-green; font-weight:bold;}
@@ -54,7 +54,7 @@
 .module-search-component .select-filters { min-width:100%; left:0;z-index:9999;padding: 40px 30px;
     ul{
         li{
-        a{font-family:$font-avenir-medium;font-size: 18px;color: $color-gray-title;text-transform: uppercase;display: block;font-weight: bold; padding:10px;
+        a{font-family:$font-montserrat-medium;font-size: 18px;color: $color-gray-title;text-transform: uppercase;display: block;font-weight: bold; padding:10px;
         &:hover{color: $color-green;}
         &:focus{background-color: $color-gray-light;}
         }
@@ -817,7 +817,7 @@ th.sfforumThreadPostsWrp.col-sm-2,
 .postWrap > .sfforumThreadPost {margin:20px 0;}
 
 .sfforumPostTitle{text-transform: capitalize;color: #333333;  font-family: Arial,Helvetica,sans-serif;  font-size: 14px; font-weight:normal;  line-height: 20px;	
-	#threadTitleText{font-size: 26px; line-height: 30px; text-transform: uppercase; color: #777777; font-family: $font-avenir-medium; font-weight: bold;}
+	#threadTitleText{font-size: 26px; line-height: 30px; text-transform: uppercase; color: #777777; font-family: $font-montserrat-medium; font-weight: bold;}
 }
 
 .sfforumSocialShareWrp {background: $color-green;  color:#FFF; margin:20px 0 0; padding: 8px; font-weight:bold;}
@@ -951,7 +951,7 @@ body.sfreContentArea{background:transparent; max-width:100%; padding:20px; min-h
 		span:nth-child(2){border-bottom-left-radius: 4px!important;border-top-left-radius: 4px!important;margin-left: 0;}
 		span:nth-child(5){border-bottom-right-radius: 4px!important;border-top-right-radius: 4px!important;}
         span{
-            a{ color:#FFF; text-transform:none; font-family:$font-avenir; font-size:12px;
+            a{ color:#FFF; text-transform:none; font-family:$font-montserrat; font-size:12px;
                         i{font-size: $size-10;}
                      }
              @media #{$media-sm} {border-radius:4px!important; margin:0 0 10px;}

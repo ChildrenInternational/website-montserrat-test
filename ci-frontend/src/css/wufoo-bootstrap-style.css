@@ -1473,11 +1473,11 @@ CSS rules into "custom.css".
 
 - - - - - - - - - - - - - - - - - - - - - */
 :root {
-  --font-stack: "AvenirLT-Roman", 'Open Sans', Tahoma, sans-serif;
+  --font-stack: "Montserrat-Regular", 'Open Sans', Tahoma, sans-serif;
 }
 
 /* - - - Default - - - */
-.wufoo { font-family: "AvenirLT-Roman", 'Open Sans', Tahoma, sans-serif; font-size: 16px;}
+.wufoo { font-family: "Montserrat-Regular", 'Open Sans', Tahoma, sans-serif; font-size: 16px;}
 
 /* Logo */
 #logo a {background-image:url('https://www.children.org/ci-frontend/dist/images/logo-purple.svg'); background-position: center top; min-height:0; height:70px}

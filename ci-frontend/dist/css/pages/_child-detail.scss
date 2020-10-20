@@ -75,7 +75,7 @@
         @media #{$media-md} { float: right; width: 70%; }
         @media #{$media-sm} { float: right; width: 55%; } 
     }
-    .person-name, .person-name h1 { color: $color-gray-dark; font-size: $size-4; margin-top: 0;margin-bottom: 0; display:inline-block; line-height:34px;font-family: $font-avenir-medium;
+    .person-name, .person-name h1 { color: $color-gray-dark; font-size: $size-4; margin-top: 0;margin-bottom: 0; display:inline-block; line-height:34px;font-family: $font-montserrat-medium;
         @media #{$media-xs} { font-size: $size-2; text-align: left; } 
 
         .team { font-size: $size-6; margin-right: 8px;
@@ -91,7 +91,7 @@
     .person-location { margin-bottom: 15px; }
     .person-profile,
     .person-profile p { 
-        font-family: $font-avenir;
+        font-family: $font-montserrat;
         margin-top: 20px;
         text-align: left;
 
@@ -144,7 +144,7 @@
     }
 }
 
-.person-details-more{ text-transform:uppercase; font-size:$size-9;padding-top:20px;font-family: $font-avenir;
+.person-details-more{ text-transform:uppercase; font-size:$size-9;padding-top:20px;font-family: $font-montserrat;
         .column-one {
         @include make-xs-column(12);
         @include make-sm-column(6);
@@ -161,7 +161,7 @@
     }
 
     ul{
-        li{ margin-bottom:20px; position:relative; padding-left:35px;font-family: $font-avenir;
+        li{ margin-bottom:20px; position:relative; padding-left:35px;font-family: $font-montserrat;
           > i{ position:absolute; left:0;}
         }
     }
@@ -219,7 +219,7 @@ ul.spaced-buttons {
         flex-wrap: wrap;
         overflow: hidden;
         width: 100%;
-        font-family:$font-avenir;
+        font-family:$font-montserrat;
 
         @media #{$media-mdlg} { float: left; margin-top: -90px; }
 
@@ -324,7 +324,7 @@ ul.spaced-buttons {
         }
     }
     h4 {
-        font-family: $font-avenir-medium;
+        font-family: $font-montserrat-medium;
         color: $color-orange;
         margin-bottom: 15px;
 
@@ -386,11 +386,11 @@ ul.spaced-buttons {
                     @media #{$media-xs} {max-height: 253px;min-height: 253px;}
                     @media #{$media-xxs} {max-height: 233px;min-height: 233px;}
                 }
-                .photo-date{left:0; bottom:0; position:absolute; width:100%; color:$color-white; font-size:14px; padding:5px;font-family:$font-avenir;height: 55%;display: flex;justify-content: flex-end;flex-direction: column;
+                .photo-date{left:0; bottom:0; position:absolute; width:100%; color:$color-white; font-size:14px; padding:5px;font-family:$font-montserrat;height: 55%;display: flex;justify-content: flex-end;flex-direction: column;
                 background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 82%);
 
                     span{ display:block;text-align:right;
-                        &:nth-child(1){font-family:$font-avenir-heavy; font-size:$size-6;line-height: 20px;}
+                        &:nth-child(1){font-family:$font-montserrat-heavy; font-size:$size-6;line-height: 20px;}
                         &:nth-child(2){font-size:$size-12;}
                         &:nth-child(3){font-size:$size-12;}
                         &:nth-child(4){font-size:$size-11;}

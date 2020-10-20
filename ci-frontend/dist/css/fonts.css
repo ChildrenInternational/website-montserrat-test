@@ -1,33 +1,43 @@
 @charset "UTF-8";
+/* montserrat-regular - latin */
 @font-face {
-  font-family: 'AvenirLT-Medium';
-  src: url("fonts/2FE55C_0_0.eot");
-  src: url("fonts/2FE55C_0_0.eot?#iefix") format("embedded-opentype"), url("fonts/2FE55C_0_0.woff?embed") format("woff"), url("fonts/2FE55C_0_0.ttf") format("truetype"); }
+  font-family: 'Montserrat-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v15-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../fonts/montserrat-v15-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v15-latin-regular.woff2") format("woff2"), url("../fonts/montserrat-v15-latin-regular.woff") format("woff"), url("../fonts/montserrat-v15-latin-regular.ttf") format("truetype"), url("../fonts/montserrat-v15-latin-regular.svg#Montserrat") format("svg");
+  /* Legacy iOS */ }
 
+/* montserrat-500 - latin */
 @font-face {
-  font-family: 'AvenirLT-Roman';
-  src: url("fonts/2FE55C_1_0.eot");
-  src: url("fonts/2FE55C_1_0.eot?#iefix") format("embedded-opentype"), url("fonts/2FE55C_1_0.woff?embed") format("woff"), url("fonts/2FE55C_1_0.ttf") format("truetype"); }
+  font-family: 'Montserrat-Medium';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/montserrat-v15-latin-500.eot");
+  /* IE9 Compat Modes */
+  src: local("Montserrat Medium"), local("Montserrat-Medium"), url("../fonts/montserrat-v15-latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v15-latin-500.woff2") format("woff2"), url("../fonts/montserrat-v15-latin-500.woff") format("woff"), url("../fonts/montserrat-v15-latin-500.ttf") format("truetype"), url("../fonts/montserrat-v15-latin-500.svg#Montserrat") format("svg");
+  /* Legacy iOS */ }
 
+/* montserrat-700 - latin */
 @font-face {
-  font-family: 'AvenirLT-Black';
-  src: url("fonts/2FE55C_4_0.eot");
-  src: url("fonts/2FE55C_4_0.eot?#iefix") format("embedded-opentype"), url("fonts/2FE55C_4_0.woff?embed") format("woff"), url("fonts/2FE55C_4_0.ttf") format("truetype"); }
+  font-family: 'Montserrat-Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-v15-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../fonts/montserrat-v15-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v15-latin-700.woff2") format("woff2"), url("../fonts/montserrat-v15-latin-700.woff") format("woff"), url("../fonts/montserrat-v15-latin-700.ttf") format("truetype"), url("../fonts/montserrat-v15-latin-700.svg#Montserrat") format("svg");
+  /* Legacy iOS */ }
 
+/* montserrat-900 - latin */
 @font-face {
-  font-family: 'AvenirLT-Book';
-  src: url("fonts/2FE55C_6_0.eot");
-  src: url("fonts/2FE55C_6_0.eot?#iefix") format("embedded-opentype"), url("fonts/2FE55C_6_0.woff") format("woff"), url("fonts/2FE55C_6_0.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'AvenirLT-Light';
-  src: url("fonts/2FE55C_7_0.eot");
-  src: url("fonts/2FE55C_7_0.eot?#iefix") format("embedded-opentype"), url("fonts/2FE55C_7_0.woff") format("woff"), url("fonts/2FE55C_7_0.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'AvenirLT-Heavy';
-  src: url("fonts/2FE55C_B_0.eot");
-  src: url("fonts/2FE55C_B_0.eot?#iefix") format("embedded-opentype"), url("fonts/2FE55C_B_0.woff?embed") format("woff"), url("fonts/2FE55C_B_0.ttf") format("truetype"); }
+  font-family: 'Montserrat-Black';
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/montserrat-v15-latin-900.eot");
+  /* IE9 Compat Modes */
+  src: local("Montserrat Black"), local("Montserrat-Black"), url("../fonts/montserrat-v15-latin-900.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v15-latin-900.woff2") format("woff2"), url("../fonts/montserrat-v15-latin-900.woff") format("woff"), url("../fonts/montserrat-v15-latin-900.ttf") format("truetype"), url("../fonts/montserrat-v15-latin-900.svg#Montserrat") format("svg");
+  /* Legacy iOS */ }
 
 @font-face {
   font-family: 'cihandregular';

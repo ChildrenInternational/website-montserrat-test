@@ -70,7 +70,7 @@
             @media #{$media-xs} { width:100%!important;}
         }
         .message-main {width: 100%;line-height: 7vw;margin-bottom:10px;}
-        .message-sub {color: $color-white;@include fluid-type(font-size, 320px, 1366px, 18px, 24px);font-weight: 900;line-height: 1.5em;letter-spacing: 2px;display: block;text-transform: uppercase;width: 100%;z-index: 100;font-family:$font-avenir;@include text-shadow(); text-align:left;
+        .message-sub {color: $color-white;@include fluid-type(font-size, 320px, 1366px, 18px, 24px);font-weight: 900;line-height: 1.5em;letter-spacing: 2px;display: block;text-transform: uppercase;width: 100%;z-index: 100;font-family:$font-montserrat;@include text-shadow(); text-align:left;
         @media #{$media-mobile} {width:100%;}
             a{ 
                 @media #{$media-mobile} {margin-bottom:0;}

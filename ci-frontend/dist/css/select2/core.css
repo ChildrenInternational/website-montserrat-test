@@ -119,7 +119,7 @@
 .select2-container--default .select2-results .select2-results__options {
   text-transform: uppercase;
   font-size: 14px;
-  font-family: "AvenirLT-Roman";
+  font-family: "Montserrat-Regular";
   line-height: 20px; }
 
 .select2-container--default .select2-results .select2-results__options li {
@@ -428,7 +428,7 @@
 .select2-container--bootstrap .select2-results .select2-results__options {
   text-transform: uppercase;
   font-size: 14px;
-  font-family: "AvenirLT-Roman";
+  font-family: "Montserrat-Regular";
   line-height: 20px; }
 
 .select2-container--bootstrap .select2-results .select2-results__options li {

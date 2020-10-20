@@ -22,7 +22,7 @@
 
 /* HEADER
 ------------------------------------------------------------------------ */
-header {background-color: $color-white;box-shadow: 0 4px 4px -4px $color-gray; color: $color-gray-dark;   left: 0; font-family: $font-avenir;font-size: 13px; padding:20px 0 0;position: relative; text-transform: uppercase;top: 0; width: 100%;z-index: 1060; @include transitions(padding $header-focus-time ease-in-out,opacity $header-focus-time ease-in-out,transform $header-focus-time ease-in-out,background $header-focus-time ease-in-out);
+header {background-color: $color-white;box-shadow: 0 4px 4px -4px $color-gray; color: $color-gray-dark;   left: 0; font-family: $font-montserrat;font-size: 13px; padding:20px 0 0;position: relative; text-transform: uppercase;top: 0; width: 100%;z-index: 1060; @include transitions(padding $header-focus-time ease-in-out,opacity $header-focus-time ease-in-out,transform $header-focus-time ease-in-out,background $header-focus-time ease-in-out);
     &.focus {background-color: $color-white;}
 
     @media #{$media-lg} { padding: 25px 0; }
@@ -93,7 +93,7 @@ header {background-color: $color-white;box-shadow: 0 4px 4px -4px $color-gray; c
         }
     }
     .menu-text{ text-transform:uppercase; color:$color-gray-dark; font-size:10px; text-align:right;}
-    > ul {font-family:$font-avenir;height: 100%;
+    > ul {font-family:$font-montserrat;height: 100%;
 
         > li {float: left;height: 100%;margin: 0 16px;position: relative;
 
@@ -142,24 +142,24 @@ header {background-color: $color-white;box-shadow: 0 4px 4px -4px $color-gray; c
 
     &.bg-purple {background-color: $color-purple;
         a { color: $color-white; }
-        a:hover  { background-color: darken($color-purple, 10%); color: $color-white;font-family:$font-avenir; }
+        a:hover  { background-color: darken($color-purple, 10%); color: $color-white;font-family:$font-montserrat; }
     }
     &.bg-green {background-color: $color-green;
         a { color: $color-white; }
-        a:hover  { background-color: darken($color-green, 10%); color: $color-white;font-family:$font-avenir; }
+        a:hover  { background-color: darken($color-green, 10%); color: $color-white;font-family:$font-montserrat; }
     }
     &.bg-yellow {background-color: $color-yellow;
             @media #{$media-mobile} {display:none;}
             @media #{$media-xs} { left:auto; right:0;}
             @media #{$media-xxs} { left:auto; right:0;}
             a { color: $color-gray-dark; }
-            a:hover  { background-color: darken($color-yellow, 10%); color:$color-gray-dark;font-family:$font-avenir; }
+            a:hover  { background-color: darken($color-yellow, 10%); color:$color-gray-dark;font-family:$font-montserrat; }
         }
 
     li {border-top: 1px solid $color-gray-light;display: block;list-style: none;margin: 0;width: 100%;
         &:first-child { border-top: none; }
     }
-    a {color: $color-gray-dark;display: block;font-size: $size-10;font-weight: normal;padding: 20px 20px;width: 100%;font-family:$font-avenir;
+    a {color: $color-gray-dark;display: block;font-size: $size-10;font-weight: normal;padding: 20px 20px;width: 100%;font-family:$font-montserrat;
         &:hover { background-color: $color-gray-light; }
     }
 }
@@ -191,7 +191,7 @@ header {background-color: $color-white;box-shadow: 0 4px 4px -4px $color-gray; c
 }
 
 /* Top Nav */
-.top-nav.default {float: right;margin:0;font-family:$font-avenir;
+.top-nav.default {float: right;margin:0;font-family:$font-montserrat;
     li {margin-top:10px;float: left;margin-left: 15px;
        &:nth-child(1){margin-left:0;}
     }
@@ -208,11 +208,11 @@ header {background-color: $color-white;box-shadow: 0 4px 4px -4px $color-gray; c
 
 /* Header Buttons */
 .notification-count{position: absolute;min-width: 25px;height: 25px;width: auto;
-    a{background: $color-orange;font-family:$font-avenir;color: $color-white;text-align: center;font-size: $size-12;font-weight: 700;border-radius:50%;display:inline-block; min-width:25px; height:25px;line-height:26px;padding:0 2px;
+    a{background: $color-orange;font-family:$font-montserrat;color: $color-white;text-align: center;font-size: $size-12;font-weight: 700;border-radius:50%;display:inline-block; min-width:25px; height:25px;line-height:26px;padding:0 2px;
     }
 }
 
-.header-cta-buttons.default {font-weight: 600;font-family:$font-avenir;float: left; width: calc(100% + 15px); margin: 0 -15px; position:relative;
+.header-cta-buttons.default {font-weight: 600;font-family:$font-montserrat;float: left; width: calc(100% + 15px); margin: 0 -15px; position:relative;
     @media #{$media-lg} { float: right; width: 95%; margin: 0;}
     @media #{$media-xxs} {width:100%; margin:0; }
 
@@ -283,9 +283,9 @@ header {background-color: $color-white;box-shadow: 0 4px 4px -4px $color-gray; c
     &.mm-menu.mm-offcanvas { top:169px;
         @media #{$media-xxs} { top:139px; }
     }
-    .mm-listview {font-family:$font-avenir;
+    .mm-listview {font-family:$font-montserrat;
         > li {
-            > a { font-family: $font-avenir-medium; font-size: $size-8; text-transform: uppercase; color: $color-gray-dark; padding: 15px 10px 15px 20px;margin-left:0; }
+            > a { font-family: $font-montserrat-medium; font-size: $size-8; text-transform: uppercase; color: $color-gray-dark; padding: 15px 10px 15px 20px;margin-left:0; }
             &.secondary a{font-size: 12px;color: $color-gray;}
 
             &.top-level{
@@ -339,7 +339,7 @@ header {background-color: $color-white;box-shadow: 0 4px 4px -4px $color-gray; c
 ------------------------------------------------------------------------ */
 .section-breadcrumbs{padding:0; position:relative;z-index:100;}
 .breadcrumb {background: rgba(246, 244, 243, .8);color: #484848;float: left;font-size: 12px;height: 32px;line-height: 34px;width: 100%;
-    li {display: inline;margin-left: 5px;font-family:$font-avenir;
+    li {display: inline;margin-left: 5px;font-family:$font-montserrat;
 
         &:before { content: "/"; margin-right: 5px;}
         &:first-child {margin-left: 0;
@@ -351,7 +351,7 @@ header {background-color: $color-white;box-shadow: 0 4px 4px -4px $color-gray; c
 
 /* FOOTER
 ------------------------------------------------------------------------ */
-footer { background: $color-green; color: $color-white; font-family: $font-avenir; padding:0; position: relative;
+footer { background: $color-green; color: $color-white; font-family: $font-montserrat; padding:0; position: relative;
     .column-one {
         @include make-xs-column(12);
         @include make-sm-column(12);
@@ -430,19 +430,19 @@ footer { background: $color-green; color: $color-white; font-family: $font-aveni
     .column-one, .column-two, .column-three, .column-full {
         position: relative;
 
-        h3 {font-size: $size-8;font-family: $font-avenir;text-transform: uppercase;margin: 0 0 25px 0; @include white-text;
+        h3 {font-size: $size-8;font-family: $font-montserrat;text-transform: uppercase;margin: 0 0 25px 0; @include white-text;
 
             @media #{$media-mobile} { font-size: 22px; }
         }
 
-        p {margin: 0;font-family: $font-avenir;line-height:1.5;
+        p {margin: 0;font-family: $font-montserrat;line-height:1.5;
             @media #{$media-mobile} { font-size: 18px; }
         }
 
         a { color: $color-white; text-decoration: none;
             &:hover{  opacity: 0.7;}
         }
-        ul, ol { margin: 0; padding: 0;font-family:$font-avenir;
+        ul, ol { margin: 0; padding: 0;font-family:$font-montserrat;
             li { list-style: none; float: left; }
             &.right { float: right; }
         }
@@ -528,19 +528,19 @@ footer { background: $color-green; color: $color-white; font-family: $font-aveni
         } 
     }
     .sitemap-wrap{ padding:40px 0;
-        .column-one {font-family:$font-avenir;
+        .column-one {font-family:$font-montserrat;
             @include make-xs-column(12);
             @include make-sm-column(4);
             @include make-md-column(4);
             @include make-lg-column(4);
         }
-        .column-two {font-family:$font-avenir;
+        .column-two {font-family:$font-montserrat;
             @include make-xs-column(12);
             @include make-sm-column(4);
             @include make-md-column(4);
             @include make-lg-column(4);
         }
-        .column-three {font-family:$font-avenir;
+        .column-three {font-family:$font-montserrat;
             @include make-xs-column(12);
             @include make-sm-column(4);
             @include make-md-column(4);
@@ -553,7 +553,7 @@ footer { background: $color-green; color: $color-white; font-family: $font-aveni
         a,
         .icon-logo{color:$color-white;}
 
-        .legal-info {font-family:$font-avenir;text-align:center;
+        .legal-info {font-family:$font-montserrat;text-align:center;
             @media #{$media-mobile} { margin-left: 0; }
 
             li { display: inline-block; margin-left: 30px; float:none; font-size:$size-12;
@@ -606,7 +606,7 @@ footer { background: $color-green; color: $color-white; font-family: $font-aveni
 }
 ul.default.sidebar-list { margin: 0; padding: 0;
     li { margin: 10px 0 40px 0;
-        a {font-family: $font-avenir-medium; font-size: $size-8; margin-left: -10px; margin-bottom:45px; color: $color-gray-title; text-transform:uppercase; display:block; font-weight:bold;
+        a {font-family: $font-montserrat-medium; font-size: $size-8; margin-left: -10px; margin-bottom:45px; color: $color-gray-title; text-transform:uppercase; display:block; font-weight:bold;
            &:hover{color: $color-green;}
         }
          &.selected a { color: $color-green; }
@@ -618,7 +618,7 @@ ul.default.sidebar-list { margin: 0; padding: 0;
                 }
                 &.selected ul, ul { margin: 0; padding: 0;
                     li { margin: 0;
-                        a { font-family: $font-avenir; font-size: $size-10; margin-left: 10px; font-weight:normal; color: $color-gray-title;
+                        a { font-family: $font-montserrat; font-size: $size-10; margin-left: 10px; font-weight:normal; color: $color-gray-title;
                              &:hover{color: $color-green;}
                         }
                         li {

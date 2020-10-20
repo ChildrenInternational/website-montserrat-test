@@ -97,7 +97,7 @@
 
         ul {
             li {margin-right: 15px;
-                a {color: $color-gray;  font-family: $font-avenir-heavy; opacity: .7;padding-left: 20px;position: relative;text-transform: uppercase;
+                a {color: $color-gray;  font-family: $font-montserrat-heavy; opacity: .7;padding-left: 20px;position: relative;text-transform: uppercase;
                     i {bottom: 1px;display: block;font-size: 8px;left: 0;position: absolute;}
                     &:hover { opacity: 1; }
                     &.clear-all {border-bottom: 1px solid $color-gray-border;padding-left: 0;}
@@ -114,7 +114,7 @@
         ul {margin: 15px 0 0;padding:0; list-style: none;
             @media #{$media-mobile} { display: none;margin:10px 0 0; padding:0; }
 
-            li {float: left;border-right: 1px solid #bbb;font-size: $size-9;font-family: $font-avenir;padding-right: 5px;margin-right: 5px;
+            li {float: left;border-right: 1px solid #bbb;font-size: $size-9;font-family: $font-montserrat;padding-right: 5px;margin-right: 5px;
                 a{
                     &.active{color:$color-purple; font-weight:bold;}
                 }
@@ -131,7 +131,7 @@
     .column-full.sort{
         ul{  float:right;
                     @media #{$media-mobile} { display: block;margin:10px 0 0; padding:0; float:left; }
-            li {float: left;border-right: 1px solid #bbb;font-size: $size-9;font-family: $font-avenir;padding-right: 8px;margin-right: 8px;
+            li {float: left;border-right: 1px solid #bbb;font-size: $size-9;font-family: $font-montserrat;padding-right: 8px;margin-right: 8px;
                  @media #{$media-mobile} {border-right: 1px solid #bbb; width:auto;
                     &:last-child,
                     &.no-border { border-right: none; }
@@ -159,7 +159,7 @@
 
             li {list-style:none;margin-bottom: 25px;
                 &:last-child {margin-bottom: 0;}
-                a {text-transform: uppercase;font-size: $size-10;color: $color-gray-dark;font-weight: 500;font-family: $font-avenir;
+                a {text-transform: uppercase;font-size: $size-10;color: $color-gray-dark;font-weight: 500;font-family: $font-montserrat;
                     &:hover {color: $color-green;}
                     &.active {color: $color-green; font-weight:bold;}
                 }
@@ -169,7 +169,7 @@
 
             .filter-select-wrap {margin-bottom: 30px;position:relative;width: 100%;
                 select::-ms-expand {display: none;}
-                select { padding:10px 20px; margin: 0;outline:none;display: inline-block;-webkit-appearance:none;-moz-appearance:none;appearance:none;cursor:pointer; background-color:transparent; border:none; border-radius:0;border-bottom: 1px solid $color-gray-border;width: 100%;color:#676767;text-transform:uppercase;font-size:$size-10;font-family:$font-avenir; height:auto; box-shadow:none; background-image:none;
+                select { padding:10px 20px; margin: 0;outline:none;display: inline-block;-webkit-appearance:none;-moz-appearance:none;appearance:none;cursor:pointer; background-color:transparent; border:none; border-radius:0;border-bottom: 1px solid $color-gray-border;width: 100%;color:#676767;text-transform:uppercase;font-size:$size-10;font-family:$font-montserrat; height:auto; box-shadow:none; background-image:none;
                   @media #{$media-mobile} {font-size:$size-8;}
                 }
 
@@ -222,7 +222,7 @@
               @media #{$media-xxs} {width:100%;}
 
                .select-radio{ width:100%;
-                   h6{color:$color-gray;font-family:$font-avenir-black;margin:10px 0 0;}
+                   h6{color:$color-gray;font-family:$font-montserrat-black;margin:10px 0 0;}
                     .radio-inline, .checkbox-inline{display: inline-block;margin-right: .75rem;padding:0;
                     + .radio-inline, + .checkbox-inline{margin-left:0;}
                         .form-radio-label{vertical-align: middle;padding-left: 1.25rem;margin-bottom: 0;font-weight: normal;
@@ -272,12 +272,12 @@
             &:after { content:$icon-arrow-down;pointer-events:none;font-family:$font-icon;margin-left: 10px;margin-top:3px;float: right;font-size: 5px;color: #484848;font-style: normal;height: 20px;width: 20px;top: 40%;background: none;border: 0;position: absolute;right: 1px;}
 }
 select.select-box::-ms-expand {display: none;}
- .select-box{ padding:10px 20px; margin: 0;outline:none;display: inline-block;-webkit-appearance:none;-moz-appearance:none;appearance:none;cursor:pointer; background-color:transparent; border:none; border-radius:0;border-bottom: 1px solid $color-gray-border;width: 100%;color:#676767;text-transform:uppercase;font-size:$size-10;font-family:$font-avenir; height:auto; box-shadow:none; background-image:none;
+ .select-box{ padding:10px 20px; margin: 0;outline:none;display: inline-block;-webkit-appearance:none;-moz-appearance:none;appearance:none;cursor:pointer; background-color:transparent; border:none; border-radius:0;border-bottom: 1px solid $color-gray-border;width: 100%;color:#676767;text-transform:uppercase;font-size:$size-10;font-family:$font-montserrat; height:auto; box-shadow:none; background-image:none;
               @media #{$media-mobile} {font-size:$size-8;}
  }
 
 optgroup,
-option{text-transform: uppercase;font-size: $size-10;color: $color-gray-dark;font-weight: 500;font-family: $font-avenir;
+option{text-transform: uppercase;font-size: $size-10;color: $color-gray-dark;font-weight: 500;font-family: $font-montserrat;
         &:hover {color: $color-green;cursor: pointer;}
         &.active {color: $color-green;}
     }
@@ -324,7 +324,7 @@ option{text-transform: uppercase;font-size: $size-10;color: $color-gray-dark;fon
     }
 
     h4.filter-title{flex:auto; }
-    .form-control-placeholder {font-size:$size-10;font-weight: 600;text-transform: uppercase;font-family: $font-avenir-black;color: #484848;position: absolute; top: 2px; left:0; padding: 0 0 0 10px;transition: all 200ms;opacity: 0.5;
+    .form-control-placeholder {font-size:$size-10;font-weight: 600;text-transform: uppercase;font-family: $font-montserrat-black;color: #484848;position: absolute; top: 2px; left:0; padding: 0 0 0 10px;transition: all 200ms;opacity: 0.5;
         @media #{$media-mobile}{top: 12px;z-index: -1;}
     }
 
@@ -351,7 +351,7 @@ option{text-transform: uppercase;font-size: $size-10;color: $color-gray-dark;fon
 }
 .section-child-search-header {padding-bottom:30px;padding-top:0;
 
-    p { font-family: $font-avenir-medium;margin-bottom: 30px;width: 66%;
+    p { font-family: $font-montserrat-medium;margin-bottom: 30px;width: 66%;
         @media #{$media-mobile} { width: 100%; }
     }
     .btn-link{
@@ -507,7 +507,7 @@ option{text-transform: uppercase;font-size: $size-10;color: $color-gray-dark;fon
     .person-info {
         @media #{$media-mobile} { text-align: center; }
     }
-    .person-name {color: $color-green;font-family: $font-avenir-medium;font-size: 24px;margin-top: 20px;
+    .person-name {color: $color-green;font-family: $font-montserrat-medium;font-size: 24px;margin-top: 20px;
         .team {font-family: $font-handwritten; font-size: $size-7; margin-right: 5px;
         }
     }
@@ -663,7 +663,7 @@ option{text-transform: uppercase;font-size: $size-10;color: $color-gray-dark;fon
                         @media #{$media-xxs} {display:none;} 
                         @media #{$media-tiny} {display:none;} 
                     }
-                    .sponsored-txt{ display:block;background-color:$color-green; opacity: 0.9; font-size:$size-9;font-family: "AvenirLT-Medium"; position: absolute;bottom: 0; left: 0;padding: 0 5px; width: 100%;
+                    .sponsored-txt{ display:block;background-color:$color-green; opacity: 0.9; font-size:$size-9;font-family: "montserrat-Medium"; position: absolute;bottom: 0; left: 0;padding: 0 5px; width: 100%;
                          @media #{$media-xlg} {font-size:$size-8;} 
                          @media #{$media-md} {font-size:$size-9;} 
                          @media #{$media-xs} {font-size:$size-11;} 

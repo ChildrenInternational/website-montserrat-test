@@ -26,7 +26,7 @@
     .title,
     .subtitle {text-align: center;}
     h3 { margin: 0 0 20px; }
-    p { font-family: $font-avenir; }
+    p { font-family: $font-montserrat; }
 
         .section-info { padding: 0; margin: 0 auto;
         @media #{$media-lg} { padding: 75px 0; }
@@ -58,7 +58,7 @@
 
     .select-amount { margin: 20px auto 5px auto; text-align: center;
 
-        .radio {color: $color-green;float: none;font-family: $font-avenir-heavy;font-size: 22px;margin: 0 20px 40px;position: relative;
+        .radio {color: $color-green;float: none;font-family: $font-montserrat-heavy;font-size: 22px;margin: 0 20px 40px;position: relative;
 
             @media #{$media-md} { margin: 0 10px 40px; }
             @media #{$media-xs} { margin: 0 10px 40px; }
@@ -79,7 +79,7 @@
             @media #{$media-tiny}{ font-size:$size-10; top:26px;}
         }
     }
-    .donation { background: none; border: 1px solid $color-gray-dark; color: $color-gray-dark; font-family: $font-avenir-heavy; font-size: $size-4; height: 72px; line-height: 72px; outline: none; text-align: center;
+    .donation { background: none; border: 1px solid $color-gray-dark; color: $color-gray-dark; font-family: $font-montserrat-heavy; font-size: $size-4; height: 72px; line-height: 72px; outline: none; text-align: center;
         @include form-focus;
 
         @media #{$media-tiny}{ text-align: left;}
@@ -106,7 +106,7 @@
             }
             @media #{$media-mobile} { margin: 0 0 20px; }
         }
-        .other-options { clear: both; display: block; font-family: $font-avenir-heavy; font-size: $size-10; margin-top: 20px; }
+        .other-options { clear: both; display: block; font-family: $font-montserrat-heavy; font-size: $size-10; margin-top: 20px; }
     }
 }
 

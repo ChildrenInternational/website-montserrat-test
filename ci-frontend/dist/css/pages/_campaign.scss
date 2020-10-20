@@ -28,7 +28,7 @@
         label { margin-right: 10px; }
         .value { 
             color: $color-purple;
-            font-family: $font-avenir-black;
+            font-family: $font-montserrat-black;
             font-size: $size-4;
         }
     }
@@ -57,7 +57,7 @@
 ------------------------------------------------------------------------ */
 .sections-navigation {padding:0;text-align: center;position: relative;z-index: 100;
     ul{padding: 25px 0;}
-    li {font-family:$font-avenir; border-left: 1px solid $color-gray-border; display: inline;font-size: $size-10;padding: 0 10px;
+    li {font-family:$font-montserrat; border-left: 1px solid $color-gray-border; display: inline;font-size: $size-10;padding: 0 10px;
         @media #{$media-mobile} { border: none;border-top: 1px solid $color-gray-border;display: block;font-size: $size-6;padding: 10px 0;text-align: center;width: 100%;}
 
         &:first-child { border-left: 0;

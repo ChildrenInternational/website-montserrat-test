@@ -44,7 +44,7 @@ ul.myAcclist{list-style:none;margin:0;padding:0;
 	@include responsive(medium-screens){max-height: 50%;}
 }
 
-.child-name {  color: $color-gray-dark;  font-family: $font-avenir-medium; font-size: 24px; line-height:28px; margin-top:0;}
+.child-name {  color: $color-gray-dark;  font-family: $font-montserrat-medium; font-size: 24px; line-height:28px; margin-top:0;}
 
 .form-content{
 	.user-name input,
@@ -62,7 +62,7 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-.con_wrap {text-transform:uppercase;font-size:20px;font-family: $font-avenir-heavy;padding:5px;margin:25px 0 25px 5px;border:1px solid #000;display:inline-flex;
+.con_wrap {text-transform:uppercase;font-size:20px;font-family: $font-montserrat-heavy;padding:5px;margin:25px 0 25px 5px;border:1px solid #000;display:inline-flex;
     transform: rotate(-5deg) ;
 }
 
@@ -91,8 +91,8 @@ input::-webkit-inner-spin-button {
 .myAccount .pagination-wrap ul {box-shadow:none;padding:0;float:right;@include border-radius(0px);margin: 0;
 	@include responsive(medium-screens){float:left;}
 }
-.myAccount .pagination-wrap ul > li > a, .myAccount .pagination-wrap ul > li > span{border:none;font-family: $font-avenir;}
-.myAccount .tab-content .pagination-wrap ul > li > a, .myAccount .pagination-wrap ul > li > span{border:none;padding:4px 9px;font-family: $font-avenir;}
+.myAccount .pagination-wrap ul > li > a, .myAccount .pagination-wrap ul > li > span{border:none;font-family: $font-montserrat;}
+.myAccount .tab-content .pagination-wrap ul > li > a, .myAccount .pagination-wrap ul > li > span{border:none;padding:4px 9px;font-family: $font-montserrat;}
 
 .myAccount .pagination-container {float: right;margin: 0;
 	@include responsive(medium-screens){float:left;}
@@ -100,8 +100,8 @@ input::-webkit-inner-spin-button {
 .myAccount .pagination-container ul {box-shadow:none;padding:0;float:right;@include border-radius(0px);margin: 0;
 	@include responsive(medium-screens){float:left;}
 }
-.myAccount .pagination-container ul > li > a, .myAccount .pagination-container ul > li > span{border:none;font-family: $font-avenir;}
-.myAccount .tab-content .pagination-container ul > li > a, .myAccount .pagination-container ul > li > span{border:none;padding:4px 9px;font-family: $font-avenir;}
+.myAccount .pagination-container ul > li > a, .myAccount .pagination-container ul > li > span{border:none;font-family: $font-montserrat;}
+.myAccount .tab-content .pagination-container ul > li > a, .myAccount .pagination-container ul > li > span{border:none;padding:4px 9px;font-family: $font-montserrat;}
 
 .myAccount .pgTop {margin:0 0 10px;width:88%;
 	@include responsive(lg-med-screens){width: 88%;}
@@ -156,7 +156,7 @@ input::-webkit-inner-spin-button {
 
 	ul.infoList {list-style-type: none;margin:0;padding:0;
 		li {margin-bottom: 4px;}
-		li a {font-family: $font-avenir;	}
+		li a {font-family: $font-montserrat;	}
 		li a:hover i {text-decoration:none;	}
 		li i.fa-map-marker{margin-left:5px}
 	}
@@ -687,7 +687,7 @@ border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 
 	.blog-date{float:right;background:#dedede;border:1px solid #DDD;@include border-radius(5px);padding:6px;
 
-		.blog-dy{font-family:$font-avenir-medium;font-size:26px;line-height:26px;border-right:1px solid #999;color:#999;padding:0 5px 0 0;float:left;}
+		.blog-dy{font-family:$font-montserrat-medium;font-size:26px;line-height:26px;border-right:1px solid #999;color:#999;padding:0 5px 0 0;float:left;}
 		.blog-mnth,
 		.blog-yr{color:#999;padding:0 0 0 5px;text-align:center;line-height:14px;text-transform:uppercase;}
 		.blog-yr{font-size:11px;}

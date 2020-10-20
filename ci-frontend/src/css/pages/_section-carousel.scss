@@ -164,7 +164,7 @@
          /* custom select styles */
          .dropdown-wrap{ width:100%;margin-bottom: 30px;position:relative;
             select::-ms-expand {display: none;}
-            select { padding:10px 20px; margin: 0;outline:none;display: inline-block;-webkit-appearance:none;-moz-appearance:none;appearance:none;cursor:pointer; background-color:transparent; border:none; border-radius:0;border-bottom: 1px solid $color-gray-border;width: 100%;color:$color-white;text-transform:uppercase;font-size:$size-10;font-family:$font-avenir; height:auto; box-shadow:none; background-image:none;
+            select { padding:10px 20px; margin: 0;outline:none;display: inline-block;-webkit-appearance:none;-moz-appearance:none;appearance:none;cursor:pointer; background-color:transparent; border:none; border-radius:0;border-bottom: 1px solid $color-gray-border;width: 100%;color:$color-white;text-transform:uppercase;font-size:$size-10;font-family:$font-montserrat; height:auto; box-shadow:none; background-image:none;
               @media #{$media-mobile} {font-size:$size-8;}
             }
             /* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */

@@ -6,7 +6,7 @@
     border-radius: unset;
     cursor: pointer;
     display: inline-block;
-    font-family: $font-avenir-heavy;
+    font-family: $font-montserrat-heavy;
     font-size: $size-10;
     font-weight: normal;
     margin-bottom: 0;
@@ -81,7 +81,7 @@
 
 .btn-sm{ padding-top:8px; padding-bottom:8px;}
 .btn-lg{white-space: normal;
-    span{text-transform: none;display: block; border-top: 1px solid #ccc; padding: 10px 0 0; margin: 10px 0 0; font-family:$font-avenir-medium; letter-spacing: 1px;}
+    span{text-transform: none;display: block; border-top: 1px solid #ccc; padding: 10px 0 0; margin: 10px 0 0; font-family:$font-montserrat-medium; letter-spacing: 1px;}
 }
 
 .btn-yellow.btn-lg{
@@ -165,7 +165,7 @@
     .button-text {
         color: $color-gray-dark;
         font-size: $size-10;
-        font-family: $font-avenir-heavy;
+        font-family: $font-montserrat-heavy;
         text-transform: uppercase;
         @media #{$media-sm} {font-size: $size-7-sm; }
         @media #{$media-xs} {font-size: $size-8; }
@@ -271,7 +271,7 @@ button.btn-text { background:transparent; border:none;}
 .btn-clear {
     border-bottom: 1px solid $color-gray;
     color: $color-gray;
-    font-family: $font-avenir-heavy;
+    font-family: $font-montserrat-heavy;
     padding-bottom: 5px;
     text-decoration: none;
     text-transform: uppercase;
@@ -303,7 +303,7 @@ button.btn-text { background:transparent; border:none;}
 
     &.share-image-buttons{left:0; top:10px;}
 
-    .share-text{font-size: 12px; padding-top: 9.5px;display: inline-block;vertical-align: top;padding-right: 10px;text-transform:uppercase;font-family: $font-avenir;
+    .share-text{font-size: 12px; padding-top: 9.5px;display: inline-block;vertical-align: top;padding-right: 10px;text-transform:uppercase;font-family: $font-montserrat;
         @media #{$media-mobile} {margin:0 0 10px;}
     }
 
@@ -326,7 +326,7 @@ button.btn-text { background:transparent; border:none;}
                 }
             }
         }
-        .favorite-count{ float:left; width:42px;background-color:$color-gray-light;border: 1px solid $color-gray-border; border-top:none; color: $color-gray;display: block; text-align:center;font-family: $font-avenir; font-size:$size-10; clear:left;
+        .favorite-count{ float:left; width:42px;background-color:$color-gray-light;border: 1px solid $color-gray-border; border-top:none; color: $color-gray;display: block; text-align:center;font-family: $font-montserrat; font-size:$size-10; clear:left;
             @media #{$media-xs} {width:  71px;}
             @media #{$media-xxs} {width:  55px;}
             @media #{$media-tiny}{border-top:none; border-bottom: 1px solid $color-gray-border;}
@@ -510,7 +510,7 @@ button.btn-text { background:transparent; border:none;}
 
 /* Button - Search Filters
 ------------------------------------------------------------------------ */
-.btn-search-filters { border-bottom: 1px solid $color-gray-border;color: $color-gray-dark;font-family: $font-avenir-medium;font-size: $size-10;height: 42px;line-height: 42px;text-align: left;width: 100%;
+.btn-search-filters { border-bottom: 1px solid $color-gray-border;color: $color-gray-dark;font-family: $font-montserrat-medium;font-size: $size-10;height: 42px;line-height: 42px;text-align: left;width: 100%;
     overflow: hidden;}
 
 .toggle-sort-prev {
@@ -570,11 +570,11 @@ button.btn-text { background:transparent; border:none;}
        @media #{$media-tiny} { right: 59px;width: 141px;}
        .floated-button-popout-content{ background:#FFF; border:2px solid $color-purple; padding:10px; max-width:100%;}
         &.feedback-block .floated-button-popout-content{padding:0;}
-        p{ font-family:$font-avenir;}
+        p{ font-family:$font-montserrat;}
         .popup-nav{
             li{border-top: 1px solid #f6f4f3;display: block;list-style: none;margin: 0;padding:0;width: 100%;}
             li:first-child {border-top: none;}
-            a {color: #484848;display: block;font-size: 14px;font-weight: normal;padding: 10px;width: 100%;font-family: "AvenirLT-Roman"; text-transform:uppercase;}
+            a {color: #484848;display: block;font-size: 14px;font-weight: normal;padding: 10px;width: 100%;font-family: "Montserrat-Regular"; text-transform:uppercase;}
             a:hover {background-color: #f6f4f3;}
             }
         .btn-block { width:100%; text-align:left; padding-left:15px; padding-right:15px; position:relative;

@@ -115,14 +115,14 @@
          .post .content{
              .post-title{margin: 0 0 20px 0;font-size:$size-8; line-height:22px;}
              .post-category + .post-title{margin: 10px 0 20px 0;}
-             .post-excerpt { font-family: $font-avenir; font-size:$size-9; margin: 0 0 30px 0; }
+             .post-excerpt { font-family: $font-montserrat; font-size:$size-9; margin: 0 0 30px 0; }
              }
     }
 }
 
 
-.media-text{padding:20px; font-size:14px;font-family: $font-avenir;
-    p{font-size:14px;font-family: $font-avenir;}
+.media-text{padding:20px; font-size:14px;font-family: $font-montserrat;
+    p{font-size:14px;font-family: $font-montserrat;}
     &.bg-green{color:#FFF;
         h4,
         a{color:#FFF;}

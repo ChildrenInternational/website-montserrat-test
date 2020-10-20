@@ -6,7 +6,7 @@ html.grnbg{ background:$color-green; }
 
 body {
     background: $color-white;
-    font-family: $font-avenir;
+    font-family: $font-montserrat;
     font-size: $size-8;
     position: relative;
 
@@ -239,7 +239,7 @@ ul, ol { font-family:$font-martel; margin-bottom:30px;padding-left: 15px;
         &.inline {
             li { display: inline-block;}
         }
-    &.normal { font-family: $font-avenir;}
+    &.normal { font-family: $font-montserrat;}
     }
     &.links-group { margin: 0; padding: 0;
         li { list-style: none;  margin: 15px 0;
@@ -257,7 +257,7 @@ ul, ol { font-family:$font-martel; margin-bottom:30px;padding-left: 15px;
         li { list-style: none; margin:0;  margin-left:15px; padding-left:15px; display:inline-block; border-left:2px solid $color-gray-border;
              &:first-child{ border-left:0; margin-left:0; padding-left:0;}
               @media #{$media-mobile} { padding: 0; margin:0; border:0; width: 100%; }
-             a{	text-decoration: none;font-family: $font-avenir-medium;text-transform: uppercase; font-size:$size-10;
+             a{	text-decoration: none;font-family: $font-montserrat-medium;text-transform: uppercase; font-size:$size-10;
                 &:after {
                     content:$icon-arrow-cta;
                     font-family:$font-icon;
@@ -303,7 +303,7 @@ ul, ol { font-family:$font-martel; margin-bottom:30px;padding-left: 15px;
     @media #{$media-mobile} { margin-bottom: 35px; }
     @media #{$media-xxs} { margin-bottom: 25px; }
 
-    label { font-family: $font-avenir-medium; font-size: $size-10; }
+    label { font-family: $font-montserrat-medium; font-size: $size-10; }
 }
 
 .form-control {
@@ -376,7 +376,7 @@ form.ng-invalid.ng-touched { border: 0px; }
     .section-link { text-align: center; width: 100%; }
     .section-title {
 
-        h2 { color: #fff; font-family: $font-avenir-medium; font-size: 42px; font-weight: normal; line-height: 42px; }
+        h2 { color: #fff; font-family: $font-montserrat-medium; font-size: 42px; font-weight: normal; line-height: 42px; }
         h2,
         h3 { margin-top: 0; }
     }
@@ -415,7 +415,7 @@ form.ng-invalid.ng-touched { border: 0px; }
         @media #{$media-mobile} { margin-bottom: 40px; }
     }
     .section-subtitle {
-        p{font-family:$font-avenir;}
+        p{font-family:$font-montserrat;}
         @media #{$media-mobile} { font-size: $size-4; }
     }
 }

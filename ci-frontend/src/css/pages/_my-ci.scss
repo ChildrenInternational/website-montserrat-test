@@ -207,7 +207,7 @@
                 .column-one{padding-right:20px;position:relative;
                  @media #{$media-mobile} {padding:10px;display: flex; flex-direction: row;flex-wrap: wrap;justify-content: center;}
                     .dashboard-title { text-align:center; width:100%; margin-top:5px; 
-                        a{font-family:$font-avenir-heavy;text-transform:uppercase; cursor:pointer;
+                        a{font-family:$font-montserrat-heavy;text-transform:uppercase; cursor:pointer;
                             @media #{$media-mobile}{color: $color-white;}
                             &:hover{color:$color-gray-border;
                              @media #{$media-mobile}{color: $color-gray-border;}
@@ -235,7 +235,7 @@
                 }
                 .column-two{display: flex;flex-direction: column;height: 100%; width:100%;
                  .dashboard-quicklinks{ margin-bottom:20px;
-                    p, ul{font-family:$font-avenir;}
+                    p, ul{font-family:$font-montserrat;}
                  }
                     .btn{margin-top: auto;}
                 }
@@ -254,14 +254,14 @@
 
 /* FAQS - Expanding block
 ------------------------------------------------------------------------ */
-.faq-question{padding-bottom:10px;float: left;font-size:$size-7-sm;font-family:$font-avenir-heavy;}
+.faq-question{padding-bottom:10px;float: left;font-size:$size-7-sm;font-family:$font-montserrat-heavy;}
 .faq-answer{margin-bottom:30px;}
 
 
 /* account settings - details-summary
 ------------------------------------------------------------------------ */
 .details-summary{
-    .details-summary-id{font-family:$font-avenir-heavy;}
+    .details-summary-id{font-family:$font-montserrat-heavy;}
 }
 
 /* section-payment-info
@@ -305,7 +305,7 @@
     .exp-date{ padding-left:34px;}
     .expiring-card { color: $color-error; }
     .expired-card { color: $color-error; }
-    .selected-autopay{ padding-left:35px;font-family:$font-avenir-black;}
+    .selected-autopay{ padding-left:35px;font-family:$font-montserrat-black;}
     .selected-autopay-nobold{ padding-left:34px;}
 
     .login-wrap{
@@ -320,7 +320,7 @@
         .addCredit-form, .addACH-form{
             &.active{padding:20px 20px 0; background:#FFF;}
             .new-credit-card-form-extra-info-container,
-            .new-ach-form-extra-info-container{font-family:$font-avenir-black;}
+            .new-ach-form-extra-info-container{font-family:$font-montserrat-black;}
             ul{padding:20px; background:#FFF; margin:0 -20px;width: calc(100% + 40px);}
         }
     }
@@ -328,7 +328,7 @@
  .autopay{
     .appeal-wrap{
         .form-group:nth-child(even){border-top:1px solid #bbb; border-bottom:1px solid #bbb; padding:15px 0;}
-        .appeal-title{font-family:$font-avenir-black;}
+        .appeal-title{font-family:$font-montserrat-black;}
         .tooltip{margin-left:25px;}
         .tooltip-arrow{left: calc(50% - 24px);}
         autopay-appeal{
@@ -380,7 +380,7 @@
                 @media #{$media-tiny} { width:100%; }
                     &:hover{ border:1px solid #009976; background:#eee; }
                     &:focus,
-                    &.active{ border:1px solid #901f61;font-family:$font-avenir-black;outline:none;}
+                    &.active{ border:1px solid #901f61;font-family:$font-montserrat-black;outline:none;}
                 }
             }
         }
@@ -475,7 +475,7 @@
                     }
                 }
             }
-            .child-name{font-family:$font-avenir-heavy; font-size:$size-6; text-align:center;
+            .child-name{font-family:$font-montserrat-heavy; font-size:$size-6; text-align:center;
                 .team{font-family:$font-handwritten;margin-right: 5px; font-size:$size-7;}
             }
             .child-status{font-size:$size-12; text-align:center;}
@@ -500,7 +500,7 @@
                         &:nth-child(3){border:none;}
                     }
                 .detail-label{font-size:$size-12;font-family:$font-martel;}
-                div{font-family:$font-avenir-heavy;font-size:$size-9;}
+                div{font-family:$font-montserrat-heavy;font-size:$size-9;}
             }
         }
     }
@@ -534,7 +534,7 @@
                             &:nth-child(3){border:none;}
                         }
                     .detail-label{font-size:$size-12;font-family:$font-martel; padding:0 2px;}
-                    span{font-family:$font-avenir-heavy;font-size:$size-8; display:inline-block;}
+                    span{font-family:$font-montserrat-heavy;font-size:$size-8; display:inline-block;}
                 }
             }
     }
@@ -548,7 +548,7 @@
                         &:nth-child(3){border:none;}
              }
             .detail-label{font-size:$size-12;font-family:$font-martel;padding:0 2px;width:100%;}
-            span{font-family:$font-avenir-heavy;font-size:$size-8; display:inline-block;}
+            span{font-family:$font-montserrat-heavy;font-size:$size-8; display:inline-block;}
         }
     }
 }
@@ -579,9 +579,9 @@
             @media #{$media-xxs} { padding:10px ;}
             &:nth-child(1){border-left:none;}
             &.active {background:#e3b912;
-                    a{color:$color-gray-dark;font-family:$font-avenir-heavy;}
+                    a{color:$color-gray-dark;font-family:$font-montserrat-heavy;}
                 }
-            a{text-transform:uppercase; color:#91770c;font-family:$font-avenir-medium; font-size:$size-10;
+            a{text-transform:uppercase; color:#91770c;font-family:$font-montserrat-medium; font-size:$size-10;
               &:hover{ color:$color-gray-dark;}
             }
         }
@@ -627,7 +627,7 @@
                 @media #{$media-xxs} { flex-wrap: wrap;}
                 .message-hdr-wrap{
                      @media #{$media-xs} { display:flex; }
-                    .message-header{width:90%;font-family:$font-avenir-black; 
+                    .message-header{width:90%;font-family:$font-montserrat-black; 
                         @media #{$media-mobile} { width:94%; }
                         @media #{$media-xxs} {  float:left;width:100%; }
 
@@ -641,7 +641,7 @@
                     .message-summary{ margin-top:10px; padding-top:10px; border-top:1px solid $color-gray; width:100%;
                         @media #{$media-mobile}{width:calc(100% - 10px);}
                         @media #{$media-xxs}{width:100%;}
-                        p{font-family:$font-avenir;}
+                        p{font-family:$font-montserrat;}
                     }
                 }
             }
@@ -658,20 +658,20 @@
                 @media #{$media-xxs} { display:block; }        
                     > div { display:inline-flex; align-items:center;                        
                     &:before{ content: "\2022"; margin:4px 5px 0 0;color:$color-green;}
-                        p{font-family:$font-avenir-black; display:inline-flex; align-items:center;  
+                        p{font-family:$font-montserrat-black; display:inline-flex; align-items:center;  
                             &:before{content: $icon-logo-sm;margin-right:10px; background:$color-green; border-radius:50%; width:35px; height:35px;font-size:$size-8; color:$color-white;font-family:$font-icon; text-align:center;display:flex; align-items:center; justify-content:center;flex-grow: 0;flex-shrink: 0;}
                             &.letter-icon:before{content: $icon-email; }
                             &.photo-icon:before{content: $icon-images; font-size:$size-10; }
                         }                       
                     }
                 }
-                .message-date{ font-size:$size-11;font-family:$font-avenir;
+                .message-date{ font-size:$size-11;font-family:$font-montserrat;
                     @media #{$media-xxs} { display:block; padding-left:50px; }  
                 }
                 .message-read{                   
-                    .hdr-flex-wrap > div {font-family:$font-avenir;
+                    .hdr-flex-wrap > div {font-family:$font-montserrat;
                         &:before{content: "";margin:0;}
-                        p{font-family:$font-avenir;}
+                        p{font-family:$font-montserrat;}
                     }
                     .message-date{
                         @media #{$media-xxs} {padding-left:44px; }  
@@ -723,7 +723,7 @@
         }
 
         .checkout-bar-top,
-        .checkout-bar {display: flex;flex-wrap: nowrap;font-family:$font-avenir; position:relative;
+        .checkout-bar {display: flex;flex-wrap: nowrap;font-family:$font-montserrat; position:relative;
                       
         .step {	padding: 0;	position: relative; width:33.3333333%; margin:0; z-index:5;
             .dot {position: absolute;width: 30px;height: 30px;display: block;background-color:$color-gray-border;top: 24px;left: 50%;margin-top: -15px;margin-left: -15px;border-radius: 50%; color:$color-white; font-size:16px;text-align:center;line-height:30px;font-weight: bold;}
@@ -833,7 +833,7 @@
 /* giving-history
 ------------------------------------------------------------------------ */
 .giving-history{
-    .total-given{font-family:$font-avenir-heavy;}
+    .total-given{font-family:$font-montserrat-heavy;}
     .payment-sum{
             li{display: flex;flex-direction: row; flex-wrap: nowrap;justify-content: space-between ;align-content: stretch;align-items: flex-start;margin:0 -5px; padding:5px 0;
             &:nth-child(1){border-top:1px solid $color-gray;}
@@ -848,7 +848,7 @@
                     &.payment-type{
                      @media #{$media-xs} { font-size:$size-12; }
                     }
-                    &.payment-amt{font-family:$font-avenir-heavy;margin-left: auto;
+                    &.payment-amt{font-family:$font-montserrat-heavy;margin-left: auto;
                      @media #{$media-xs} { font-size:$size-11; }
                     }
                     i{
@@ -859,7 +859,7 @@
     }
 
     .pagination{
-        ul{ margin:0; padding:0;font-family: $font-avenir;
+        ul{ margin:0; padding:0;font-family: $font-montserrat;
             li{margin-bottom:0;
                 &.current{background:$color-purple!important;}
             }
@@ -871,7 +871,7 @@
     .open-close-btn{
         button{padding-left:0; padding-right:0;}
     }
-    .year-end-btn{padding-top:10px;font-family:$font-avenir-heavy;
+    .year-end-btn{padding-top:10px;font-family:$font-montserrat-heavy;
         @media #{$media-xs} { padding-top:0; }
     }
 }
@@ -906,7 +906,7 @@
             }
         }
         .column-two{width:100%;
-            .child-name{font-family:$font-avenir-heavy; font-size:$size-7; text-align:center;
+            .child-name{font-family:$font-montserrat-heavy; font-size:$size-7; text-align:center;
                 .team{font-family:$font-handwritten;margin-right: 5px; font-size:$size-7-sm;}
             }
            .full-name,
@@ -918,11 +918,11 @@
                     &:nth-child(1){border:none;padding-left:0;}
                     &:last-child{padding-right:0;}
                 }
-                .product-title{ font-family:$font-avenir-heavy;font-size:$size-9;
+                .product-title{ font-family:$font-montserrat-heavy;font-size:$size-9;
                   @media #{$media-xxs} {font-size:$size-11;}
                   @media #{$media-tiny} {font-size:11px;}
                 }
-                .product-copy{font-family:$font-avenir-heavy;
+                .product-copy{font-family:$font-montserrat-heavy;
                   @media #{$media-tiny} {font-size:11px;}
                 }
                 .product-sub-text{font-size:$size-12;
@@ -1055,11 +1055,11 @@
 /* Sponsorship openOrder-form 
 ------------------------------------------------------------------------ */
 .openOrder-form{
-    .multi-amount-txt{font-family:$font-avenir-heavy;}
+    .multi-amount-txt{font-family:$font-montserrat-heavy;}
 
     .appeal-wrap{
         .form-group:nth-child(even){border-top:1px solid #bbb; border-bottom:1px solid #bbb; padding:5px 0;}
-        .appeal-title{font-family:$font-avenir-black;}
+        .appeal-title{font-family:$font-montserrat-black;}
         .tooltip{margin-left:25px;}
         .tooltip-arrow{left: calc(50% - 24px);}
     }
@@ -1105,8 +1105,8 @@
     .product-desc{display:flex; justify-content:space-between;}
     .product-desc{margin-bottom:5px;font-size:$size-9;}
 
-    .product-info-header{ font-family:$font-avenir-heavy; margin-right:5px; font-size:$size-9;}
-    .product-info-amt{ font-family:$font-avenir-heavy;}
+    .product-info-header{ font-family:$font-montserrat-heavy; margin-right:5px; font-size:$size-9;}
+    .product-info-amt{ font-family:$font-montserrat-heavy;}
 }
 
 /* Extr gift modal

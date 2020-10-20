@@ -52,7 +52,7 @@
     }
 
     .checkout-bar-top,
-    .checkout-bar {display: flex;flex-wrap: wrap;font-family:$font-avenir; position:relative;
+    .checkout-bar {display: flex;flex-wrap: wrap;font-family:$font-montserrat; position:relative;
 
         .step {	padding: 0;	position: relative; width:50%; margin:0; z-index:5;
             .dot {position: absolute;width: 30px;height: 30px;display: block;background-color:$color-green;top: 24px;left: 50%;margin-top: -15px;margin-left: -15px;border-radius: 50%; color:$color-white; font-size:16px;text-align:center;line-height:30px;font-weight: bold; transition: all .2s;}
@@ -187,9 +187,9 @@
     fieldset { width: 100%; }
     .step { border-bottom: 1px solid $color-gray-border; padding: 30px 0; position: relative;
 
-        h2 { color: $color-gray-dark; font-family: $font-avenir-medium; font-size: $size-6; margin: 0 0 20px 0; }
-        h3 { font-size: $size-9; font-family: $font-avenir-heavy; }
-        p { font-family: $font-avenir; font-size: $size-10;margin: 0 0 10px; }
+        h2 { color: $color-gray-dark; font-family: $font-montserrat-medium; font-size: $size-6; margin: 0 0 20px 0; }
+        h3 { font-size: $size-9; font-family: $font-montserrat-heavy; }
+        p { font-family: $font-montserrat; font-size: $size-10;margin: 0 0 10px; }
         ul {
             &.inline { 
                 li {margin-right: 10px;
@@ -260,10 +260,10 @@
 }
 .cart-wrap {
 
-    .sum-list{ list-style:none; font-family: $font-avenir;padding:0; margin:0 0 20px; 
+    .sum-list{ list-style:none; font-family: $font-montserrat;padding:0; margin:0 0 20px; 
         li {font-size:$size-7-sm;
             ul{padding:0 0 0 20px;}
-            li{padding:0; margin:0;font-family: $font-avenir; list-style:none;font-size:$size-9;clear:both;
+            li{padding:0; margin:0;font-family: $font-montserrat; list-style:none;font-size:$size-9;clear:both;
                 .item-wrap{clear:both;width: 100%;float:left;
                     &:before{ content: "\2022"; font-size:$size-9;}
                     span:nth-child(2){float:right; margin-left: 5px;}
@@ -279,8 +279,8 @@
         @media #{$media-mdlg} { padding: 10px 60px 10px 60px;}
     }
     .checkout-total { display: block; margin: 20px 0;
-        p{margin-bottom:0;font-family: $font-avenir;}
-        .amount { display: inline-block; font-size: $size-7-sm; margin-right: 5px;font-family: $font-avenir;
+        p{margin-bottom:0;font-family: $font-montserrat;}
+        .amount { display: inline-block; font-size: $size-7-sm; margin-right: 5px;font-family: $font-montserrat;
                     @media #{$media-mobile} {font-size: $size-8;}
         }
         .round-up { display: inline-block; font-size: $size-11; }
@@ -291,7 +291,7 @@
     }
 
     .step-five{
-       .confirm-terms p{ font-size: $size-10;font-family: $font-avenir;margin-bottom:10px;}
+       .confirm-terms p{ font-size: $size-10;font-family: $font-montserrat;margin-bottom:10px;}
     }
     .next-step {float: right;
         @media #{$media-mobile} { float: left; width: 100%; }
@@ -301,7 +301,7 @@
         }
     }
 
-    h3 {font-family: $font-avenir-heavy;}
+    h3 {font-family: $font-montserrat-heavy;}
     .remove-child { color: $color-gray-dark; display: block; font-size: $size-11; margin:0;padding:5px 0 0;
         @media #{$media-mobile} { margin:10px 0 0 10px; display:inline-block;}
         i { font-size: $size-12; margin-right: 5px; }
@@ -311,7 +311,7 @@
         @media #{$media-mobile} { padding:20px 20px; }
         hr { border-color: $color-gray-dark; }
     }
-    p{font-family: $font-avenir;@media #{$media-mobile} {font-size: $size-9;}}
+    p{font-family: $font-montserrat;@media #{$media-mobile} {font-size: $size-9;}}
     .person-card {
         &.sponsored-child { border-bottom: 1px solid $color-gray-border; margin-bottom: 40px; padding:0; width: 100%;
             .person-info {
@@ -319,7 +319,7 @@
                 @media #{$media-mobile} { padding-left: 15px; }
                 .person-name { color: $color-gray-dark; font-size: $size-9; margin: 0; }
                 .person-details { border-top: none; margin: 10px 0; padding: 0;
-                    .age { margin: 0 15px 0 8px; font-family: $font-avenir-heavy; font-size: $size-8; }
+                    .age { margin: 0 15px 0 8px; font-family: $font-montserrat-heavy; font-size: $size-8; }
                     i { font-size: 20px; }
                     .detail { clear: both; display: block; float: left; margin-bottom: 10px; }
                 }
@@ -336,7 +336,7 @@
 
 .confirm-wrap{ display: block; margin: 20px 0; padding: 20px; background:$color-gray-border;
         p{margin-bottom:0;}
-        .amount { display: inline-block; font-size: $size-8; font-family: $font-avenir-heavy;
+        .amount { display: inline-block; font-size: $size-8; font-family: $font-montserrat-heavy;
                     @media #{$media-mobile} {font-size: $size-8;}
         }
     h3 {font-size:$size-7-sm; margin-bottom:10px; }
@@ -374,7 +374,7 @@
             @media #{$media-mobile} { margin-bottom: 30px; }
         }
         .column-two {
-            h3 { color: $color-gray-dark; font-family: $font-avenir-medium; font-size: $size-6; }
+            h3 { color: $color-gray-dark; font-family: $font-montserrat-medium; font-size: $size-6; }
             ul {
                 li { margin-bottom: 10px; }
             }
@@ -387,11 +387,11 @@
             .message-main { padding-right: 0 !important;
                 .txt-congrats { color:$color-white; font-size:200px; bottom: 250px; float: none !important; left: 0; position: absolute; text-align: center !important; width: 100%; }
             }
-           .down-arrow .arrow-text{font-family: $font-avenir;}
+           .down-arrow .arrow-text{font-family: $font-montserrat;}
         }
         .section-form {
             h3 { color: $color-gray; margin-bottom: 20px; }
-            P { font-family: $font-avenir; margin: 20px 0; }
+            P { font-family: $font-montserrat; margin: 20px 0; }
             .column-one { padding: 0 20%; }
         }
         .section-my-team {
@@ -414,7 +414,7 @@
             }
             .notice { margin: 50px auto 0 auto; max-width: 65%;
 
-                p { font-family: $font-avenir; }
+                p { font-family: $font-montserrat; }
             }
         }
     }    
@@ -550,7 +550,7 @@ grid-template-areas:
     .top-total-wrap,
     .total-wrap{ text-align:right;
              @media #{$media-xxs} { text-align:center;}
-        .cart-total{font-family: $font-avenir; font-size: $size-6;
+        .cart-total{font-family: $font-montserrat; font-size: $size-6;
              @media #{$media-xs} {font-size: $size-7;}
 
         }
