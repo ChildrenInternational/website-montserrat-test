@@ -7203,7 +7203,7 @@ Styleguide 2.4
   border-radius: unset;
   cursor: pointer;
   display: inline-block;
-  font-family: "Montserrat-Heavy";
+  font-family: "Montserrat-Bold";
   font-size: 14px;
   font-weight: normal;
   margin-bottom: 0;
@@ -7760,7 +7760,7 @@ Styleguide 2.4
 .btn-block-with-text .button-text {
   color: #484848;
   font-size: 14px;
-  font-family: "Montserrat-Heavy";
+  font-family: "Montserrat-Bold";
   text-transform: uppercase; }
   @media (min-width: 768px) and (max-width: 991px) {
     .btn-block-with-text .button-text {
@@ -7895,7 +7895,7 @@ button.btn-text {
 .btn-clear {
   border-bottom: 1px solid #898989;
   color: #898989;
-  font-family: "Montserrat-Heavy";
+  font-family: "Montserrat-Bold";
   padding-bottom: 5px;
   text-decoration: none;
   text-transform: uppercase; }
@@ -11905,7 +11905,7 @@ div.jump-target,
     margin: 0 0 20px 0; }
   .login-wrap .step h3 {
     font-size: 15px;
-    font-family: "Montserrat-Heavy"; }
+    font-family: "Montserrat-Bold"; }
   .login-wrap .step p {
     font-family: "Montserrat-Regular";
     font-size: 14px;
@@ -12153,7 +12153,7 @@ div.jump-target,
         width: 100%; } }
 
 .cart-wrap h3 {
-  font-family: "Montserrat-Heavy"; }
+  font-family: "Montserrat-Bold"; }
 
 .cart-wrap .remove-child {
   color: #484848;
@@ -12209,7 +12209,7 @@ div.jump-target,
       padding: 0; }
       .cart-wrap .person-card.sponsored-child .person-info .person-details .age {
         margin: 0 15px 0 8px;
-        font-family: "Montserrat-Heavy";
+        font-family: "Montserrat-Bold";
         font-size: 16px; }
       .cart-wrap .person-card.sponsored-child .person-info .person-details i {
         font-size: 20px; }
@@ -12237,7 +12237,7 @@ div.jump-target,
   .confirm-wrap .amount {
     display: inline-block;
     font-size: 16px;
-    font-family: "Montserrat-Heavy"; }
+    font-family: "Montserrat-Bold"; }
     @media (min-width: 0) and (max-width: 991px) {
       .confirm-wrap .amount {
         font-size: 16px; } }
@@ -13562,7 +13562,7 @@ ul.spaced-buttons {
           display: block;
           text-align: right; }
           .section-child-gallery .photo-gallery-pics-wrap .photo-wrap .uploaded-photo .photo-date span:nth-child(1) {
-            font-family: "Montserrat-Heavy";
+            font-family: "Montserrat-Bold";
             font-size: 24px;
             line-height: 20px; }
           .section-child-gallery .photo-gallery-pics-wrap .photo-wrap .uploaded-photo .photo-date span:nth-child(2) {
@@ -13847,7 +13847,7 @@ ul.spaced-buttons {
     margin-right: 15px; }
     .module-search-component .applied-filters ul li a {
       color: #898989;
-      font-family: "Montserrat-Heavy";
+      font-family: "Montserrat-Bold";
       opacity: .7;
       padding-left: 20px;
       position: relative;
@@ -19138,7 +19138,7 @@ es-MX .nav-tabs.sm-tabs > li > a:focus {
   text-align: center; }
   .signup-small p {
     color: #484848;
-    font-family: "Montserrat-Heavy";
+    font-family: "Montserrat-Bold";
     font-size: 14px;
     line-height: 30px;
     margin: 0 auto 20px;
@@ -20714,7 +20714,7 @@ input::-webkit-inner-spin-button {
 .con_wrap {
   text-transform: uppercase;
   font-size: 20px;
-  font-family: "Montserrat-Heavy";
+  font-family: "Montserrat-Bold";
   padding: 5px;
   margin: 25px 0 25px 5px;
   border: 1px solid #000;
@@ -27075,7 +27075,7 @@ ul.commaList {
             width: 100%;
             margin-top: 5px; }
             .dashboard-wrap .dashboard-block .dashboard-block-wrap .flex-wrap .column-one .dashboard-title a {
-              font-family: "Montserrat-Heavy";
+              font-family: "Montserrat-Bold";
               text-transform: uppercase;
               cursor: pointer; }
               @media (min-width: 0) and (max-width: 991px) {
@@ -27176,7 +27176,7 @@ ul.commaList {
   padding-bottom: 10px;
   float: left;
   font-size: 18px;
-  font-family: "Montserrat-Heavy"; }
+  font-family: "Montserrat-Bold"; }
 
 .faq-answer {
   margin-bottom: 30px; }
@@ -27184,7 +27184,7 @@ ul.commaList {
 /* account settings - details-summary
 ------------------------------------------------------------------------ */
 .details-summary .details-summary-id {
-  font-family: "Montserrat-Heavy"; }
+  font-family: "Montserrat-Bold"; }
 
 /* section-payment-info
 ------------------------------------------------------------------------ */
@@ -27732,7 +27732,7 @@ ul.commaList {
               .myci-sponorships .column-one .myci-child-actions .myci-child-action-list li a {
                 white-space: nowrap; } }
       .myci-sponorships .column-one .myci-child-actions .child-name {
-        font-family: "Montserrat-Heavy";
+        font-family: "Montserrat-Bold";
         font-size: 24px;
         text-align: center; }
         .myci-sponorships .column-one .myci-child-actions .child-name .team {
@@ -27804,7 +27804,7 @@ ul.commaList {
         font-size: 12px;
         font-family: "martellight"; }
       .myci-sponorships .myci-child-details .myci-child-detail .detail div {
-        font-family: "Montserrat-Heavy";
+        font-family: "Montserrat-Bold";
         font-size: 15px; }
   .myci-sponorships .myci-sponorship-past {
     display: -webkit-flex;
@@ -27879,7 +27879,7 @@ ul.commaList {
       font-family: "martellight";
       padding: 0 2px; }
     .myci-sponorships .myci-sponorship-past .myci-child-details .myci-child-detail span {
-      font-family: "Montserrat-Heavy";
+      font-family: "Montserrat-Bold";
       font-size: 16px;
       display: inline-block; }
 
@@ -27912,7 +27912,7 @@ ul.commaList {
   width: 100%; }
 
 .es .myci-sponorships .myci-child-details .myci-child-detail span {
-  font-family: "Montserrat-Heavy";
+  font-family: "Montserrat-Bold";
   font-size: 16px;
   display: inline-block; }
 
@@ -28006,7 +28006,7 @@ ul.commaList {
       background: #e3b912; }
       .message-tabs-sub.default li.active a {
         color: #484848;
-        font-family: "Montserrat-Heavy"; }
+        font-family: "Montserrat-Bold"; }
     .message-tabs-sub.default li a {
       text-transform: uppercase;
       color: #91770c;
@@ -28642,7 +28642,7 @@ ul.commaList {
 /* giving-history
 ------------------------------------------------------------------------ */
 .giving-history .total-given {
-  font-family: "Montserrat-Heavy"; }
+  font-family: "Montserrat-Bold"; }
 
 .giving-history .payment-sum li {
   display: -webkit-flex;
@@ -28692,7 +28692,7 @@ ul.commaList {
       .giving-history .payment-sum li span.payment-date, .giving-history .payment-sum li span.payment-type {
         font-size: 12px; } }
     .giving-history .payment-sum li span.payment-amt {
-      font-family: "Montserrat-Heavy";
+      font-family: "Montserrat-Bold";
       margin-left: auto; }
       @media (max-width: 767px) {
         .giving-history .payment-sum li span.payment-amt {
@@ -28719,7 +28719,7 @@ ul.commaList {
 
 .giving-history .year-end-btn {
   padding-top: 10px;
-  font-family: "Montserrat-Heavy"; }
+  font-family: "Montserrat-Bold"; }
   @media (max-width: 767px) {
     .giving-history .year-end-btn {
       padding-top: 0; } }
@@ -28842,7 +28842,7 @@ ul.commaList {
     .section-sponsorship-contrib .js-child-list .flex-wrap .column-two {
       width: 100%; }
       .section-sponsorship-contrib .js-child-list .flex-wrap .column-two .child-name {
-        font-family: "Montserrat-Heavy";
+        font-family: "Montserrat-Bold";
         font-size: 22px;
         text-align: center; }
         .section-sponsorship-contrib .js-child-list .flex-wrap .column-two .child-name .team {
@@ -28886,7 +28886,7 @@ ul.commaList {
           .section-sponsorship-contrib .js-child-list .flex-wrap .column-two .product-info-text .product-detail:last-child {
             padding-right: 0; }
         .section-sponsorship-contrib .js-child-list .flex-wrap .column-two .product-info-text .product-title {
-          font-family: "Montserrat-Heavy";
+          font-family: "Montserrat-Bold";
           font-size: 15px; }
           @media (max-width: 480px) {
             .section-sponsorship-contrib .js-child-list .flex-wrap .column-two .product-info-text .product-title {
@@ -28895,7 +28895,7 @@ ul.commaList {
             .section-sponsorship-contrib .js-child-list .flex-wrap .column-two .product-info-text .product-title {
               font-size: 11px; } }
         .section-sponsorship-contrib .js-child-list .flex-wrap .column-two .product-info-text .product-copy {
-          font-family: "Montserrat-Heavy"; }
+          font-family: "Montserrat-Bold"; }
           @media (max-width: 320px) {
             .section-sponsorship-contrib .js-child-list .flex-wrap .column-two .product-info-text .product-copy {
               font-size: 11px; } }
@@ -29157,7 +29157,7 @@ ul.commaList {
 /* Sponsorship openOrder-form 
 ------------------------------------------------------------------------ */
 .openOrder-form .multi-amount-txt {
-  font-family: "Montserrat-Heavy"; }
+  font-family: "Montserrat-Bold"; }
 
 .openOrder-form .appeal-wrap .form-group:nth-child(even) {
   border-top: 1px solid #bbb;
@@ -29311,11 +29311,11 @@ ul.commaList {
     margin-bottom: 5px;
     font-size: 15px; }
   .autopay-sum .product-info-header {
-    font-family: "Montserrat-Heavy";
+    font-family: "Montserrat-Bold";
     margin-right: 5px;
     font-size: 15px; }
   .autopay-sum .product-info-amt {
-    font-family: "Montserrat-Heavy"; }
+    font-family: "Montserrat-Bold"; }
 
 /* Extr gift modal
 ------------------------------------------------------------------------ */
@@ -29509,7 +29509,7 @@ ul.commaList {
     .hero-content .select-amount .radio {
       color: #009976;
       float: none;
-      font-family: "Montserrat-Heavy";
+      font-family: "Montserrat-Bold";
       font-size: 22px;
       margin: 0 20px 40px;
       position: relative; }
@@ -29568,7 +29568,7 @@ ul.commaList {
     background: none;
     border: 1px solid #484848;
     color: #484848;
-    font-family: "Montserrat-Heavy";
+    font-family: "Montserrat-Bold";
     font-size: 30px;
     height: 72px;
     line-height: 72px;
@@ -29619,7 +29619,7 @@ ul.commaList {
     .hero-content .payment-options .other-options {
       clear: both;
       display: block;
-      font-family: "Montserrat-Heavy";
+      font-family: "Montserrat-Bold";
       font-size: 14px;
       margin-top: 20px; }
 
