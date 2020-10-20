@@ -3,18 +3,7 @@ module.exports = function (grunt) {
   timer.init(grunt);
 
   grunt.initConfig({
-    'exec': {
-        'webpack-prod': 'npm run webpack-prod',
-        'webpack-dev': 'npm run webpack-dev',
-        build: 'npm run build'
-    },
-    concurrent: {
-        options: {
-            logConcurrentOutput: true
-        },
-        'watch': ['watch', 'exec:webpack-dev'],
-        'sync': [['browserSync', 'watch'], 'exec:webpack-dev']
-    },
+    
     sass: {
       compile: {
         options: {
@@ -32,17 +21,6 @@ module.exports = function (grunt) {
       }
     },
 
-    kss: {
-      options: {
-        includeType: 'css',
-        includePath: 'ci-frontend/dist/css/main.css',
-      },
-      dist: {
-          files: {
-            src: '/ci-frontend/src/css'
-          }
-      }
-    },
 
     copy: {
       css: {
@@ -157,19 +135,6 @@ module.exports = function (grunt) {
         ]
       }
     },
-    browserSync: {
-        bsFiles: {
-            src : [
-                'ci-frontend/dist/css/*.css',
-                'ci-frontend/dist/*.html',
-                'ci-frontend/dist/**/*.shtml'
-            ]		
-        },
-        options: {
-            watchTask: true,
-            proxy: "localhost:5706"
-        }
-    },
 	
 	autoprefixer: {
 		options: {
@@ -215,14 +180,8 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-mincer');
-  grunt.loadNpmTasks('grunt-kss');
-  grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-exec');
-  grunt.loadNpmTasks('grunt-concurrent');
-  grunt.registerTask('build-production', ['exec:webpack-prod', 'exec:build']);
   grunt.registerTask('run', ['sass', 'mince', 'copy', 'autoprefixer']);
-  grunt.registerTask('nosync', ['run', 'concurrent:watch']);
-  grunt.registerTask('default', ['run', 'concurrent:sync']);
-  return grunt.registerTask('build', ['run', 'build-production']);
+  return grunt.registerTask('default', ['run']);
 };
